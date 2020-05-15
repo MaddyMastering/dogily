@@ -1,0 +1,76 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 4fr;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet-profile {
+    color: #fff;
+    background-color: #2185d0;
+}
+
+.pet-profile-nav {
+    background-color: #dfdfdf;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.history {
+    position: relative;
+    background-color: #f3f3f3;
+    transition: all ease-in-out 0.5s;
+}
+
+.history.open {
+    display: flex !important;
+}
+
+.information {
+    background: #fff;
+    position: relative;
+}
+
+.information.close {
+    display: none !important;
+}
+
+/* ACTION ICONS */
+#icon-close-history {
+    display: none;
+    position: absolute;
+    right: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#icon-show-history {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (max-device-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 6fr;
+    }
+
+    .history {
+        display: none !important;
+    }
+
+    #icon-close-history {
+        display: block;
+    }
+
+    #icon-show-history {
+        display: block;
+    }
+}
