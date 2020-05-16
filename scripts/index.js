@@ -1,7 +1,7 @@
 function sidemenuopen() {
-    document.getElementById('nav').classList.add('open');
+    document.getElementById('aside').classList.add('open');
 }
 
 function sidemenuclose() {
-    document.getElementById('nav').classList.remove('open');
+    document.getElementById('aside').classList.remove('open');
 }
