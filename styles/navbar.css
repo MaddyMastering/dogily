@@ -55,7 +55,7 @@ nav > ul > li > a {
     nav {
         display: none;
     }
-    
+
     aside.open {
         left: 0px;
     }
@@ -70,6 +70,7 @@ nav > ul > li > a {
 
 @media screen and (max-device-width: 480px) {
     aside {
+        left: -110vw;
         width: 100vw;
     }
 }
