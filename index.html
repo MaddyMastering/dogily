@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/scrollbar.css" />
+    <link rel="stylesheet" href="./styles/input.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <title>Dogily</title>
 </head>
@@ -17,8 +19,38 @@
 <body class="on-scroll">
     <header>
         <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
-        HEADER
+
+        <div class="location">
+            <i class="material-icons">gps_fixed</i>
+            <span>Bengaluru</span>
+        </div>
+
+        <div class="search">
+            <label class="input">
+                <i class="material-icons">search</i>
+                <input type="text" autocomplete="off" placeholder="Search" />
+            </label>
+        </div>
+
+        <div class="logo">
+            <img src="./logo.svg">
+            <span>DOGILY</span>
+        </div>
+
+        <div class="profile">
+            <span>LOGIN</span>
+            <label class="icon">
+                <span>3</span>
+                <img src="./images/header/cart.svg" />
+            </label>
+        </div>
+
+        <div class="theme">
+            <span class="theme-selected"></span>
+            <i class="material-icons">wb_sunny</i>
+        </div>
     </header>
+    
     <nav id="nav">
         <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         NAVIGATION

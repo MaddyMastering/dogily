@@ -1,0 +1,42 @@
+label.input {
+    border: 1px solid rgba(156, 156, 156, 0.3);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+label > i {
+    margin: 0 10px;
+    color: var(--text-disabled-color);
+}
+
+input[type="text"] {
+    margin-left: 10px;
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 4px;
+}
+
+label.icon {
+    position: relative;
+}
+
+label.icon > span {
+    position: absolute;
+    font-size: 10px;
+    background: var(--primary-color);
+    color: var(--text-invert-color);
+    padding: 5% 20%;
+    border-radius: 50%;
+    right: 0;
+    top: -6px;
+}
+
+@media screen and (max-device-width: 480px) {
+    label.icon > img{
+        width: 20px;
+    }
+}
