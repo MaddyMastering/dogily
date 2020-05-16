@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/scrollbar.css" />
     <link rel="stylesheet" href="../styles/input.css" />
-    <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/profile.css" />
+    <link rel="stylesheet" href="../styles/profile-pet.css" />
     <title>Dogily</title>
 </head>
 
-<body>
+<body class="on-scroll">
     <header>
         <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
         <div class="location">
@@ -65,52 +64,27 @@
     </aside>
 
     <div class="container">
-        <div class="profile-description">
-            <div class="avatar">
-                <img src="../images/profile/profile.png" />
-            </div>
-            <div class="name">
-                <div>
-                    <span>First name</span>
-                    <span>Maddy</span>
-                </div>
-                <div>
-                    <span>Last name</span>
-                    <span>M</span>
-                </div>
-            </div>
-            <div class="address">
-                <span>Address</span>
-                <span># 12, 7th main, Hongasandra,
-                Bangalore 5600068</span>
-            </div>
-            <div class="phone">
-                <span>Phone</span>
-                <span>7760449537</span>
-            </div>
-            <div class="bottom">
-                <button class="primary-invert">EDIT</button>
-            </div>
+        <div class="pet-profile">
+            PET
         </div>
-
-
-        <div class="pets on-scroll">
-            <p>Pets</p>
-
-            <div class="pet-list">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        <div class="pet-profile-nav">
+            NAV
+        </div>
+        <div class="history">
+            HISTORY
+            <span id="icon-close-history" onclick="closehistory()">
+                <i class="material-icons">clear</i>
+            </span>
+        </div>
+        <div class="information">
+            INFO
+            <span id="icon-show-history" onclick="openhistory()">SHOW HISTORY</span>
         </div>
     </div>
-
     <footer>FOOTER</footer>
 
     <script type="text/javascript" src="../scripts/index.js"></script>
+    <script type="text/javascript" src="../scripts/profile-pet.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,16 @@
+button {
+    padding: 3% 15%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+button.primary {
+    color: var(--text-invert-color);
+    background: var(--primary-color);
+}
+
+button.primary-invert {
+    color: var(--primary-color);
+    background: var(--text-invert-color);
+}
