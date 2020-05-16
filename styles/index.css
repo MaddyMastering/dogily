@@ -51,8 +51,8 @@ body {
 }
 
 .container {
-    /* 210px = 80px header + 80px nav + 50px footer */
     min-height: calc(100% - 210px);
+    /* 210px = 80px header + 80px nav + 50px footer */
     padding-top: 160px;
 }
 
@@ -92,6 +92,10 @@ footer {
         font-size: 14px;
     }
 
+    header {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
     header > i {
         position: absolute;
         top: 30px;
@@ -120,16 +124,32 @@ footer {
 
     .container {
         min-height: calc(100% - 130px);
+        /* 130px = 80px header + 50px footer */
         padding-top: 80px;
     }
 }
 
 @media screen and (max-device-width: 480px) {
+    header {
+        height: 50px;
+    }
+
+    header > i {
+        top: 15px;
+        left: 15px;
+    }
+
     nav {
         top: 0;
         left: -100vw;
         height: 100vh;
         width: 100vw;
         transition: all ease-in-out 0.5s;
+    }
+
+    .container {
+        min-height: calc(100% - 100px);
+        /* 100px = 50px header + 50px footer */
+        padding-top: 50px;
     }
 }
