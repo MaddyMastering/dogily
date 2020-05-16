@@ -50,7 +50,7 @@ nav > ul > li > a {
     }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 1110px) {
     nav {
         display: none;
     }
@@ -67,7 +67,7 @@ nav > ul > li > a {
     }
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
     aside {
         left: -110vw;
         width: 100vw;

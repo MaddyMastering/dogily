@@ -44,9 +44,9 @@
 }
 
 .pet-card > .pet-description > .icons > div > span {
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 .pet-card > .pet-description > .icons > div > .label {
-    font-size: 14px;
+    /* font-size: 14px; */
 }

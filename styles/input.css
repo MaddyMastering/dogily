@@ -20,11 +20,11 @@ input[type="text"] {
     margin-bottom: 4px;
 }
 
-label.icon {
+label.icon_badge {
     position: relative;
 }
 
-label.icon > span {
+label.icon_badge > span {
     position: absolute;
     font-size: 10px;
     background: var(--primary-color);
@@ -35,8 +35,14 @@ label.icon > span {
     top: -6px;
 }
 
-@media screen and (max-device-width: 480px) {
-    label.icon > img{
+@media screen and (max-width: 768px) {
+    label.icon_badge > img{
+        width: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    label.icon_badge > img{
         width: 20px;
     }
 }
