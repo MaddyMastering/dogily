@@ -1,0 +1,52 @@
+.pet-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 8% 5% 10% 5%;
+}
+
+.pet-card > .clear {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.pet-card > .pet-avatar > img {
+    border-radius: 50%;
+}
+
+.pet-card > .pet-description > .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.pet-card > .pet-description > .info > span {
+    margin-bottom: 10px;
+}
+
+.pet-card > .pet-description > .info > .breed {
+    color: var(--text-label-color);
+}
+
+.pet-card > .pet-description > .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pet-card > .pet-description > .icons > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pet-card > .pet-description > .icons > div > span {
+    font-size: 30px;
+}
+
+.pet-card > .pet-description > .icons > div > .label {
+    font-size: 14px;
+}
