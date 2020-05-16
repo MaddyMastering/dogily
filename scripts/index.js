@@ -1,6 +1,5 @@
 function sidemenuopen() {
     document.getElementById('aside').classList.add('open');
-    alert();
 }
 
 function sidemenuclose() {
