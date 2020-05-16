@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--text-invert-color);
     background: #de652c;
     height: calc(100vh / 2);    
 }
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ebebeb;
+    background: #857c7c;
     height: calc(100vh - 160px);
 }
 
@@ -26,8 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    background-color: #2185d0;
+    color: var(--text-invert-color);
+    background-color: var(--primary-color);
     height: calc(100vh - 160px);
 }
 
@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--text-invert-color);
     background-color: rgba(0, 0, 0, 0.8);
     height: calc((100vh / 2) - 160px);
 }

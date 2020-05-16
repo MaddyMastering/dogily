@@ -1,0 +1,17 @@
+:root {
+    --text-color: rgba(0, 0, 0, 0.8);
+    --text-label-color: rgba(0, 0, 0, 0.6);
+    --text-disabled-color: rgba(0, 0, 0, 0.3);
+    --text-invert-color: #fff;
+
+    --primary-color: #2185d0;
+
+    
+
+
+    --footer-background-color: #333333;
+
+    --shadow-color-one: rgba(0, 0, 0, 0.1);
+    --shadow-color-two: rgba(0, 0, 0, 0.2);
+    --shadow-color-three: rgba(0, 0, 0, 0.3);
+}

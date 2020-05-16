@@ -10,13 +10,13 @@
 }
 
 .pet-profile {
-    color: #fff;
-    background-color: #2185d0;
+    color: var(--text-invert-color);
+    background-color: var(--primary-color);
 }
 
 .pet-profile-nav {
     background-color: #dfdfdf;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 6px var(--shadow-color-one);
     z-index: 2;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .information {
-    background: #fff;
+    background: var(--text-invert-color);
     position: relative;
 }
 
