@@ -6,6 +6,10 @@ function sidemenuclose() {
     document.getElementById('aside').classList.remove('open');
 }
 
+function viewPet() {
+    document.location.href = './profile-pet.html'
+}
+
 window.onload = () => {
     const carousel = new Glider(document.querySelector("#carousel-content"), {
         slidesToShow: 1,

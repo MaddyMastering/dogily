@@ -35,6 +35,11 @@ header > div > span {
     border-right: 1px solid var(--text-label-color);
 }
 
+.profile > span > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .theme {
     justify-content: flex-end;
 }
