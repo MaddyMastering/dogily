@@ -10,7 +10,7 @@ window.onload = () => {
     const carousel = new Glider(document.querySelector("#carousel-content"), {
         slidesToShow: 1,
         dots: '#dots',
-        draggable: true,
+        draggable: false,
     });
 
     document.querySelector('.glider').addEventListener('glider-slide-visible', (event) => {
