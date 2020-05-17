@@ -1,21 +1,57 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 4fr;
-}
-
-.container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 2fr 5fr;
 }
 
 .pet-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 3fr 2fr 2fr 2fr 3fr;
+    grid-row-gap: 20px;
     color: var(--text-invert-color);
     background-color: var(--primary-color);
 }
 
+.pet-profile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet-profile > .back > a,
+.pet-profile > .edit > a,
+.pet-profile > .back > a > i,
+.pet-profile > .edit > a > i {
+    font-weight: bold;
+    color: var(--text-invert-color);
+}
+
+.pet-profile > .pet-avatar > img {
+    width: 80%;
+    height: 75%;
+    border-radius: 50%;
+}
+
+.pet-profile > .name > span:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pet-profile > .sex > span > img {
+    filter: invert(1);
+}
+
+.pet-profile > div > span:first-child {
+    margin-bottom: 10px;
+}
+
+.pet-profile > div > span.label {
+    font-size: 10px;
+}
+
 .pet-profile-nav {
-    background-color: #dfdfdf;
+    background-color: #f3f3f3;
     box-shadow: 3px 3px 6px var(--shadow-color-one);
     z-index: 2;
 }
@@ -26,8 +62,42 @@
     transition: all ease-in-out 0.5s;
 }
 
+.history > .header {
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 20px;
+}
+
+.history > .header > i {
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.history > .content > ul > li {
+    padding: 15px 20px;
+}
+
+.history > .content > ul > li > div {
+    display: inline-block;
+}
+
+.history > .content > ul > li > div:first-child > span {
+    display: block;
+}
+
+.history > .content > ul > li > div:nth-child(2) {
+    float: right;
+}
+
+.history > .content > ul > li > div:first-child > span:first-child {
+    margin-bottom: 10px;
+}
+
 .history.open {
     display: flex !important;
+    flex-direction: column;
 }
 
 .information {
@@ -39,13 +109,10 @@
     display: none !important;
 }
 
-/* ACTION ICONS */
-#icon-close-history {
-    display: none;
+.profile-nav-bg {
     position: absolute;
+    bottom: 50px;
     right: 50px;
-    /* font-size: 14px; */
-    cursor: pointer;
 }
 
 #icon-show-history {
@@ -56,21 +123,101 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 6fr;
+.pet-profile-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.pet-profile-nav > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pet-profile-nav > div.active {
+    color: var(--primary-color);
+}
+
+.pet-profile-nav > div.active > img {
+    filter: var(--primary-color-filter);
+}
+
+.pet-profile-nav > div > img {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 2560px) {
+    .pet-profile-nav > div {
+        border-bottom: 1px solid var(--border-color);
     }
 
-    .history {
+    #icon-close-history {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 100px 6fr;
+    }
+
+    .pet-profile {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        height: 80px;
+    }
+
+    .pet-profile > div > span:first-child {
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    .history,
+    .pet-profile > .sex,
+    .pet-profile > .age,
+    .pet-profile > .weight,
+    .pet-profile > .avatar,
+    .pet-profile > .name > .breed {
         display: none !important;
     }
 
     #icon-close-history {
-        display: block;
+        display: inline-block;
     }
 
     #icon-show-history {
         display: block;
+    }
+
+    .pet-profile-nav {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .pet-profile-nav > div {
+        justify-content: flex-end;
+        padding-bottom: 10px;
+        border-bottom: none;
+        border-right: 1px solid var(--border-color);
+    }
+
+    .pet-profile-nav > div > img {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 6fr;
+    }
+
+    .pet-profile {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+        height: 50px;
     }
 }

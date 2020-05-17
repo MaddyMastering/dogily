@@ -5,11 +5,13 @@
     --text-invert-color: #fff;
 
     --primary-color: #2185d0;
-
+    --primary-color-filter: invert(49%) sepia(21%) saturate(4938%) hue-rotate(183deg) brightness(86%) contrast(88%);
     
 
 
     --footer-background-color: #333333;
+
+    --border-color: #DFDFDF;
 
     --shadow-color-one: rgba(0, 0, 0, 0.1);
     --shadow-color-two: rgba(0, 0, 0, 0.2);

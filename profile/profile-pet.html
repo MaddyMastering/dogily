@@ -65,19 +65,91 @@
 
     <div class="container">
         <div class="pet-profile">
-            PET
+            <div class="back">
+                <a class="link" href="./profile.html"><i class="material-icons">chevron_left</i>BACK</a>
+            </div>
+            <div class="name">
+                <span>Brownie</span>
+                <span class="breed">Golden retriever</span>
+            </div>
+            <div class="avatar">
+                <img src="../images/profile/pet-avatar.png" />
+            </div>
+            <div class="sex">
+                <span>
+                    <img src="../images/profile/female.svg" />
+                </span>
+                <span class="label">FEMALE</span>
+            </div>
+            <div class="age">
+                <span>12</span>
+                <span class="label">YEARS OLD</span>
+            </div>
+            <div class="weight">
+                <span>52</span>
+                <span class="label">KGS</span>
+            </div>
+            <div class="edit">
+                <a class="link" href="">EDIT<i class="material-icons">edit</i></a>
+            </div>
         </div>
+
         <div class="pet-profile-nav">
-            NAV
+            <div class="active">
+                <img src="../images/profile/pet-profile-nav/walking.svg" />
+                <span>Walking</span>
+            </div>
+            <div>
+                <img src="../images/profile/pet-profile-nav/food.svg" />
+                <span>Food</span>
+            </div>
+            <div>
+                <img src="../images/profile/pet-profile-nav/vaccination.svg" />
+                <span>Vaccination</span>
+            </div>
+            <div>
+                <img src="../images/profile/pet-profile-nav/prescription.svg" />
+                <span>Prescription</span>
+            </div>
+            <div>
+                <img src="../images/profile/pet-profile-nav/deworming.svg" />
+                <span>Deworming</span>
+            </div>
+            <div>
+                <img src="../images/profile/pet-profile-nav/services.svg" />
+                <span>Services</span>
+            </div>
         </div>
         <div class="history">
-            HISTORY
-            <span id="icon-close-history" onclick="closehistory()">
-                <i class="material-icons">clear</i>
-            </span>
+            <div class="header">
+                <span>WALKING HISTORY</span>
+                <i class="material-icons" id="icon-close-history" onclick="closehistory()">clear</i>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <div>
+                            <span>12th May 2020</span>
+                            <span>10:45 am</span>
+                        </div>
+                        <div>
+                            <span>20 min</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span>12th May 2020</span>
+                            <span>10:45 am</span>
+                        </div>
+                        <div>
+                            <span>20 min</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="information">
-            INFO
+            <img class="profile-nav-bg" src="../images/profile/profile-pet-bg/walking.svg" />
             <span id="icon-show-history" onclick="openhistory()">SHOW HISTORY</span>
         </div>
     </div>

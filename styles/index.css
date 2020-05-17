@@ -14,6 +14,10 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     min-height: calc(100% - 210px); /* 210px = 80px header + 80px nav + 50px footer */
     padding-top: 160px;

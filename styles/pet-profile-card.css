@@ -62,3 +62,16 @@
 .pet-card > .pet-description > .icons > div > .label {
     font-size: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .pet-card > .pet-avatar > img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pet-card > .pet-avatar > img {
+        height: 40%;
+    }
+}

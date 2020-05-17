@@ -5,6 +5,7 @@ nav {
     top: 80px;
     height: 80px;
     width: 100vw;
+    font-weight: bold;
     position: fixed;
     z-index: 3;
     background: var(--text-invert-color);
@@ -33,10 +34,9 @@ nav > ul > li.active > a {
 
 nav > ul > li > a {
     color: var(--text-color);
-    text-decoration: none;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2560px) {
     aside {
         position: absolute;
         left: -400px;

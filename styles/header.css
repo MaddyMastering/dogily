@@ -11,6 +11,10 @@ header {
     background: var(--text-invert-color);
 }
 
+header > i {
+    cursor: pointer;
+}
+
 header > div {
     display: flex;
     justify-content: center;
@@ -55,7 +59,7 @@ header > div > span {
     margin: 0 20px;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2560px) {
     header > i {
         display: none;
     }
