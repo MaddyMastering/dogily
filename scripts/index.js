@@ -12,4 +12,10 @@ window.onload = () => {
         dots: '#dots',
         draggable: true,
     });
+
+    document.querySelector('.glider').addEventListener('glider-slide-visible', (event) => {
+        var myArray = ['#F5BAD0', '#A2E159', '#333', '#2185D0'];
+        var rand = myArray[Math.floor(Math.random() * myArray.length)];
+        document.querySelector(".carousel").style.backgroundColor = rand;
+    });
 };
