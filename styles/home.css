@@ -1,10 +1,33 @@
 .carousel {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-invert-color);
     background: #de652c;
-    height: calc(100vh / 2);    
+    height: calc(100vh / 2);
+}
+
+.carousel > #carousel-content > div {
+    width: 100vw;
+}
+
+.carousel > #carousel-content h1 {
+    margin-left: 100px;
+}
+
+.carousel > #dots {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+}
+
+.glider-dot {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.glider-dot.active {
+    background-color: var(--text-invert-color) !important;
 }
 
 .welcome {

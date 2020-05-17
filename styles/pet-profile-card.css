@@ -13,6 +13,7 @@
 
 .pet-card > .pet-avatar > img {
     width: 80%;
+    height: 75%;
     border-radius: 50%;
 }
 
@@ -55,5 +56,5 @@
 }
 
 .pet-card > .pet-description > .icons > div > .label {
-    font-size: 14px;
+    font-size: 10px;
 }
