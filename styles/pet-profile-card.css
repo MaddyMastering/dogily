@@ -12,6 +12,7 @@
 }
 
 .pet-card > .pet-avatar > img {
+    width: 80%;
     border-radius: 50%;
 }
 
@@ -40,13 +41,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 
-.pet-card > .pet-description > .icons > div > span {
-    /* font-size: 30px; */
+.pet-card > .pet-description > .icons > .sex > span > img,
+.pet-card > .pet-description > .icons > .age > span:first-child {
+    margin-left: 12px;
+}
+
+.pet-card > .pet-description > .icons > div > span:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .pet-card > .pet-description > .icons > div > .label {
-    /* font-size: 14px; */
+    font-size: 14px;
 }
