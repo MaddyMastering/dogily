@@ -36,7 +36,6 @@
     /* Support for IE. */
 }
 
-
 h1 {
     font-size: 50px;
     font-weight: bold;
@@ -44,4 +43,11 @@ h1 {
 
 p {
     font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
