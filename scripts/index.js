@@ -11,6 +11,14 @@ function viewPet() {
 }
 
 window.onload = () => {
+    setTimeout(() => {
+        document.querySelector('.loading-screen').classList.add('hide');
+    }, 1000);
+
+    setTimeout(() => {
+        document.querySelector('.loading-screen').classList.add('close');
+    }, 1500);
+    
     const carousel = new Glider(document.querySelector("#carousel-content"), {
         slidesToShow: 1,
         dots: '#dots',
