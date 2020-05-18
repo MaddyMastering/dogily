@@ -221,13 +221,40 @@
     height: calc(100vh - 160px);
 }
 
+/* ===========================================================
+    ABOUT
+=========================================================== */
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    padding: 5% 10%;
     color: var(--text-invert-color);
     background-color: rgba(0, 0, 0, 0.8);
-    height: calc((100vh / 2) - 160px);
+}
+
+.about > .links > .header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.about > .links > p {
+    margin-bottom: 20px;
+}
+
+.about > .links > p > a {
+    color: var(--text-invert-color);
+}
+
+.about > .links > a {
+    margin: 0 10px;
+}
+
+.subscribe {
+    border-radius: 0px !important;
+    height: 40px;
+    background: var(--text-invert-color);
 }
 
 @media screen and (max-width: 786px) {
@@ -238,6 +265,11 @@
     .shop-by-pet > .icon > .image {
         width: 140px;
         height: 140px;
+    }
+    
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 
