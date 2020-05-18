@@ -10,6 +10,16 @@ function viewPet() {
     document.location.href = './profile-pet.html'
 }
 
+function initCarousel() {
+    const carousel = new Glider(document.querySelector("#carousel-content"), {
+        slidesToShow: 1,
+        dots: '#dots',
+        draggable: false,
+    });
+
+    gsap.to('.carousel-quote', { duration: 1, x: 10, opacity: 1, ease: "power4.out", delay: 2 });
+}
+
 window.onload = () => {
     setTimeout(() => {
         document.querySelector('.loading-screen').classList.add('hide');
@@ -18,16 +28,6 @@ window.onload = () => {
     setTimeout(() => {
         document.querySelector('.loading-screen').classList.add('close');
     }, 1500);
-    
-    const carousel = new Glider(document.querySelector("#carousel-content"), {
-        slidesToShow: 1,
-        dots: '#dots',
-        draggable: false,
-    });
 
-    document.querySelector('.glider').addEventListener('glider-slide-visible', (event) => {
-        var myArray = ['#F5BAD0', '#A2E159', '#333', '#2185D0'];
-        var rand = myArray[Math.floor(Math.random() * myArray.length)];
-        document.querySelector(".carousel").style.backgroundColor = rand;
-    });
+    initCarousel();
 };
