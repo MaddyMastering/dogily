@@ -71,6 +71,10 @@ header > div > span {
     .logo {
         font-size: 30px;
     }
+
+    .only-small-device {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1110px) {
@@ -125,5 +129,18 @@ header > div > span {
 @media screen and (max-width: 480px) {
     header {
         grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    .only-small-device {
+        display: inline-block;
+    }
+
+    .only-small-device > a > i {
+        font-size: 30px;
+        color: #666;
+    }
+
+    .profile-link {
+        display: none;
     }
 }
