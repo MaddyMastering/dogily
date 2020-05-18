@@ -43,6 +43,10 @@ header > div > span {
     text-decoration: none;
 }
 
+.profile > span > a:hover {
+    color: var(--primary-color);
+}
+
 .theme {
     justify-content: flex-end;
 }

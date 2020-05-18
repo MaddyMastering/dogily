@@ -112,7 +112,6 @@
     display: inline-flex;
     flex-direction: column;
     text-align: center;
-    cursor: pointer;
     position: absolute;
     z-index: 1;
 }
@@ -147,6 +146,10 @@
 
 .shop-by-pet > .icon > .actions > a {
     color: var(--text-color);
+}
+
+.shop-by-pet > .icon > .actions > a:hover {
+    color: var(--primary-color);
 }
 
 .shop-by-pet > .icon:hover > .label {
