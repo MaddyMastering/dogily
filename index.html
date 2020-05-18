@@ -40,7 +40,7 @@
             <span>Hi, <a href="profile/profile.html">Maddy</a></span>
             <label class="icon_badge">
                 <span>3</span>
-                <img src="./images/header/cart.svg" />
+                <img class="lazy" src="./images/header/cart.svg" />
             </label>
         </div>
         <div class="theme">
@@ -73,21 +73,21 @@
                         compassion in them<br />
                         than most humans.</h1>
                     <div class="carousel-overlay"></div>
-                    <img src="./images/home/carousel/1.jpg" />
+                    <img class="lazy" src="images/home/carousel/1-low.jpg" data-src="./images/home/carousel/1.jpg" />
                 </div>
                 <div>
                     <h1 class="carousel-quote">Pets have more love and<br />
                         compassion in them<br />
                         than most humans.</h1>
                     <div class="carousel-overlay"></div>
-                    <img src="./images/home/carousel/2.jpg" />
+                    <img class="lazy" src="images/home/carousel/2.jpg" data-src="./images/home/carousel/2.jpg" />
                 </div>
                 <div>
                     <h1 class="carousel-quote">Pets have more love and<br />
                         compassion in them<br />
                         than most humans.</h1>
                     <div class="carousel-overlay"></div>
-                    <img src="./images/home/carousel/3.jpg" />
+                    <img class="lazy" data-src="./images/home/carousel/3.jpg" />
                 </div>
             </div>
             <div id="dots"></div>
@@ -106,7 +106,7 @@
 
             <div class="icon dog">
                 <span class="image">
-                    <img src="./images/home/shop-by-pet/dog.png" />
+                    <img class="lazy" src="./images/home/shop-by-pet/dog.png" />
                 </span>
                 <span class="label">DOG</span>
                 <span class="actions">
@@ -115,11 +115,11 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="dog-bg" src="./images/home/shop-by-pet/dog.svg" />
+            <img class="dog-bg lazy" src="./images/home/shop-by-pet/dog.svg" />
 
             <div class="icon small-pet">
                 <span class="image">
-                    <img src="./images/home/shop-by-pet/photo-1559214369-a6b1d7919865-removebg-preview.png" />
+                    <img class="lazy" src="./images/home/shop-by-pet/photo-1559214369-a6b1d7919865-removebg-preview.png" />
                 </span>
                 <span class="label">SMALL PET</span>
                 <span class="actions">
@@ -129,13 +129,13 @@
                 </span>
             </div>
             <span>
-                <img class="small-pet-bg" src="./images/home/shop-by-pet/small-pet.svg" />
-                <img class="small-pet-2-bg" src="./images/home/shop-by-pet/small-pet-2.svg" />
+                <img class="small-pet-bg lazy" src="./images/home/shop-by-pet/small-pet.svg" />
+                <img class="small-pet-2-bg lazy" src="./images/home/shop-by-pet/small-pet-2.svg" />
             </span>
 
             <div class="icon fish">
                 <span class="image">
-                    <img src="./images/home/shop-by-pet/fish.png" />
+                    <img class="lazy" src="./images/home/shop-by-pet/fish.png" />
                 </span>
                 <span class="label">FISH</span>
                 <span class="actions">
@@ -144,11 +144,11 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="fish-bg" src="./images/home/shop-by-pet/fish.svg" />
+            <img class="fish-bg lazy" src="./images/home/shop-by-pet/fish.svg" />
 
             <div class="icon bird">
                 <span class="image">
-                    <img src="./images/home/shop-by-pet/bird.png" />
+                    <img class="lazy" src="./images/home/shop-by-pet/bird.png" />
                 </span>
                 <span class="label">BIRD</span>
                 <span class="actions">
@@ -157,11 +157,11 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="bird-bg" src="./images/home/shop-by-pet/bird.svg" />
+            <img class="bird-bg lazy" src="./images/home/shop-by-pet/bird.svg" />
 
             <div class="icon cat">
                 <span class="image">
-                    <img src="./images/home/shop-by-pet/cat.png" />
+                    <img class="lazy" src="./images/home/shop-by-pet/cat.png" />
                 </span>
                 <span class="label">CAT</span>
                 <span class="actions">
@@ -170,7 +170,7 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="cat-bg" src="./images/home/shop-by-pet/cat.svg" />
+            <img class="cat-bg lazy" src="./images/home/shop-by-pet/cat.svg" />
         </section>
 
         <section class="products">PRODUCTS</section>
@@ -205,9 +205,9 @@
                 </label>
                 <br />
                 <p class="header">Folow us</p>
-                <a href=""><img src="./images/home/social/fb.svg" /></a>
-                <a href=""><img src="./images/home/social/twitter.svg" /></a>
-                <a href=""><img src="./images/home/social/google.svg" /></a>
+                <a href=""><img class="lazy" src="./images/home/social/fb.svg" /></a>
+                <a href=""><img class="lazy" src="./images/home/social/twitter.svg" /></a>
+                <a href=""><img class="lazy" src="./images/home/social/google.svg" /></a>
             </div>
         </section>
     </div>
@@ -217,6 +217,7 @@
         <img src="./logo.svg" />
     </div>
 
+    <script async type="text/javascript" src="./libs/lazy-load/lazyLoad.js"></script>
     <script async type="text/javascript" src="./libs/glider/glider.min.js"></script>
     <script async type="text/javascript" src="./libs/gsap/gsap-3.2.6.js"></script>
     <script defer type="text/javascript" src="./scripts/index.js"></script>

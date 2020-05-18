@@ -20,6 +20,12 @@ function initCarousel() {
     gsap.to('.carousel-quote', { duration: 1, x: 10, opacity: 1, ease: "power4.out", delay: 2 });
 }
 
+function initLazyLoad() {
+    const lazy = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+}
+
 window.onload = () => {
     setTimeout(() => {
         document.querySelector('.loading-screen').classList.add('hide');
@@ -30,4 +36,5 @@ window.onload = () => {
     }, 1500);
 
     initCarousel();
+    initLazyLoad();
 };
