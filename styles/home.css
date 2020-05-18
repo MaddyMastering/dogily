@@ -1,3 +1,6 @@
+/* ===========================================================
+    CAROUSEL
+=========================================================== */
 .carousel {
     position: relative;
     display: flex;
@@ -30,6 +33,10 @@
     background-color: var(--text-invert-color) !important;
 }
 
+/* ===========================================================
+    WELCOME
+=========================================================== */
+
 .welcome {
     display: flex;
     justify-content: center;
@@ -42,14 +49,166 @@
     margin-bottom: 50px;
 }
 
+/* ===========================================================
+    SHOP BY PET 
+=========================================================== */
 .shop-by-pet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     background: #ebebeb;
     height: calc(100vh - 160px);
 }
 
+.shop-by-pet > h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.shop-by-pet > .dog-bg,
+.shop-by-pet > .cat-bg,
+.shop-by-pet > .bird-bg,
+.shop-by-pet > .fish-bg,
+.shop-by-pet > span > .small-pet-bg,
+.shop-by-pet > span > .small-pet-2-bg {
+    position: absolute;
+    z-index: 0;
+}
+
+.shop-by-pet > .dog-bg {
+    bottom: 0;
+    right: 50px;
+    width: 20%;
+}
+
+.shop-by-pet > .cat-bg {
+    bottom: 0;
+    width: 20%;
+}
+
+.shop-by-pet > .bird-bg {
+    width: 8%;
+    top: 10%;
+    left: 33%;
+}
+
+.shop-by-pet > span > .small-pet-bg {
+    bottom: 0;
+    width: 10%;
+    right: 26%;
+}
+
+.shop-by-pet > span > .small-pet-2-bg {
+    bottom: 0;
+    width: 8%;
+    left: 33%;
+}
+
+.shop-by-pet > .fish-bg {
+    width: 8%;
+    bottom: 40%;
+    right: 35%;
+}
+
+.shop-by-pet > .icon {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+.shop-by-pet > .icon > .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #f3f3f3;
+    box-shadow: 0 5px 10px var(--shadow-color-one);
+}
+
+.shop-by-pet > .icon > .image > img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.shop-by-pet > .icon > .label,
+.shop-by-pet > .icon > .actions {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.shop-by-pet > .icon > .actions {
+    display: none;
+}
+
+.shop-by-pet > .icon > .actions > a {
+    color: var(--text-color);
+}
+
+.shop-by-pet > .icon:hover > .label {
+    display: none;
+}
+
+.shop-by-pet > .icon:hover > .actions {
+    display: inline-block;
+}
+
+.shop-by-pet > .icon.dog {
+    top: 5%;
+    left: 5%;
+}
+
+.icon.dog:hover + .dog-bg {
+    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
+}
+
+.icon.fish:hover + .fish-bg {
+    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
+}
+
+.icon.bird:hover + .bird-bg {
+    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
+}
+
+.icon.cat:hover + .cat-bg {
+    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
+}
+
+.icon.small-pet:hover + span > img {
+    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
+}
+
+.shop-by-pet > .icon.small-pet {
+    top: 34%;
+    left: 23%;
+}
+
+.shop-by-pet > .icon.fish {
+    top: 63%;
+    left: 45%;
+}
+
+.shop-by-pet > .icon.bird {
+    top: 32%;
+    right: 22%;
+}
+
+.shop-by-pet > .icon.cat {
+    top: 5%;
+    right: 5%;
+}
+
+.shop-by-pet > .icon.small-pet > .image > img {
+    width: 80%;
+}
+
+/* ===========================================================
+    PRODUCTS 
+=========================================================== */
 .products {
     display: flex;
     justify-content: center;
