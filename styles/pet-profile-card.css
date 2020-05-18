@@ -40,6 +40,7 @@
 .pet-card > .pet-description > .icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 80px 0 0;
 }
 
 .pet-card > .pet-description > .icons > div {
@@ -49,14 +50,21 @@
 }
 
 .pet-card > .pet-description > .icons > .sex > span > img,
-.pet-card > .pet-description > .icons > .age > span:first-child {
-    margin-left: 12px;
+.pet-card > .pet-description > .icons > .age > span:first-child,
+.pet-card > .pet-description > .icons > .weight > span:first-child {
+    margin-left: 5px;
 }
 
-.pet-card > .pet-description > .icons > div > span:first-child {
+.pet-card > .pet-description > .icons > .age > span:first-child,
+.pet-card > .pet-description > .icons > .weight > span:first-child {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.pet-card > .pet-description > .icons > .sex > span:first-child {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .pet-card > .pet-description > .icons > div > .label {
@@ -73,5 +81,9 @@
 @media screen and (max-width: 480px) {
     .pet-card > .pet-avatar > img {
         height: 40%;
+    }
+
+    .pet-card > .pet-description > .icons {
+        padding: 0 0 0 0 !important;
     }
 }

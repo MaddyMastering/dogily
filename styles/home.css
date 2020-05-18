@@ -28,7 +28,7 @@
     opacity: 0;
 }
 
-.glider-slide >.carousel-overlay {
+.glider-slide > .carousel-overlay {
     background: rgba(0, 0, 0, 0.2);
     z-index: 1;
     height: calc(100vh / 2);
@@ -300,8 +300,13 @@
 }
 
 @media screen and (max-width: 480px) {
-    .carousel > #carousel-content h1 {
-        margin-left: 50px;
+    .glider-slide > .carousel-quote {
+        top: 20px;
+        left: 20px;
+    }
+
+    .welcome {
+        padding: 5% 10% !important;
     }
 
     .shop-by-pet > .dog-bg,

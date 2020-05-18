@@ -127,8 +127,8 @@ header > div > span {
 }
 
 @media screen and (max-width: 480px) {
-    header {
-        grid-template-columns: 1fr 2fr 2fr;
+    header > i {
+        font-size: 25px !important;
     }
 
     .only-small-device {
@@ -136,11 +136,15 @@ header > div > span {
     }
 
     .only-small-device > a > i {
-        font-size: 30px;
+        font-size: 25px;
         color: #666;
     }
 
     .profile-link {
         display: none;
+    }
+
+    header > div > span {
+        margin: 0 10px;
     }
 }
