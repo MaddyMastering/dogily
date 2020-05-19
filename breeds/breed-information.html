@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2185d0" />
+    <meta name="description" content="Dogily pet application">
     <link rel="icon" href="../icons/logo.svg" />
+    <link rel="manifest" href="../manifest.json" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2185d0">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <link rel="apple-touch-icon" href="../icons/icon-152x152.png">
+
     <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="../styles/fonts.css" />
     <link rel="stylesheet" href="../styles/index.css" />
@@ -32,7 +40,7 @@
             </label>
         </div>
         <div class="logo">
-            <img src="../icons/logo.svg">
+            <img alt="image" src="../icons/logo.svg">
             <span>DOGILY</span>
         </div>
         <div class="profile">
@@ -41,7 +49,7 @@
             <span class="profile-link">Hi, <a href="../../profile/profile.html">Maddy</a></span>
             <label class="icon_badge">
                 <span>3</span>
-                <img src="../images/header/cart.svg" />
+                <img alt="image" src="../images/header/cart.svg" />
             </label>
         </div>
         <div class="theme">
@@ -89,24 +97,24 @@
             <h3>Most searched pets</h3>
             <div class="grid">
                 <div class="breed-info-card first" onclick="goToDescription()">
-                    <img src="../images/breed-information/dog.png" />
+                    <img alt="image" src="../images/breed-information/dog.png" />
                     <p class="tag">DOG</p>
                     <p class="name">Breed one</p>
                     <p class="description">consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                 </div>
                 <div class="breed-info-card second">
-                    <img src="../images/breed-information/bird.png" />
+                    <img alt="image" src="../images/breed-information/bird.png" />
                     <p class="tag">BIRD</p>
                     <p class="name">Breed one</p>
                     <p class="description">consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                 </div>
                 <div class="breed-info-card third">
-                    <img src="../images/breed-information/small-pet.png" />
+                    <img alt="image" src="../images/breed-information/small-pet.png" />
                     <p class="tag">SMALL PET</p>
                     <p class="name">Breed one</p>
                 </div>
                 <div class="breed-info-card fourth">
-                    <img src="../images/breed-information/cat.png" />
+                    <img alt="image" src="../images/breed-information/cat.png" />
                     <p class="tag">CAT</p>
                     <p class="name">Breed one</p>
                 </div>
@@ -116,6 +124,7 @@
 
     <footer>@2020-2021 All Rights Reserved.</footer>
 
+    <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>
 </body>
 

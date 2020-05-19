@@ -31,14 +31,18 @@ function goToDescription() {
 }
 
 window.onload = () => {
-    setTimeout(() => {
-        document.querySelector('.loading-screen').classList.add('hide');
-    }, 1000);
+    if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
 
-    setTimeout(() => {
-        document.querySelector('.loading-screen').classList.add('close');
-    }, 1500);
+        setTimeout(() => {
+            document.querySelector('.loading-screen').classList.add('hide');
+        }, 1000);
 
-    initCarousel();
+        setTimeout(() => {
+            document.querySelector('.loading-screen').classList.add('close');
+        }, 1500);
+
+        initCarousel();
+    }
+
     initLazyLoad();
 };
