@@ -191,22 +191,10 @@
     left: 5%;
 }
 
-.icon.dog:hover + .dog-bg {
-    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
-}
-
-.icon.fish:hover + .fish-bg {
-    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
-}
-
-.icon.bird:hover + .bird-bg {
-    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
-}
-
-.icon.cat:hover + .cat-bg {
-    filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
-}
-
+.icon.dog:hover + .dog-bg,
+.icon.fish:hover + .fish-bg,
+.icon.bird:hover + .bird-bg,
+.icon.cat:hover + .cat-bg,
 .icon.small-pet:hover + span > img {
     filter: invert(55%) sepia(100%) saturate(969%) hue-rotate(177deg) brightness(80%) contrast(10%);
 }
@@ -240,11 +228,53 @@
 =========================================================== */
 .products {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    flex-direction: column;
     color: var(--text-invert-color);
     background-color: var(--primary-color);
-    height: calc(100vh - 160px);
+    padding: 5%;
+}
+
+.products > .tabs > a {
+    color: var(--text-invert-color);
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+.products > .tabs > a.active {
+    font-weight: bold;
+}
+
+.products > .content {
+    margin-top: 50px;
+}
+
+.products > .content > .product {
+    width: 320px;
+    height: 400px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.products > .content > .product > .product-image {
+    width: 100%;
+    height: 340px;
+    background-color: #f3f3f3;
+}
+
+.products > .content > .product > .product-description {
+    padding: 5%;
+    width: 90%;
+    text-align: left;
+}
+
+.products > .content > .product > .product-description > p > span {
+    float: right;
+}
+
+.products > .content > .product > .product-description > p > span.ratings > i {
+    margin: 0 10px;
+    color: var(--text-invert-color);
 }
 
 /* ===========================================================
@@ -283,6 +313,9 @@
     background: var(--text-invert-color);
 }
 
+/* ===========================================================
+    MEDIA QUERIES
+=========================================================== */
 @media screen and (max-width: 786px) {
     .shop-by-pet {
         height: calc(100vh / 1.5);
@@ -294,8 +327,8 @@
     }
 
     .about {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -339,6 +372,14 @@
         flex-direction: column;
         top: 0 !important;
         left: 0 !important;
+    }
+
+    .products > .content > .product {
+        width: 80vw;
+    }
+
+    .products > .content > .product > .product-image {
+        height: 300px;
     }
 
     .about {
