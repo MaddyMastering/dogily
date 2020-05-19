@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/breed-information.css" />
+    <link rel="stylesheet" href="../styles/breed-description.css" />
     <title>Dogily</title>
 </head>
 
@@ -56,7 +56,7 @@
             <li><a href="">PRODUCTS</a></li>
             <li><a href="">SERVICES</a></li>
             <li><a href="">ADOPTIONS & RESCUE</a></li>
-            <li class="active"><a href="">BREED INFORMATION</a></li>
+            <li class="active"><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
             <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
         </ul>
     </nav>
@@ -67,49 +67,44 @@
     </aside>
 
     <div class="container">
-        <div class="header">
-            <h2>Find information about your pet</h2>
-            <label class="search-bar" for="search-pet-by-breed">
-                <input type="text" name="search-pet-by-breed" placeholder="Enter breed of your pet" />
-                <i class="material-icons search-icon">search</i>
-            </label>
-            <div class="tags">
-                <ul>
-                    <li class="tag">DOG</li>
-                    <li class="tag active">CAT</li>
-                    <li class="tag">FISH</li>
-                    <li class="tag">SMALL PET</li>
-                    <li class="tag">BIRD</li>
-                    <li class="tag">REPTILES</li>
-                </ul>
+        <div class="grid">
+            <div class="image">
+                <img src="../images/breed-information/description.png" />
+                <br />
+                <div class="carousel-icons">
+                    <i class="material-icons">chevron_left</i>
+                    <span>1</span>
+                    <span>/</span>
+                    <span>5</span>
+                    <i class="material-icons">chevron_right</i>
+                </div>
             </div>
-        </div>
-
-        <div class="content">
-            <h3>Most searched pets</h3>
-            <div class="grid">
-                <div class="breed-info-card first" onclick="goToDescription()">
-                    <img src="../images/breed-information/dog.png" />
-                    <p class="tag">DOG</p>
-                    <p class="name">Breed one</p>
-                    <p class="description">consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
-                </div>
-                <div class="breed-info-card second">
-                    <img src="../images/breed-information/bird.png" />
-                    <p class="tag">BIRD</p>
-                    <p class="name">Breed one</p>
-                    <p class="description">consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
-                </div>
-                <div class="breed-info-card third">
-                    <img src="../images/breed-information/small-pet.png" />
-                    <p class="tag">SMALL PET</p>
-                    <p class="name">Breed one</p>
-                </div>
-                <div class="breed-info-card fourth">
-                    <img src="../images/breed-information/cat.png" />
-                    <p class="tag">CAT</p>
-                    <p class="name">Breed one</p>
-                </div>
+            <div class="description">
+                <h3>Breed name</h3>
+                <table>
+                    <tr>
+                        <td>Family</td>
+                        <td>Cat</td>
+                    </tr>
+                    <tr>
+                        <td>Height</td>
+                        <td>10ft - 15ft</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>120gms - 150gms</td>
+                    </tr>
+                    <tr>
+                        <td>Mood</td>
+                        <td>Attentive</td>
+                    </tr>
+                </table>
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
+                    rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
+                <button class="primary-invert">COMPARE</button>
             </div>
         </div>
     </div>
@@ -117,6 +112,7 @@
     <footer>@2020-2021 All Rights Reserved.</footer>
 
     <script type="text/javascript" src="../scripts/index.js"></script>
+    <script type="text/javascript" src="../scripts/profile-pet.js"></script>
 </body>
 
 </html>

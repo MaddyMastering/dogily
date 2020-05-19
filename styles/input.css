@@ -67,6 +67,11 @@ label.icon_badge > span {
     background-color: var(--primary-color);
 }
 
+.tag:hover.active {
+    color: var(--text-invert-color);
+    background-color: var(--primary-hover-color);
+}
+
 .tag:hover {
     color: var(--primary-color);
 }

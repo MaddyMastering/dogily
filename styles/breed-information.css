@@ -72,6 +72,11 @@
     border-radius: 20px;
     cursor: pointer;
     overflow: hidden;
+    transition: opacity ease-in 0.3s;
+}
+
+.breed-info-card:hover {
+    opacity: 0.8;
 }
 
 .breed-info-card > img {

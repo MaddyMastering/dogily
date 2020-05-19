@@ -26,6 +26,10 @@ function initLazyLoad() {
     });
 }
 
+function goToDescription() {
+    window.location.href = './breed-description.html'
+}
+
 window.onload = () => {
     setTimeout(() => {
         document.querySelector('.loading-screen').classList.add('hide');
