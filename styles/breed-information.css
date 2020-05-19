@@ -1,3 +1,148 @@
 .container {
-    background: #F9F9F9;
+    background: #f9f9f9;
+}
+
+.header {
+    text-align: center;
+    padding: 0 20%;
+}
+
+.header > h2 {
+    padding: 30px 0;
+}
+
+.header > .search-bar {
+    position: relative;
+}
+
+.header > .search-bar > input {
+    width: 70%;
+    height: 50px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 3px 6px var(--shadow-color-two);
+}
+
+.header > .search-bar > .search-icon {
+    position: absolute;
+    right: 0;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.header .tags > ul > li {
+    display: inline-block;
+}
+
+.content {
+    padding: 3% 15%;
+}
+
+.content > .grid {
+    display: grid;
+    grid-template-areas:
+        "first first first second second third"
+        "first first first second second fourth";
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+
+.content > .grid > .first {
+    grid-area: first;
+}
+
+.content > .grid > .second {
+    grid-area: second;
+}
+
+.content > .grid > .third {
+    grid-area: third;
+}
+
+.content > .grid > .fourth {
+    grid-area: fourth;
+}
+
+/* CARD */
+.breed-info-card {
+    display: inline-block;
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.breed-info-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.breed-info-card > .tag {
+    margin: 0px 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.breed-info-card > .name {
+    margin: 0px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 13%;
+    color: var(--text-invert-color);
+}
+
+.breed-info-card > .description {
+    margin: 0px 20px;
+    position: absolute;
+    bottom: 7%;
+    color: var(--text-invert-color);
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+    .header {
+        text-align: center;
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .content > .grid {
+        grid-template-areas:
+            "first first first"
+            "second second third"
+            "second second fourth";
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0 5%;
+    }
+
+    .header > .search-bar > input {
+        width: 80%;
+    }
+
+    .content > .grid {
+        grid-template-areas:
+            "first first"
+            "second second"
+            "third fourth";
+    }
+
+    .content {
+        padding: 5% 10%;
+    }
+
+    .breed-info-card > .tag {
+        display: none;
+    }
 }

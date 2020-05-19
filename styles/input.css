@@ -49,14 +49,43 @@ label.icon_badge > span {
     top: -6px;
 }
 
+/* TAG */
+.tag {
+    height: 40px;
+    width: max-content;
+    line-height: 40px;
+    padding: 0 19px;
+    margin: 10px 21px;
+    background: var(--text-invert-color);
+    border-radius: 20px;
+    box-shadow: 0 3px 6px var(--shadow-color-two);
+    cursor: pointer;
+}
+
+.tag.active {
+    color: var(--text-invert-color);
+    background-color: var(--primary-color);
+}
+
+.tag:hover {
+    color: var(--primary-color);
+}
+
 @media screen and (max-width: 768px) {
-    label.icon_badge > img{
+    label.icon_badge > img {
         width: 24px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    label.icon_badge > img{
+    label.icon_badge > img {
         width: 20px;
+    }
+
+    .tag {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 19px;
+        margin: 10px 5px;
     }
 }
