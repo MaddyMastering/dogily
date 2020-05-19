@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#2185d0" />
-    <link rel="icon" href="logo.svg" />
+    <meta name="description" content="Dogily pet application">
+    <link rel="icon" href="./icons/logo.svg" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2185d0">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <link rel="apple-touch-icon" href="./icons/icon-152x152.png">
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -33,7 +42,7 @@
             </label>
         </div>
         <div class="logo">
-            <img src="./logo.svg">
+            <img alt="image" src="./icons/logo.svg">
             <span>DOGILY</span>
         </div>
         <div class="profile">
@@ -42,7 +51,7 @@
             <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
             <label class="icon_badge">
                 <span>3</span>
-                <img class="lazy" src="./images/header/cart.svg" />
+                <img alt="image" class="lazy" src="./images/header/cart.svg" />
             </label>
         </div>
         <div class="theme">
@@ -75,21 +84,21 @@
                         compassion in them<br />
                         than most humans.</h1>
                     <div class="carousel-overlay"></div>
-                    <img class="lazy" src="images/home/carousel/1-low.jpg" data-src="./images/home/carousel/1.jpg" />
+                    <img alt="image" class="lazy" src="images/home/carousel/1-low.jpg" data-src="./images/home/carousel/1.webp" />
                 </div>
                 <div>
                     <h1 class="carousel-quote">Pets have more love and<br />
                         compassion in them<br />
                         than most humans.</h1>
                     <div class="carousel-overlay"></div>
-                    <img class="lazy" src="images/home/carousel/2.jpg" data-src="./images/home/carousel/2.jpg" />
+                    <img alt="image" class="lazy" src="images/home/carousel/2-low.jpg" data-src="./images/home/carousel/2.webp" />
                 </div>
                 <div>
                     <h1 class="carousel-quote">Pets have more love and<br />
                         compassion in them<br />
                         than most humans.</h1>
                     <div class="carousel-overlay"></div>
-                    <img class="lazy" src="images/home/carousel/3-low.jpg" data-src="./images/home/carousel/3.jpg" />
+                    <img alt="image" class="lazy" src="images/home/carousel/3-low.jpg" data-src="./images/home/carousel/3.webp" />
                 </div>
             </div>
             <div id="dots"></div>
@@ -108,7 +117,7 @@
 
             <div class="icon dog">
                 <span class="image">
-                    <img class="lazy" src="./images/home/shop-by-pet/dog.png" />
+                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/dog.webp" />
                 </span>
                 <span class="label">DOG</span>
                 <span class="actions">
@@ -117,12 +126,12 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="dog-bg lazy" src="./images/home/shop-by-pet/dog.svg" />
+            <img alt="image" class="dog-bg lazy" data-src="./images/home/shop-by-pet/dog-bg.webp" />
 
             <div class="icon small-pet">
                 <span class="image">
-                    <img class="lazy"
-                        src="./images/home/shop-by-pet/photo-1559214369-a6b1d7919865-removebg-preview.png" />
+                    <img alt="image" class="lazy"
+                        data-src="./images/home/shop-by-pet/small-pet.webp" />
                 </span>
                 <span class="label">SMALL PET</span>
                 <span class="actions">
@@ -132,13 +141,13 @@
                 </span>
             </div>
             <span>
-                <img class="small-pet-bg lazy" src="./images/home/shop-by-pet/small-pet.svg" />
-                <img class="small-pet-2-bg lazy" src="./images/home/shop-by-pet/small-pet-2.svg" />
+                <img alt="image" class="small-pet-bg lazy" data-src="./images/home/shop-by-pet/small-pet-bg.webp" />
+                <img alt="image" class="small-pet-2-bg lazy" data-src="./images/home/shop-by-pet/small-pet-2-bg.webp" />
             </span>
 
             <div class="icon fish">
                 <span class="image">
-                    <img class="lazy" src="./images/home/shop-by-pet/fish.png" />
+                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/fish.webp" />
                 </span>
                 <span class="label">FISH</span>
                 <span class="actions">
@@ -147,11 +156,11 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="fish-bg lazy" src="./images/home/shop-by-pet/fish.svg" />
+            <img alt="image" class="fish-bg lazy" data-src="./images/home/shop-by-pet/fish-bg.webp" />
 
             <div class="icon bird">
                 <span class="image">
-                    <img class="lazy" src="./images/home/shop-by-pet/bird.png" />
+                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/bird.webp" />
                 </span>
                 <span class="label">BIRD</span>
                 <span class="actions">
@@ -160,11 +169,11 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="bird-bg lazy" src="./images/home/shop-by-pet/bird.svg" />
+            <img alt="image" class="bird-bg lazy" data-src="./images/home/shop-by-pet/bird-bg.webp" />
 
             <div class="icon cat">
                 <span class="image">
-                    <img class="lazy" src="./images/home/shop-by-pet/cat.png" />
+                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/cat.webp" />
                 </span>
                 <span class="label">CAT</span>
                 <span class="actions">
@@ -173,7 +182,7 @@
                     <a href="">SERVICES</a>
                 </span>
             </div>
-            <img class="cat-bg lazy" src="./images/home/shop-by-pet/cat.svg" />
+            <img alt="image" class="cat-bg lazy" data-src="./images/home/shop-by-pet/cat-bg.webp" />
         </section>
 
         <section class="products">PRODUCTS</section>
@@ -208,16 +217,16 @@
                 </label>
                 <br />
                 <p class="header">Folow us</p>
-                <a href=""><img class="lazy" src="./images/home/social/fb.svg" /></a>
-                <a href=""><img class="lazy" src="./images/home/social/twitter.svg" /></a>
-                <a href=""><img class="lazy" src="./images/home/social/google.svg" /></a>
+                <a href=""><img alt="image" class="lazy" data-src="./images/home/social/fb.svg" /></a>
+                <a href=""><img alt="image" class="lazy" data-src="./images/home/social/twitter.svg" /></a>
+                <a href=""><img alt="image" class="lazy" data-src="./images/home/social/google.svg" /></a>
             </div>
         </section>
     </div>
     <footer>@2020-2021 All Rights Reserved.</footer>
 
     <div class="loading-screen">
-        <img src="./logo.svg" />
+        <img alt="image" src="./icons/logo.svg" />
     </div>
 
     <script async type="text/javascript" src="./libs/lazy-load/lazyLoad.js"></script>
