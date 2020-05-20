@@ -16,6 +16,10 @@ function compare() {
     document.location.href = './breed-compare-search.html'
 }
 
+function compareResult() {
+    document.location.href = './breed-result.html'
+}
+
 function initCarousel() {
     const carousel = new Glider(document.querySelector("#carousel-content"), {
         slidesToShow: 1,

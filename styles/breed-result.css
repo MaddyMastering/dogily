@@ -1,0 +1,122 @@
+.container {
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.default > .grid > .image > img,
+.compare > .grid > .image > img {
+    width: 80%;
+    height: auto;
+}
+
+.default > .grid > .image > .carousel-icons,
+.compare > .grid > .image > .carousel-icons {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.default > .grid > .image > .carousel-icons > i,
+.compare > .grid > .image > .carousel-icons > i {
+    margin: 0 5px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.default > .grid > .image > .carousel-icons > span,
+.compare > .grid > .image > .carousel-icons > span {
+    margin: 0 5px;
+}
+
+.compare {
+    background: #ebebeb;
+}
+
+.grid > .description > h3,
+.compare > .description > h3 {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.grid > .description table tr td,
+.compare > .description table tr td {
+    padding: 0 0 20px 0;
+}
+
+.grid > .description table tr td:first-child,
+.compare > .description table tr td:first-child {
+    font-weight: bold;
+    padding: 0 40px 20px 0;
+}
+
+@media screen and (max-width: 2560px) {
+    .default,
+    .compare {
+        flex: 1;
+        padding: 3% 10%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .default,
+    .compare {
+        flex: 1;
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .default > .grid,
+    .compare > .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .compare > .breed-search {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .default > .grid,
+    .compare > .grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
+
+    .grid > .description > h3 {
+        padding: 10px 0;
+    }
+
+    .grid > .description table tr td:first-child {
+        font-weight: bold;
+        padding: 0 40px 10px 0;
+    }
+
+    .grid > .description table tr td {
+        padding: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .more-info {
+        display: none;
+    }
+
+    .default > .grid,
+    .compare > .grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .default,
+    .compare {
+        overflow: scroll;
+    }
+}
