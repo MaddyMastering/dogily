@@ -1,13 +1,19 @@
 function sidemenuopen() {
     document.getElementById('aside').classList.add('open');
+    document.querySelector('.overlay').classList.add('show');
 }
 
 function sidemenuclose() {
     document.getElementById('aside').classList.remove('open');
+    document.querySelector('.overlay').classList.remove('show');
 }
 
 function viewPet() {
     document.location.href = './profile-pet.html'
+}
+
+function compare() {
+    document.location.href = './breed-compare-search.html'
 }
 
 function initCarousel() {

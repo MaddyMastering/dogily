@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/breed-description.css" />
+    <link rel="stylesheet" href="../styles/breed-compare-search.css" />
     <title>Dogily</title>
 </head>
 
@@ -75,44 +75,66 @@
     </aside>
 
     <div class="container">
-        <div class="grid">
-            <div class="image">
-                <img alt="image" src="../images/breed-information/description.png" />
-                <br />
-                <div class="carousel-icons">
-                    <i class="material-icons">chevron_left</i>
-                    <span>1</span>
-                    <span>/</span>
-                    <span>5</span>
-                    <i class="material-icons">chevron_right</i>
+        <div class="default">
+            <div class="grid">
+
+                <div class="image">
+                    <img src="../images/breed-information/description.png" />
+                    <br /><br />
+                    <div class="carousel-icons">
+                        <i class="material-icons">chevron_left</i>
+                        <span>1</span>
+                        <span>/</span>
+                        <span>5</span>
+                        <i class="material-icons">chevron_right</i>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h3>Breed name</h3>
+                    <table>
+                        <tr>
+                            <td>Family</td>
+                            <td>Cat</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>10ft - 15ft</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>120gms - 150gms</td>
+                        </tr>
+                        <tr>
+                            <td>Mood</td>
+                            <td>Attentive</td>
+                        </tr>
+                    </table>
+                    <div class="more-info">
+                        <h3>Description</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
+                            rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
+                    </div>
                 </div>
             </div>
-            <div class="description">
-                <h3>Breed name</h3>
-                <table>
-                    <tr>
-                        <td>Family</td>
-                        <td>Cat</td>
-                    </tr>
-                    <tr>
-                        <td>Height</td>
-                        <td>10ft - 15ft</td>
-                    </tr>
-                    <tr>
-                        <td>Weight</td>
-                        <td>120gms - 150gms</td>
-                    </tr>
-                    <tr>
-                        <td>Mood</td>
-                        <td>Attentive</td>
-                    </tr>
-                </table>
-                <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
-                    rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
-                <button class="primary-invert" onclick="compare()">COMPARE</button>
+        </div>
+
+        <div class="compare">
+            <div class="breed-search">
+                <h3 class="header">Find other breed of your pet</h3>
+
+                <label class="search-bar" for="search-pet-by-breed">
+                    <input type="text" name="search-pet-by-breed" placeholder="Enter breed of your pet" value="Pers" />
+                    <i class="material-icons search-icon">search</i>
+                    <ul class="search-results">
+                        <li><a>Persian cat</a></li>
+                        <li class="active" (click)="compare()"><a>Persian Japanese cat</a></li>
+                        <li><a>Persian meowth</a></li>
+                        <li><a>Persian German cat</a></li>
+                    </ul>
+                </label>
             </div>
         </div>
     </div>

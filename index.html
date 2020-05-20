@@ -29,240 +29,252 @@
 </head>
 
 <body class="on-scroll">
-    <header>
-        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
-        <div class="location">
-            <i class="material-icons">gps_fixed</i>
-            <span>Bengaluru</span>
-        </div>
-        <div class="search">
-            <label class="input">
-                <i class="material-icons">search</i>
-                <input type="text" autocomplete="off" placeholder="Search" />
-            </label>
-        </div>
-        <div class="logo">
-            <img alt="image" src="./icons/logo.svg">
-            <span>DOGILY</span>
-        </div>
-        <div class="profile">
-            <span class="only-small-device"><a href="profile/profile.html"><i
-                        class="material-icons">person</i></a></span>
-            <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
-            <label class="icon_badge">
-                <span>3</span>
-                <img alt="image" class="lazy" src="./images/header/cart.svg" />
-            </label>
-        </div>
-        <div class="theme">
-            <span class="theme-selected"></span>
-            <i class="material-icons">wb_sunny</i>
-        </div>
-    </header>
+    <!-- LOADING -->
+    <div class="loading-screen">
+        <img alt="image" src="./icons/logo.svg" />
+    </div>
 
-    <nav>
-        <ul>
-            <li class="active"><a href="/">HOME</a></li>
-            <li><a href="">PRODUCTS</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">ADOPTIONS & RESCUE</a></li>
-            <li><a href="./breeds/breed-information.html">BREED INFORMATION</a></li>
-            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
-        </ul>
-    </nav>
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
+    <!-- SIDEMENU -->
     <aside id="aside">
         <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         SIDEMENU
     </aside>
 
-    <div class="container">
-        <section class="carousel">
-            <div id="carousel-content">
-                <div>
-                    <h1 class="carousel-quote">Pets have more love and<br />
-                        compassion in them<br />
-                        than most humans.</h1>
-                    <div class="carousel-overlay"></div>
-                    <img alt="image" class="lazy" src="images/home/carousel/1-low.jpg" data-src="./images/home/carousel/1.webp" />
-                </div>
-                <div>
-                    <h1 class="carousel-quote">Pets have more love and<br />
-                        compassion in them<br />
-                        than most humans.</h1>
-                    <div class="carousel-overlay"></div>
-                    <img alt="image" class="lazy" src="images/home/carousel/2-low.jpg" data-src="./images/home/carousel/2.webp" />
-                </div>
-                <div>
-                    <h1 class="carousel-quote">Pets have more love and<br />
-                        compassion in them<br />
-                        than most humans.</h1>
-                    <div class="carousel-overlay"></div>
-                    <img alt="image" class="lazy" src="images/home/carousel/3-low.jpg" data-src="./images/home/carousel/3.webp" />
-                </div>
+    <!-- CONTENT -->
+    <div class="main-content">
+        <header>
+            <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+            <div class="location">
+                <i class="material-icons">gps_fixed</i>
+                <span>Bengaluru</span>
             </div>
-            <div id="dots"></div>
-        </section>
-
-        <section class="welcome">
-            <h1>Welcome to team dogily</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
-                rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
-        </section>
-
-        <section class="shop-by-pet">
-            <h2>Shop by pet</h2>
-
-            <div class="icon dog">
-                <span class="image">
-                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/dog.webp" />
-                </span>
-                <span class="label">DOG</span>
-                <span class="actions">
-                    <a href="">PRODUCTS</a>
-                    &nbsp;&nbsp;
-                    <a href="">SERVICES</a>
-                </span>
-            </div>
-            <img alt="image" class="dog-bg lazy" data-src="./images/home/shop-by-pet/dog-bg.webp" />
-
-            <div class="icon small-pet">
-                <span class="image">
-                    <img alt="image" class="lazy"
-                        data-src="./images/home/shop-by-pet/small-pet.webp" />
-                </span>
-                <span class="label">SMALL PET</span>
-                <span class="actions">
-                    <a href="">PRODUCTS</a>
-                    &nbsp;&nbsp;
-                    <a href="">SERVICES</a>
-                </span>
-            </div>
-            <span>
-                <img alt="image" class="small-pet-bg lazy" data-src="./images/home/shop-by-pet/small-pet-bg.webp" />
-                <img alt="image" class="small-pet-2-bg lazy" data-src="./images/home/shop-by-pet/small-pet-2-bg.webp" />
-            </span>
-
-            <div class="icon fish">
-                <span class="image">
-                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/fish.webp" />
-                </span>
-                <span class="label">FISH</span>
-                <span class="actions">
-                    <a href="">PRODUCTS</a>
-                    &nbsp;&nbsp;
-                    <a href="">SERVICES</a>
-                </span>
-            </div>
-            <img alt="image" class="fish-bg lazy" data-src="./images/home/shop-by-pet/fish-bg.webp" />
-
-            <div class="icon bird">
-                <span class="image">
-                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/bird.webp" />
-                </span>
-                <span class="label">BIRD</span>
-                <span class="actions">
-                    <a href="">PRODUCTS</a>
-                    &nbsp;&nbsp;
-                    <a href="">SERVICES</a>
-                </span>
-            </div>
-            <img alt="image" class="bird-bg lazy" data-src="./images/home/shop-by-pet/bird-bg.webp" />
-
-            <div class="icon cat">
-                <span class="image">
-                    <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/cat.webp" />
-                </span>
-                <span class="label">CAT</span>
-                <span class="actions">
-                    <a href="">PRODUCTS</a>
-                    &nbsp;&nbsp;
-                    <a href="">SERVICES</a>
-                </span>
-            </div>
-            <img alt="image" class="cat-bg lazy" data-src="./images/home/shop-by-pet/cat-bg.webp" />
-        </section>
-
-        <section class="products">
-            <div class="tabs">
-                <a href="" class="active">NEW ARRIVAL</a>
-                <a href="">FEATURED</a>
-                <a href="">TOP SELLING</a>
-            </div>
-            <div class="content">
-                <div class="product">
-                    <div class="product-image"></div>
-                    <div class="product-description">
-                        <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
-                        <p>Rs 1999</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image"></div>
-                    <div class="product-description">
-                        <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
-                        <p>Rs 1999</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image"></div>
-                    <div class="product-description">
-                        <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
-                        <p>Rs 1999</p>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image"></div>
-                    <div class="product-description">
-                        <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
-                        <p>Rs 1999</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="links">
-                <p class="header">Our Policies</p>
-                <p><a href="">FAQs</a></p>
-                <p><a href="">Privacy policy</a></p>
-                <p><a href="">Cookie policy</a></p>
-                <p><a href="">Terms & condition</a></p>
-            </div>
-            <div class="links">
-                <p class="header">Information</p>
-                <p><a href="">Live chat</a></p>
-                <p><a href="">Breeds</a></p>
-                <p><a href="">Pet adoption</a></p>
-                <p><a href="">Rescue team</a></p>
-            </div>
-            <div class="links">
-                <p class="header">Others</p>
-                <p><a href="">Blogs</a></p>
-                <p><a href="">Career</a></p>
-                <p><a href="">About us</a></p>
-                <p><a href="">About us</a></p>
-            </div>
-            <div class="links">
-                <p class="header">Connect with us</p>
-                <label class="input subscribe">
-                    <input type="text" autocomplete="off" placeholder="Enter your e-mail" />
-                    <i class="material-icons">mail_outline</i>
+            <div class="search">
+                <label class="input">
+                    <i class="material-icons">search</i>
+                    <input type="text" autocomplete="off" placeholder="Search" />
                 </label>
-                <br />
-                <p class="header">Folow us</p>
-                <a href=""><img alt="image" class="lazy" data-src="./images/home/social/fb.svg" /></a>
-                <a href=""><img alt="image" class="lazy" data-src="./images/home/social/twitter.svg" /></a>
-                <a href=""><img alt="image" class="lazy" data-src="./images/home/social/google.svg" /></a>
             </div>
-        </section>
-    </div>
-    <footer>@2020-2021 All Rights Reserved.</footer>
+            <div class="logo">
+                <img alt="image" src="./icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+            <div class="profile">
+                <span class="only-small-device"><a href="profile/profile.html"><i
+                            class="material-icons">person</i></a></span>
+                <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
+                <label class="icon_badge">
+                    <span>3</span>
+                    <img alt="image" class="lazy" src="./images/header/cart.svg" />
+                </label>
+            </div>
+            <div class="theme">
+                <span class="theme-selected"></span>
+                <i class="material-icons">wb_sunny</i>
+            </div>
+        </header>
 
-    <div class="loading-screen">
-        <img alt="image" src="./icons/logo.svg" />
+        <nav>
+            <ul>
+                <li class="active"><a href="/">HOME</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">ADOPTIONS & RESCUE</a></li>
+                <li><a href="./breeds/breed-information.html">BREED INFORMATION</a></li>
+                <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container">
+            <section class="carousel">
+                <div id="carousel-content">
+                    <div>
+                        <h1 class="carousel-quote">Pets have more love and<br />
+                            compassion in them<br />
+                            than most humans.</h1>
+                        <div class="carousel-overlay"></div>
+                        <img alt="image" class="lazy" src="images/home/carousel/1-low.jpg"
+                            data-src="./images/home/carousel/1.webp" />
+                    </div>
+                    <div>
+                        <h1 class="carousel-quote">Pets have more love and<br />
+                            compassion in them<br />
+                            than most humans.</h1>
+                        <div class="carousel-overlay"></div>
+                        <img alt="image" class="lazy" src="images/home/carousel/2-low.jpg"
+                            data-src="./images/home/carousel/2.webp" />
+                    </div>
+                    <div>
+                        <h1 class="carousel-quote">Pets have more love and<br />
+                            compassion in them<br />
+                            than most humans.</h1>
+                        <div class="carousel-overlay"></div>
+                        <img alt="image" class="lazy" src="images/home/carousel/3-low.jpg"
+                            data-src="./images/home/carousel/3.webp" />
+                    </div>
+                </div>
+                <div id="dots"></div>
+            </section>
+
+            <section class="welcome">
+                <h1>Welcome to team dogily</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
+                    rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
+            </section>
+
+            <section class="shop-by-pet">
+                <h2>Shop by pet</h2>
+
+                <div class="icon dog">
+                    <span class="image">
+                        <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/dog.webp" />
+                    </span>
+                    <span class="label">DOG</span>
+                    <span class="actions">
+                        <a href="">PRODUCTS</a>
+                        &nbsp;&nbsp;
+                        <a href="">SERVICES</a>
+                    </span>
+                </div>
+                <img alt="image" class="dog-bg lazy" data-src="./images/home/shop-by-pet/dog-bg.webp" />
+
+                <div class="icon small-pet">
+                    <span class="image">
+                        <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/small-pet.webp" />
+                    </span>
+                    <span class="label">SMALL PET</span>
+                    <span class="actions">
+                        <a href="">PRODUCTS</a>
+                        &nbsp;&nbsp;
+                        <a href="">SERVICES</a>
+                    </span>
+                </div>
+                <span>
+                    <img alt="image" class="small-pet-bg lazy" data-src="./images/home/shop-by-pet/small-pet-bg.webp" />
+                    <img alt="image" class="small-pet-2-bg lazy"
+                        data-src="./images/home/shop-by-pet/small-pet-2-bg.webp" />
+                </span>
+
+                <div class="icon fish">
+                    <span class="image">
+                        <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/fish.webp" />
+                    </span>
+                    <span class="label">FISH</span>
+                    <span class="actions">
+                        <a href="">PRODUCTS</a>
+                        &nbsp;&nbsp;
+                        <a href="">SERVICES</a>
+                    </span>
+                </div>
+                <img alt="image" class="fish-bg lazy" data-src="./images/home/shop-by-pet/fish-bg.webp" />
+
+                <div class="icon bird">
+                    <span class="image">
+                        <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/bird.webp" />
+                    </span>
+                    <span class="label">BIRD</span>
+                    <span class="actions">
+                        <a href="">PRODUCTS</a>
+                        &nbsp;&nbsp;
+                        <a href="">SERVICES</a>
+                    </span>
+                </div>
+                <img alt="image" class="bird-bg lazy" data-src="./images/home/shop-by-pet/bird-bg.webp" />
+
+                <div class="icon cat">
+                    <span class="image">
+                        <img alt="image" class="lazy" data-src="./images/home/shop-by-pet/cat.webp" />
+                    </span>
+                    <span class="label">CAT</span>
+                    <span class="actions">
+                        <a href="">PRODUCTS</a>
+                        &nbsp;&nbsp;
+                        <a href="">SERVICES</a>
+                    </span>
+                </div>
+                <img alt="image" class="cat-bg lazy" data-src="./images/home/shop-by-pet/cat-bg.webp" />
+            </section>
+
+            <section class="products">
+                <div class="tabs">
+                    <a href="" class="active">NEW ARRIVAL</a>
+                    <a href="">FEATURED</a>
+                    <a href="">TOP SELLING</a>
+                </div>
+                <div class="content">
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <div class="product-description">
+                            <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
+                            <p>Rs 1999</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <div class="product-description">
+                            <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
+                            <p>Rs 1999</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <div class="product-description">
+                            <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
+                            <p>Rs 1999</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <div class="product-description">
+                            <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
+                            <p>Rs 1999</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="links">
+                    <p class="header">Our Policies</p>
+                    <p><a href="">FAQs</a></p>
+                    <p><a href="">Privacy policy</a></p>
+                    <p><a href="">Cookie policy</a></p>
+                    <p><a href="">Terms & condition</a></p>
+                </div>
+                <div class="links">
+                    <p class="header">Information</p>
+                    <p><a href="">Live chat</a></p>
+                    <p><a href="">Breeds</a></p>
+                    <p><a href="">Pet adoption</a></p>
+                    <p><a href="">Rescue team</a></p>
+                </div>
+                <div class="links">
+                    <p class="header">Others</p>
+                    <p><a href="">Blogs</a></p>
+                    <p><a href="">Career</a></p>
+                    <p><a href="">About us</a></p>
+                    <p><a href="">About us</a></p>
+                </div>
+                <div class="links">
+                    <p class="header">Connect with us</p>
+                    <label class="input subscribe">
+                        <input type="text" autocomplete="off" placeholder="Enter your e-mail" />
+                        <i class="material-icons">mail_outline</i>
+                    </label>
+                    <br />
+                    <p class="header">Folow us</p>
+                    <a href=""><img alt="image" class="lazy" data-src="./images/home/social/fb.svg" /></a>
+                    <a href=""><img alt="image" class="lazy" data-src="./images/home/social/twitter.svg" /></a>
+                    <a href=""><img alt="image" class="lazy" data-src="./images/home/social/google.svg" /></a>
+                </div>
+            </section>
+        </div>
+        <footer>@2020-2021 All Rights Reserved.</footer>
     </div>
 
     <script async type="text/javascript" src="./libs/lazy-load/lazyLoad.js"></script>

@@ -1,0 +1,173 @@
+.container {
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.default > .grid > .image > img {
+    width: 80%;
+    height: auto;
+}
+
+.default > .grid > .image > .carousel-icons {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.default > .grid > .image > .carousel-icons > i {
+    margin: 0 5px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.default > .grid > .image > .carousel-icons > span {
+    margin: 0 5px;
+}
+
+.compare {
+    background: #ebebeb;
+}
+
+.breed-search {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.breed-search > h3 {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.breed-search > .search-bar {
+    position: relative;
+}
+
+/* STYLE SAME AS IN MAIN PAGE  */
+.breed-search > .search-bar > input {
+    width: 70%;
+    height: 50px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.breed-search > .search-bar > .search-icon {
+    position: absolute;
+    right: 0;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.breed-search > .search-bar > .search-results {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.breed-search > .search-bar > .search-results > li {
+    padding: 0 20px;
+    line-height: 50px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.breed-search > .search-bar > .search-results > li.active {
+    background: #dcdcdc;
+}
+
+.grid > .description > h3 {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.grid > .description table tr td {
+    padding: 0 0 20px 0;
+}
+
+.grid > .description table tr td:first-child {
+    font-weight: bold;
+    padding: 0 40px 20px 0;
+}
+
+@media screen and (max-width: 2560px) {
+    .default,
+    .compare {
+        flex: 1;
+        padding: 3% 10%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .default,
+    .compare {
+        flex: 1;
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .default > .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .compare > .breed-search {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .default > .grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
+
+    .grid > .description > h3 {
+        padding: 10px 0;
+    }
+
+    .grid > .description table tr td:first-child {
+        font-weight: bold;
+        padding: 0 40px 10px 0;
+    }
+
+    .grid > .description table tr td {
+        padding: 0 0 10px 0;
+    }
+
+    .breed-search {
+        margin-top: 10px;
+    }
+
+    .breed-search > h3 {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .more-info {
+        display: none;
+    }
+
+    .breed-search > .search-bar > input {
+        width: 80%;
+    }
+
+    .default > .grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+
+    .default,
+    .compare {
+        overflow: scroll;
+    }
+}
