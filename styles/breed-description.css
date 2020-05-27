@@ -87,7 +87,7 @@
 
     .grid {
         grid-template-rows: 500px 1fr;
-        padding: 3% 10%;
+        padding: 5% 10%;
         grid-gap: 30px;
     }
 
