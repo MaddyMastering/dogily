@@ -20,7 +20,7 @@
 }
 
 .glider-slide > .carousel-quote {
-    color: white;
+    color: var(--text-invert-color);
     z-index: 2;
     position: absolute;
     opacity: 0;
@@ -82,6 +82,10 @@
     position: relative;
     background: #ebebeb;
     height: calc(100vh - 160px);
+}
+
+[data-theme="dark"] .shop-by-pet {
+    background: #202837;
 }
 
 .shop-by-pet > h2 {
@@ -150,7 +154,7 @@
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
-    background: #f3f3f3;
+    background: var(--body-bg-secondary);
     box-shadow: 0 5px 10px var(--shadow-color-one);
 }
 
@@ -164,6 +168,7 @@
 .shop-by-pet > .icon > .actions {
     margin-top: 20px;
     font-weight: bold;
+    color: var(--text-color);
 }
 
 .shop-by-pet > .icon > .actions {
@@ -284,7 +289,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 50px;
-    padding: 5% 10%;
+    padding: 2% 10%;
     color: var(--text-invert-color);
     background-color: rgba(0, 0, 0, 0.8);
 }

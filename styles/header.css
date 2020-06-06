@@ -29,6 +29,10 @@ header > div > span {
     justify-content: flex-start;
 }
 
+.location > p {
+    margin: 0 10px;
+}
+
 .logo > span {
     color: var(--primary-color);
 }
