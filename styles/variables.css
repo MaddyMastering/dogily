@@ -1,4 +1,4 @@
-:root {
+[data-theme="light"] {
     --text-color: rgba(0, 0, 0, 0.8);
     --text-label-color: rgba(0, 0, 0, 0.6);
     --text-disabled-color: rgba(0, 0, 0, 0.3);
@@ -9,14 +9,31 @@
     --primary-color-filter: invert(49%) sepia(21%) saturate(4938%) hue-rotate(183deg) brightness(86%) contrast(88%);
 
     --grey-one: rgb(243, 243, 243);
-    
-
 
     --footer-background-color: #333333;
 
-    --border-color: #DFDFDF;
+    --border-color: #dfdfdf;
 
     --shadow-color-one: rgba(0, 0, 0, 0.1);
     --shadow-color-two: rgba(0, 0, 0, 0.2);
     --shadow-color-three: rgba(0, 0, 0, 0.3);
+
+    --body-bg: #fff;
+}
+
+[data-theme="dark"] {
+    --text-color: #fff;
+    --text-label-color: rgba(255, 255, 255, 0.6);
+    --text-disabled-color: rgba(255, 255, 255, 0.3);
+    --text-invert-color: #000;
+
+    --primary-color: #2185d0;
+    --primary-hover-color: rgba(33, 133, 208, 0.8);
+    --primary-color-filter: invert(49%) sepia(21%) saturate(4938%) hue-rotate(183deg) brightness(86%) contrast(88%);
+
+    --grey-one: rgba(243, 243, 243, 0.8);
+    
+    --shadow-color-one: rgba(255, 255, 255, 0.1);
+
+    --body-bg: #1a202c;
 }

@@ -8,7 +8,7 @@ header {
     padding: 0 4% 0 2%;
     position: fixed;
     z-index: 2;
-    background: var(--text-invert-color);
+    background: var(--body-bg);
 }
 
 header > i {
