@@ -19,7 +19,7 @@
 
 .grid-services {
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(auto-fit, 200px);
     grid-gap: 80px;
 }
 
@@ -36,4 +36,10 @@
 
 .grid-services > .service > p {
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-services {
+        grid-gap: 55px;
+    }
 }
