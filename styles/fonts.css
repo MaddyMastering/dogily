@@ -83,5 +83,5 @@ p {
 [data-mode="dark"] h3, 
 [data-mode="dark"] p,
 [data-mode="dark"] table {
-    filter: invert(1);
+    color: rgba(255, 255, 255, 0.8);
 }

@@ -20,7 +20,7 @@
 }
 
 .glider-slide > .carousel-quote {
-    color: var(--text-invert-color);
+    color: #fff;
     z-index: 2;
     position: absolute;
     opacity: 0;
@@ -237,7 +237,7 @@
 }
 
 .products > .tabs > a {
-    color: var(--text-invert-color);
+    color: #fff;
     margin: 10px 20px;
     display: inline-block;
 }
@@ -301,7 +301,7 @@
 }
 
 .about > .links > p > a {
-    color: var(--text-invert-color);
+    color: #fff;
 }
 
 .about > .links > a {
