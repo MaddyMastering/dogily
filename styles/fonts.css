@@ -82,6 +82,7 @@ p {
 [data-mode="dark"] h2, 
 [data-mode="dark"] h3, 
 [data-mode="dark"] p,
+[data-mode="dark"] a,
 [data-mode="dark"] table {
     color: rgba(255, 255, 255, 0.8);
 }
