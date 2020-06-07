@@ -97,14 +97,14 @@
     font-weight: bold;
     position: absolute;
     bottom: 13%;
-    color: var(--text-invert-color);
+    color: #fff;
 }
 
 .breed-info-card > .description {
     margin: 0px 20px;
     position: absolute;
     bottom: 7%;
-    color: var(--text-invert-color);
+    color: #fff;
     max-width: 80%;
     text-overflow: ellipsis;
     white-space: nowrap;
