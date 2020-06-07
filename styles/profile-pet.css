@@ -54,7 +54,7 @@
 }
 
 .pet-profile-nav {
-    background-color: var(--body-bg-secondary);
+    background-color: var(--body-bg-grey-dark);
     box-shadow: 3px 3px 6px var(--shadow-color-one);
     z-index: 2;
     font-weight: bold;
@@ -62,7 +62,7 @@
 
 .history {
     position: relative;
-    background-color: var(--body-bg-secondary);
+    background-color: var(--body-bg-grey-dark);
     transition: height ease-in-out 0.5s;
 }
 
@@ -115,6 +115,10 @@
 .information {
     background: var(--body-bg);
     position: relative;
+}
+
+[data-mode="dark"] .information {
+    background: var(--body-bg-secondary);
 }
 
 .information.close {

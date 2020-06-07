@@ -10,7 +10,18 @@
 
 .banner {
     height: 100px;
-    background: linear-gradient(to right, var(--primary-color), #972AB1);
+    background: linear-gradient(to right, var(--primary-color), #972ab1);
+    display: grid;
+    color: #fff;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.banner > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .service-header {
@@ -21,6 +32,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
     grid-gap: 80px;
+}
+
+.grid-services a {
+    color: var(--text-color);
 }
 
 .grid-services > .service > .icon {
@@ -41,5 +56,19 @@
 @media screen and (max-width: 768px) {
     .grid-services {
         grid-gap: 55px;
+    }
+
+    .banner,
+    .service-header,
+    .grid-services {
+        padding: 30px 10%;
+    }
+
+    .banner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner > div:first-child {
+        display: none;
     }
 }
