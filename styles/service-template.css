@@ -10,6 +10,7 @@
     height: 150px;
     border-radius: 50%;
     background-color: var(--grey-one);
+    
     margin-right: 30px;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .vendor-footer {
-    background: var(--grey-one);
+    background: var(--body-bg-secondary);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 30px 0;
@@ -46,7 +47,7 @@
 .service-description {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: var(--grey-one);
+    background-color: var(--body-bg-secondary);
     opacity: 0.8;
 }
 
@@ -56,11 +57,17 @@
     align-items: center;
 }
 
-.tags > .tag {
+.tags > ul > li {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    display: inline-block;
+}
+
+/* .tags > .tag {
     background-color: var(--primary-color);
     color: var(--text-invert-color);
     display: inline-block;
-}
+} */
 
 .gallery > div {
     display: inline-block;
