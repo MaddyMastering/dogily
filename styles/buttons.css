@@ -12,5 +12,5 @@ button.primary {
 
 button.primary-invert {
     color: var(--primary-color);
-    background: var(--text-invert-color);
+    background: var(--body-bg);
 }
