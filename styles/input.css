@@ -19,6 +19,7 @@ input[type="text"] {
     border: none;
     outline: none;
     margin-bottom: 4px;
+    background: transparent;
 }
 
 /* LINK */
