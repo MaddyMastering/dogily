@@ -80,12 +80,8 @@
 =========================================================== */
 .shop-by-pet {
     position: relative;
-    background: #ebebeb;
+    background: var(--body-bg-grey-dark);;
     height: calc(100vh - 160px);
-}
-
-[data-mode="dark"] .shop-by-pet {
-    background: #202837;
 }
 
 .shop-by-pet > h2 {

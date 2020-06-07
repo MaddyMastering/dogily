@@ -81,6 +81,7 @@ p {
 [data-mode="dark"] h1, 
 [data-mode="dark"] h2, 
 [data-mode="dark"] h3, 
-[data-mode="dark"] p {
+[data-mode="dark"] p,
+[data-mode="dark"] table {
     filter: invert(1);
 }

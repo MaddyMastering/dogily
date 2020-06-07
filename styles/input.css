@@ -56,7 +56,8 @@ label.icon_badge > span {
     line-height: 40px;
     padding: 0 19px;
     margin: 10px 21px;
-    background: var(--text-invert-color);
+    color: var(--text-color);
+    background: var(--body-bg);
     border-radius: 20px;
     box-shadow: 0 3px 6px var(--shadow-color-two);
     cursor: pointer;

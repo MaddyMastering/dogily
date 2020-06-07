@@ -20,6 +20,7 @@
 
     --body-bg: #fff;
     --body-bg-secondary: #f3f3f3;
+    --body-bg-grey-dark: #ebebeb;
 }
 
 [data-mode="dark"] {
@@ -44,4 +45,5 @@
 
     --body-bg: #1a202c;
     --body-bg-secondary: #2c3547;
+    --body-bg-grey-dark: #202837;
 }

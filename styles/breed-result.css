@@ -1,5 +1,5 @@
 .container {
-    background-color: #f9f9f9;
+    background: var(--body-bg-secondary);
     display: flex;
 }
 
@@ -23,13 +23,13 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.default > .grid > .image > .carousel-icons > span,
-.compare > .grid > .image > .carousel-icons > span {
+.default > .grid > .image > .carousel-icons > param,
+.compare > .grid > .image > .carousel-icons > p {
     margin: 0 5px;
 }
 
 .compare {
-    background: #ebebeb;
+    background: var(--body-bg-grey-dark);
 }
 
 .grid > .description > h3,
