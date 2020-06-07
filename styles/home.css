@@ -84,7 +84,7 @@
     height: calc(100vh - 160px);
 }
 
-[data-theme="dark"] .shop-by-pet {
+[data-mode="dark"] .shop-by-pet {
     background: #202837;
 }
 

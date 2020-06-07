@@ -28,7 +28,7 @@
     <title>Dogily</title>
 </head>
 
-<body class="on-scroll" data-theme="light">
+<body class="on-scroll" data-mode="dark">
     <!-- LOADING -->
     <div class="loading-screen">
         <img alt="image" src="./icons/logo.svg" />
@@ -72,7 +72,8 @@
             </div>
             <div class="theme">
                 <span class="theme-selected"></span>
-                <i class="material-icons">wb_sunny</i>
+                <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+                <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
             </div>
         </header>
 

@@ -48,6 +48,14 @@ header > div > span {
     color: var(--text-label-color);
 }
 
+.profile > .icon_badge > span {
+    z-index: 2;
+}
+
+[data-mode="dark"] .profile > .icon_badge > img {
+    filter: invert(1);
+}
+
 .profile > span > a:hover {
     color: var(--primary-color);
 }
@@ -65,6 +73,7 @@ header > div > span {
 
 .theme > i {
     margin: 0 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 2560px) {

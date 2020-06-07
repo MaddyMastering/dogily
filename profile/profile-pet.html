@@ -25,7 +25,7 @@
     <title>Dogily</title>
 </head>
 
-<body class="on-scroll" data-theme="light">
+<body class="on-scroll" data-mode="dark">
     <header>
         <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
         <div class="location">
@@ -53,7 +53,8 @@
         </div>
         <div class="theme">
             <span class="theme-selected"></span>
-            <i class="material-icons">wb_sunny</i>
+            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
         </div>
     </header>
 

@@ -1,4 +1,4 @@
-[data-theme="light"] {
+[data-mode="light"] {
     --text-color: rgba(0, 0, 0, 0.8);
     --text-label-color: rgba(0, 0, 0, 0.6);
     --text-disabled-color: rgba(0, 0, 0, 0.3);
@@ -22,7 +22,7 @@
     --body-bg-secondary: #f3f3f3;
 }
 
-[data-theme="dark"] {
+[data-mode="dark"] {
     --text-color: #fff;
     --text-label-color: rgba(255, 255, 255, 0.6);
     --text-disabled-color: rgba(255, 255, 255, 0.3);

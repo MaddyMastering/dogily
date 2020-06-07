@@ -40,6 +40,19 @@ function goToDescription() {
     window.location.href = './breed-description.html'
 }
 
+function toggleDarkmode() {
+    const mode = document.querySelector('body').getAttribute('data-mode');
+    if (mode === 'light') {
+        document.querySelector('body').setAttribute('data-mode', 'dark');
+        document.querySelector("#lightmode").style.display = "none";
+        document.querySelector("#darkmode").style.display = "block";
+    } else {
+        document.querySelector('body').setAttribute('data-mode', 'light');
+        document.querySelector("#lightmode").style.display = "block";
+        document.querySelector("#darkmode").style.display = "none";
+    }
+}
+
 window.onload = () => {
     if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
 
@@ -55,4 +68,6 @@ window.onload = () => {
     }
 
     initLazyLoad();
+
+    toggleDarkmode();
 };
