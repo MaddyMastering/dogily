@@ -311,7 +311,7 @@
 .subscribe {
     border-radius: 0px !important;
     height: 40px;
-    background: var(--text-invert-color);
+    background: var(--body-bg);
 }
 
 /* ===========================================================
