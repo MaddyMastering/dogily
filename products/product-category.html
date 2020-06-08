@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
-    <link rel="stylesheet" href="../styles/products-list.css" />
+    <link rel="stylesheet" href="../styles/service-template.css" />
+    <link rel="stylesheet" href="../styles/product-category.css" />
     <title>Dogily</title>
 </head>
 
@@ -62,7 +63,7 @@
     <nav>
         <ul>
             <li><a href="../index.html">HOME</a></li>
-            <li class="active"><a>PRODUCTS</a></li>
+            <li class="active"><a href="./products-list.html">PRODUCTS</a></li>
             <li><a href="../services/services.html">SERVICES</a></li>
             <li><a href="">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
@@ -76,115 +77,93 @@
     </aside>
 
     <div class="container">
-        <div class="banner">
-            <div>
-                <p>orem ipsum dolor sit amet, consectet</p>
-                <h3>Lorem ipsum dolor sit 30% consectet</h3>
+        <div class="vendor-header">
+            <div class="logo">
             </div>
-            <ul>
-                <li>Sort by</li>
-                <li class="active links">DISTANCE</li>
-                <li class="links">RATING</li>
-                <li class="links">POPULARITY</li>
-                <li class="settings"><img src="../images/products/settings.svg" /></li>
-            </ul>
+            <div class="details">
+                <h3>Reliance pet store</h3>
+                <p>Bommanahalli, Bengaluru</p>
+                <div class="rating-box">
+                    <p>Ratings</p>
+                    <p>3.5</p>
+                </div>
+                <div class="review-box">
+                    <p>Reviews</p>
+                    <p>129</p>
+                </div>
+            </div>
         </div>
 
-        <h3 class="product-header">Products near your location</h3>
+        <h3 class="category-heading">Shop by category</h3>
 
-        <div class="products-grid">
-            <a href="./product-category.html" class="product">
+        <div class="category-grid">
+            <a href="./category-list.html" class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/belt.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Belts & collars</p>
             </a>
-            <div class="product">
+            <div class="category food">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/food.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Food</p>
             </div>
-            <div class="product">
+            <div class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/toy.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Toys & treats</p>
             </div>
-            <div class="product">
+            <div class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/kennel.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Crates & kennels</p>
             </div>
-            <div class="product">
+            <div class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/bowl.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Bowls</p>
             </div>
-            <div class="product">
+            <div class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/apparel.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Apparels</p>
             </div>
-            <div class="product">
+            <div class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/medication.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Medication</p>
             </div>
-            <div class="product">
+            <div class="category">
                 <div class="image">
-                    <div class="ribbon">
-                        <img src="../images/products/ribbon.svg" />
-                        <p>FEATURED</p>
-                    </div>
-                    <p>NOT AVAILABLE</p>
+                    <img src="../images/products/category/bed.svg" />
                 </div>
-                <p class="vendor-name">Vendor name</p>
-                <p>Bommanahalli, Bengaluru</p>
+                <p>Beds</p>
+            </div>
+            <div class="category">
+                <div class="image">
+                    <img src="../images/products/category/grooming.svg" />
+                </div>
+                <p>Grooming</p>
             </div>
         </div>
 
-        <br />
-        <br />
+        <div class="vendor-footer">
+            <div></div>
+            <div>
+                <p>ADDRESS</p>
+                <p>Frosty Crumble, Art of Delight, 44/1, Residency Road</p>
+            </div>
+            <div>
+                <p>CONTACT</p>
+                <p>080-76812345</p>
+            </div>
+        </div>
     </div>
 
     <footer>@2020-2021 All Rights Reserved.</footer>

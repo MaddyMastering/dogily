@@ -1,0 +1,105 @@
+.category-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 30px 15%;
+}
+
+.category-heading > h3 {
+    line-height: 80px;
+}
+
+.category-heading > ul {
+    height: 80px;
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.category-heading > ul > li {
+    margin-right: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.category-heading > ul > li.links {
+    font-weight: bold;
+}
+
+.category-heading > ul > li.active {
+    color: var(--primary-color);
+}
+
+.category-heading > ul > li.settings > img {
+    background: var(--body-bg);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 40px;
+    padding: 30px 15%;
+}
+
+.category-list-grid > .category {
+    color: var(--text-color);
+}
+
+.category-list-grid > .category > .image {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    background-color: var(--body-bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-mode="dark"] .category-list-grid > .category > p > img {
+    filter: invert(1);
+}
+
+[data-mode="dark"] .category-heading > ul > li.settings > img {
+    background: var(--body-bg-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .category-list-grid,
+    .category-heading {
+        padding: 30px 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category-heading {
+        grid-template-columns: 1fr;
+        padding: 10px 10%;
+    }
+
+    .category-heading > h3 {
+        line-height: 50px;
+    }
+
+    .category-heading > ul {
+        height: 50px;
+    }
+
+    .category-heading > ul {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .category-heading > ul > li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .category-heading > ul > li:first-child {
+        margin-left: 0;
+    }
+}

@@ -4,14 +4,12 @@
 }
 
 .banner {
-    position: relative;
-    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background: linear-gradient(to right, #f3f3f3 50%, #f2f2f2, #cbcaca);
 }
 
 .banner > div {
-    position: absolute;
-    width: 50%;
     height: 150px;
     background: linear-gradient(to right, #ffca28, #ffa000);
     clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
@@ -22,6 +20,35 @@
     justify-content: center;
 }
 
+.banner > ul {
+    height: 150px;
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner > ul > li {
+    margin-right: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.banner > ul > li.links {
+    font-weight: bold;
+}
+
+.banner > ul > li.active {
+    color: var(--primary-color);
+}
+
+.banner > ul > li.settings > img {
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
@@ -29,6 +56,10 @@
 }
 
 /* PRODUCT CARD */
+.products-grid > .product {
+    color: var(--text-color);
+}
+
 .products-grid > .product > .image {
     background: var(--body-bg-secondary);
     width: 300px;
@@ -75,5 +106,34 @@
 
     .products-grid {
         grid-gap: 30px;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner > div {
+        clip-path: none;
+        height: 100px;
+    }
+
+    .banner > ul {
+        height: 100px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner > ul {
+        height: 70px;
+    }
+
+    .banner > ul > li{ 
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .banner > ul > li:first-child {
+        display: none;
     }
 }

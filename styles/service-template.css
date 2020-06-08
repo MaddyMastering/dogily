@@ -1,5 +1,5 @@
 .vendor-header {
-    background: linear-gradient(to right, var(--primary-color), #972AB1);
+    background: linear-gradient(to right, var(--primary-color), #972ab1);
     color: var(--text-invert-color);
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     height: 150px;
     border-radius: 50%;
     background-color: var(--grey-one);
-    
+
     margin-right: 30px;
 }
 
@@ -63,16 +63,30 @@
     display: inline-block;
 }
 
-/* .tags > .tag {
-    background-color: var(--primary-color);
-    color: var(--text-invert-color);
-    display: inline-block;
-} */
-
 .gallery > div {
     display: inline-block;
     width: 250px;
     height: 200px;
     background: var(--grey-one);
     margin-right: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .vendor-header,
+    .service-description,
+    .tags,
+    .gallery {
+        padding: 10px 5%;
+    }
+
+    .vendor-header > .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .vendor-footer {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 20px;
+    }
 }
