@@ -47,6 +47,11 @@
     border: none;
 }
 
+.cart-icon > .button-group.center {
+    vertical-align: bottom;
+    height: 48px;
+}
+
 .add-to-cart > button {
     height: 40px;
 }
@@ -57,4 +62,8 @@
 
 [data-mode="dark"] .product > .description > p > img {
     filter: invert(1);
+}
+
+[data-mode="dark"] .cart-icon > .button-group > i {
+    filter: invert(0);
 }
