@@ -1,0 +1,60 @@
+.product {
+    padding: 30px 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.product > .image {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 10px;
+    height: 540px;
+}
+
+.product > .image > .image-list > div,
+.product > .image > .main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-bg-secondary);
+}
+
+.product > .image > .image-list > div > img,
+.product > .image > .main-image > img {
+    width: 70%;
+    height: 70%;
+}
+
+.product > .image > .image-list > div {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product > .description > form > div > ul > li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.add-to-cart,
+.cart-icon {
+    width: 250px;
+}
+
+.cart-icon > .button-group {
+    border: none;
+}
+
+.add-to-cart > button {
+    height: 40px;
+}
+
+[data-mode="dark"] .container {
+    background: var(--body-bg-grey-dark);
+}
+
+[data-mode="dark"] .product > .description > p > img {
+    filter: invert(1);
+}
