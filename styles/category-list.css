@@ -47,7 +47,17 @@
 }
 
 .category-list-grid > .category {
+    cursor: pointer;
     color: var(--text-color);
+}
+
+.category-list-grid > .category:hover > p {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+.category-list-grid > .category:hover > .image {
+    filter: brightness(0.8);
 }
 
 .category-list-grid > .category > .image {

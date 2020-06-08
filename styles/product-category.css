@@ -11,6 +11,16 @@
 
 .category-grid > .category {
     color: var(--text-color);
+    cursor: pointer;
+}
+
+.category-grid > .category:hover > p {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.category-grid > .category:hover > .image {
+    filter: brightness(0.8);
 }
 
 .category-grid > .category > .image {

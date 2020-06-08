@@ -35,6 +35,7 @@
 }
 
 .grid-services a {
+    cursor: pointer;
     color: var(--text-color);
 }
 
@@ -47,6 +48,14 @@
     justify-content: center;
     align-items: center;
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grid-services > .service:hover > p {
+    color: var(--primary-color) !important;
+}
+
+.grid-services > .service:hover > .icon {
+    filter: brightness(0.8);
 }
 
 .grid-services > .service > p {
