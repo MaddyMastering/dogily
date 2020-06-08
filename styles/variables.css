@@ -1,7 +1,7 @@
 [data-mode="light"] {
-    --text-color: rgba(0, 0, 0, 0.8);
-    --text-label-color: rgba(0, 0, 0, 0.6);
-    --text-disabled-color: rgba(0, 0, 0, 0.3);
+    --text-color: rgba(0, 0, 0, 1);
+    --text-label-color: rgba(0, 0, 0, 0.8);
+    --text-disabled-color: rgba(0, 0, 0, 0.6);
     --text-invert-color: #fff;
 
     --primary-color: #2185d0;

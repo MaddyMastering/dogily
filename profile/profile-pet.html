@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/scrollbar.css" />
     <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/profile-pet.css" />
@@ -160,6 +161,38 @@
             </div>
         </div>
         <div class="information">
+            <p>Do you want us remind you to walk your pet ?</p>
+            <br />
+            <br />
+            <form>
+                <div>
+                    <span>DATE</span>
+                    <label class="input">
+                        <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
+                    </label>
+                </div>
+
+                <div>
+                    <span>TIME</span>
+                    <label class="input">
+                        <input type="text" autocomplete="off" placeholder="HH:MM" />
+                    </label>
+                </div>
+
+                <div>
+                    <span>RECURRING</span>
+                    <button class="button-group left primary">DAILY</button>
+                    <button class="button-group center">MONTHLY</button>
+                    <button class="button-group right">WEEKLY</button>
+                </div>
+                
+                <br />
+                <div>
+                    <button class="primary button-lg">NOTIFY
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+            </form>
             <img class="profile-nav-bg" src="../images/profile/profile-pet-bg/walking.svg" />
             <span id="icon-show-history" onclick="openhistory()">SHOW HISTORY</span>
         </div>

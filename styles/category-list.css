@@ -60,6 +60,11 @@
     align-items: center;
 }
 
+.category-list-grid > .category > .image > img {
+    width: 70%;
+    height: 70%;
+}
+
 [data-mode="dark"] .category-list-grid > .category > p > img {
     filter: invert(1);
 }

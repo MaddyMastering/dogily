@@ -3,14 +3,55 @@ button {
     border-radius: 25px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 button.primary {
-    color: var(--text-invert-color);
+    color: #fff;
     background: var(--primary-color);
+}
+
+button.primary:hover {
+    filter: brightness(90%);
 }
 
 button.primary-invert {
     color: var(--primary-color);
+    background: #fff;
+}
+
+button.primary > i {
+    color: var(--text-invert-color);
+    float: right;
+}
+
+button.button-lg {
+    height: 40px;
+    width: 100%;
+}
+
+button.button-lg {
+    text-align: left;
+}
+
+/* BUTTON GROUP */
+.button-group {
+    padding: 5% 8%;
+    border: 1px solid var(--border-color);
     background: var(--body-bg);
+    color: var(--text-color);
+}
+
+.button-group.left {
+    border-radius: 25px 0 0 25px;
+}
+
+.button-group.center {
+    border-radius: 0;
+    margin-left: -6px;
+}
+
+.button-group.right {
+    border-radius: 0 25px 25px 0;
+    margin-left: -14px;
 }

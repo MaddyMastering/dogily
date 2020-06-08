@@ -79,6 +79,23 @@ label.icon_badge > span {
     color: var(--primary-color);
 }
 
+/* FORM */
+form > div {
+    margin-bottom: 30px;
+}
+
+form > div > span {
+    font-size: 12px;
+    color: var(--text-label-color);
+    margin: 5px 15px;
+    display: block;
+}
+
+form > div > label  {
+    height: 30px;
+    background: var(--body-bg);
+}
+
 @media screen and (max-width: 768px) {
     label.icon_badge > img {
         width: 24px;

@@ -51,6 +51,10 @@
     opacity: 0.8;
 }
 
+.service-description > div > form {
+    width: 250px;
+}
+
 .service-description > .image {
     display: flex;
     flex-direction: column;

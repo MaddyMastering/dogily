@@ -70,6 +70,7 @@
     height: 80px;
     border-bottom: 1px solid var(--border-color);
     padding: 0 20px;
+    position: relative;
 }
 
 .history > .header > p {
@@ -81,6 +82,9 @@
     float: right;
     line-height: 80px;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 20px;
 }
 
 .history > .content > ul > li {
@@ -115,6 +119,11 @@
 .information {
     background: var(--body-bg);
     position: relative;
+    padding: 50px 100px;
+}
+
+.information > form {
+    width: 250px;
 }
 
 [data-mode="dark"] .information {
@@ -242,5 +251,9 @@
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr;
         height: 50px;
+    }
+
+    .profile-nav-bg {
+        display: none;
     }
 }
