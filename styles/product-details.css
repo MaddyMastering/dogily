@@ -67,3 +67,24 @@
 [data-mode="dark"] .cart-icon > .button-group > i {
     filter: invert(0);
 }
+
+@media screen and (max-width: 768px) {
+    .product {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        grid-template-columns: 1fr;
+        padding: 20px 7%;
+    }
+
+    .product > .image {
+        height: 300px;
+    }
+
+    .product > .image > .image-list > div {
+        height: 50px;
+    }
+}

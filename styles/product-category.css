@@ -49,3 +49,20 @@
         padding: 30px 10%;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .category-heading,
+    .category-grid {
+        padding: 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .category-grid > .category > .image {
+        width: 100%;
+        height: 150px;
+    }
+}

@@ -141,14 +141,27 @@
 @media screen and (max-width: 480px) {
     .banner > ul {
         height: 70px;
+        padding-right: 0;
+    }
+
+    .banner > div {
+        display: none;
     }
 
     .banner > ul > li {
-        margin-right: 0;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
-    .banner > ul > li:first-child {
-        display: none;
+    .banner > ul > li.settings > img {
+        background: transparent;
+        border-radius: 0%;
+        padding: 0px;
+        box-shadow: none;
+    }
+
+    .product-header,
+    .products-grid {
+        padding: 20px 7%;
     }
 }
