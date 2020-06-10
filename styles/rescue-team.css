@@ -1,0 +1,81 @@
+.adoptions-container, .rescue-container {
+    padding: 50px 15%;
+}
+
+.adoptions-container,
+.rescue-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.rescue-container,
+.rescuers {
+    background: var(--body-bg-secondary);
+}
+
+.adoptions-container > .image > img,
+.rescue-container > .image > img {
+    width: 100%;
+    height: auto;
+}
+
+.adoptions-container > .description,
+.rescue-container > .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.adoption-pets, .rescuers {
+    padding: 0 15% 50px 15%;
+}
+
+.adoption-pets > .list,
+.rescuers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-gap: 30px;
+}
+
+.rescuers > div > .image {
+    background: var(--body-bg-grey-dark) !important;
+}
+
+.adoption-pets > .list > div.link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.adoption-pets > .list > div.link > a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+.adoption-pets > .list > div > .image,
+.rescuers > div > .image {
+    width: 150px;
+    height: 150px;
+    background: var(--body-bg-secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .adoptions-container,
+    .rescue-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .adoptions-container {
+        grid-template-rows: 100px 1fr;
+    }
+
+    .rescue-container {
+        grid-template-rows: 1fr 200px;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2185d0" />
+    <meta name="description" content="Dogily pet application">
+    <link rel="icon" href="../icons/logo.svg" />
+    <link rel="manifest" href="../manifest.json" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2185d0">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <link rel="apple-touch-icon" href="../icons/icon-152x152.png">
+
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/scrollbar.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/rescue-team.css" />
+    <title>Dogily</title>
+</head>
+
+<body class="on-scroll" data-mode="dark">
+    <header>
+        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+        <div class="location">
+            <i class="material-icons">gps_fixed</i>
+            <p>Bengaluru</p>
+        </div>
+        <div class="search">
+            <label class="input-rounded">
+                <i class="material-icons">search</i>
+                <input type="text" autocomplete="off" placeholder="Search" />
+            </label>
+        </div>
+        <div class="logo">
+            <img src="../icons/logo.svg">
+            <span>DOGILY</span>
+        </div>
+        <div class="profile">
+            <span class="only-small-device"><a href="profile/profile.html"><i
+                        class="material-icons">person</i></a></span>
+            <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
+            <label class="icon_badge">
+                <span>3</span>
+                <img src="../images/header/cart.svg" />
+            </label>
+        </div>
+        <div class="theme">
+            <span class="theme-selected"></span>
+            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../products/products-list.html">PRODUCTS</a></li>
+            <li class="active"><a>SERVICES</a></li>
+            <li><a href="">ADOPTIONS & RESCUE</a></li>
+            <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
+        </ul>
+    </nav>
+
+    <aside id="aside">
+        <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
+        SIDEMENU
+    </aside>
+
+    <div class="container">
+        <div class="adoptions-container">
+            <div class="image">
+                <img src="../images/rescue/adoption.svg" />
+            </div>
+            <div class="description">
+                <h3>Why buy when you can adopt ?</h3>
+                <br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    labore et dolore magna aliqua. In hac habitasse platea
+                    rem ipsum dolor sit amet, consectetur adipiscing elit, se
+                    labore et dolore magna aliqua. In hac habitasse pl
+                    atea dictumst.</p>
+            </div>
+        </div>
+
+        <div class="adoption-pets">
+            <p>Pets to be adopted</p>
+            <br />
+            <div class="list">
+                <div>
+                    <div class="image"></div>
+                    <p>Pet one</p>
+                </div>
+                <div>
+                    <div class="image"></div>
+                    <p>Pet one</p>
+                </div>
+                <div>
+                    <div class="image"></div>
+                    <p>Pet one</p>
+                </div>
+                <div>
+                    <div class="image"></div>
+                    <p>Pet one</p>
+                </div>
+                <div class="link">
+                    <a href="">See more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rescue-container">
+            <div class="description">
+                <h3>Meet our rescue team</h3>
+                <br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    labore et dolore magna aliqua. In hac habitasse platea
+                    rem ipsum dolor sit amet, consectetur adipiscing elit, se
+                    labore et dolore magna aliqua. In hac habitasse pl
+                    atea dictumst.</p>
+            </div>
+            <div class="image">
+                <img src="../images/rescue/rescue-team.svg" />
+            </div>
+        </div>
+        
+        <div class="rescuers">
+            <div>
+                <div class="image"></div>
+                <p>Rescuer one</p>
+            </div>
+            <div>
+                <div class="image"></div>
+                <p>Rescuer one</p>
+            </div>
+            <div>
+                <div class="image"></div>
+                <p>Rescuer one</p>
+            </div>
+            <div>
+                <div class="image"></div>
+                <p>Rescuer one</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>@2020-2021 All Rights Reserved.</footer>
+    <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
+    <script type="text/javascript" src="../scripts/index.js"></script>
+</body>
+
+</html>
