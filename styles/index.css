@@ -23,6 +23,10 @@ p {
     margin-bottom: 10px;
 }
 
+.inline {
+    display: inline-block;
+}
+
 .container {
     min-height: calc(100% - 210px); /* 210px = 80px header + 80px nav + 50px footer */
     padding-top: 160px;

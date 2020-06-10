@@ -46,19 +46,21 @@
 
 .service-description {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: var(--body-bg-secondary);
     opacity: 0.8;
-}
-
-.service-description > div > form {
-    width: 250px;
 }
 
 .service-description > .image {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.service-description > .image > img {
+    width: 100%;
+    height: auto;
 }
 
 .tags > ul > li {
