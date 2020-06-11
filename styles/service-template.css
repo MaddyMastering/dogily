@@ -18,6 +18,23 @@
     margin-right: 30px;
 }
 
+.vendor-header > .details > .rating-box > p > i,
+.vendor-header > .details > .review-box > p > i,
+.vendor-header > .details > .review-box > p > a,
+.vendor-header > .details > .rating-box > p > a {
+    color: #fff;
+}
+
+.vendor-header > .details > .review-box > p > a,
+.vendor-header > .details > .rating-box > p > a {
+    cursor: pointer;
+}
+
+[data-mode="dark"] .vendor-header > .details > .rating-box > p > i,
+[data-mode="dark"] .vendor-header > .details > .review-box > p > i {
+    color: #000;
+}
+
 .vendor-header > .details > .rating-box > p,
 .vendor-header > .details > .review-box > p {
     margin: 0;
@@ -77,6 +94,12 @@
     margin-right: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    .vendor-header {
+        padding: 30px 7%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .vendor-header,
     .service-description,
@@ -94,5 +117,10 @@
         grid-template-columns: 1fr;
         grid-gap: 10px;
         padding: 20px;
+    }
+
+    .vendor-header > .details > .rating-box.center,
+    .vendor-header > .details > .review-box.center {
+        display: none;
     }
 }

@@ -1,11 +1,41 @@
 function sidemenuopen() {
+    document.querySelector('body').classList.add('no-overflow');
     document.getElementById('aside').classList.add('open');
     document.querySelector('.overlay').classList.add('show');
 }
 
 function sidemenuclose() {
+    document.querySelector('body').classList.remove('no-overflow');
     document.getElementById('aside').classList.remove('open');
     document.querySelector('.overlay').classList.remove('show');
+}
+
+function openreviewmodal() {
+    document.querySelector('body').classList.add('no-overflow');
+    document.querySelector('.overlay').classList.add('show');
+    document.querySelector('.modal').classList.add('open');
+}
+
+function closereviewmodal() {
+    document.querySelector('body').classList.remove('no-overflow');
+    document.querySelector('.overlay').classList.remove('show');
+    document.querySelector('.modal').classList.remove('open');
+}
+
+function openfilters() {
+    document.querySelector('body').classList.add('no-overflow');
+    document.querySelector('.overlay').classList.add('show');
+    document.querySelector('.filter-sidebar').classList.add('open');
+}
+
+function closefilters() {
+    document.querySelector('body').classList.remove('no-overflow');
+    document.querySelector('.overlay').classList.remove('show');
+    document.querySelector('.filter-sidebar').classList.remove('open');
+}
+
+function openme(obj) {
+    document.querySelector(obj).classList.toggle('open');
 }
 
 function viewPet() {
@@ -57,10 +87,12 @@ window.onload = () => {
     if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
 
         setTimeout(() => {
+            document.querySelector('body').classList.add('no-overflow');
             document.querySelector('.loading-screen').classList.add('hide');
         }, 1000);
 
         setTimeout(() => {
+            document.querySelector('body').classList.remove('no-overflow');
             document.querySelector('.loading-screen').classList.add('close');
         }, 1500);
 

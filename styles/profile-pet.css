@@ -126,6 +126,10 @@
     width: 300px;
 }
 
+.information > form > div.selection {
+    width: 275px;
+}
+
 [data-mode="dark"] .information {
     background: var(--body-bg-secondary);
 }

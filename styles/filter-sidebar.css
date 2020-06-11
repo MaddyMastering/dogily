@@ -1,0 +1,124 @@
+.filter-sidebar {
+    position: absolute;
+    right: -400px;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    z-index: 10;
+    background: var(--body-bg);
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0px 3px 6px var(--shadow-color-one);
+    display: none;
+}
+
+.filter-sidebar.open {
+    right: 0;
+    display: block;
+}
+
+.filter-sidebar > .header {
+    height: 50px;
+    font-weight: bold;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.filter-sidebar > .header > .clear {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.filter-sidebar > .header > p {
+    line-height: 50px;
+}
+
+.filter-sidebar > .footer {
+    height: 50px;
+    border-top: 1px solid var(--border-color);
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.filter-sidebar > .footer > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-sidebar > .footer > span:nth-child(2) {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.filter-sidebar > .item {
+    padding: 0 5%;
+    margin-bottom: 3px;
+}
+
+.filter-sidebar > .item > .item-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    cursor: pointer;
+}
+
+.filter-sidebar > .item > .item-header > p,
+.filter-sidebar > .item > .item-header > i {
+    line-height: 50px;
+}
+
+.filter-sidebar > .item > .item-header > i {
+    text-align: right;
+}
+
+.filter-sidebar > .item > .item-content {
+    display: none;
+    padding-bottom: 10px;
+}
+
+.filter-sidebar > .item > .item-content > ul > li {
+    height: 40px;
+}
+
+.filter-sidebar > .item.open {
+    background: var(--body-bg-secondary);
+}
+
+.filter-sidebar > .item.open > .item-header > i {
+    /* transform: rotateZ(180deg); */
+}
+
+.filter-sidebar > .item.open > .item-content {
+    display: block;
+}
+
+.rating-filter > .item-content > span {
+    margin: 10px;
+    color: var(--text-color);
+}
+
+.rating-filter > .item-content > span.active > i {
+    color: var(--primary-color);
+}
+
+[data-mode="dark"] .rating-filter > .item-content > span.active > i { 
+    filter: invert(0);
+}
+
+.rating-filter > .item-content > span.active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .filter-sidebar {
+        right: -110vw;
+        width: 100vw;
+    }
+}

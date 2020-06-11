@@ -1,0 +1,67 @@
+.modal {
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--body-bg);
+    z-index: 10;
+    display: none;
+    padding: 30px;
+}
+
+.modal.open {
+    display: block;
+}
+
+.modal > .clear {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal > .store-name {
+    font-weight: bold;
+}
+
+.modal > .rating > i {
+    cursor: pointer;
+    color: var(--body-bg-grey-dark);
+}
+
+.modal > textarea {
+    width: 100%;
+    background: var(--body-bg-grey-dark);
+    border: none;
+    outline: none;
+}
+
+.modal > button {
+    width: 100px;
+    height: 30px;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.modal > hr {
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+}
+
+.modal > .comments {
+    height: 250px;
+    overflow-y: auto;
+}
+
+.modal > .comments > li > div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.modal > .comments > li > div > .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--body-bg-secondary);
+}

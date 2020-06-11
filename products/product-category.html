@@ -18,152 +18,252 @@
     <link rel="stylesheet" href="../styles/fonts.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/scrollbar.css" />
+    <link rel="stylesheet" href="../styles/loading-screen.css" />
     <link rel="stylesheet" href="../styles/input.css" />
     <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
     <link rel="stylesheet" href="../styles/service-template.css" />
     <link rel="stylesheet" href="../styles/product-category.css" />
     <title>Dogily</title>
 </head>
 
 <body class="on-scroll" data-mode="dark">
-    <header>
-        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
-        <div class="location">
-            <i class="material-icons">gps_fixed</i>
-            <p>Bengaluru</p>
-        </div>
-        <div class="search">
-            <label class="input-rounded">
-                <i class="material-icons">search</i>
-                <input type="text" autocomplete="off" placeholder="Search" />
-            </label>
-        </div>
-        <div class="logo">
-            <img src="../icons/logo.svg">
-            <span>DOGILY</span>
-        </div>
-        <div class="profile">
-            <span class="only-small-device"><a href="profile/profile.html"><i
-                        class="material-icons">person</i></a></span>
-            <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
-            <label class="icon_badge">
-                <span>3</span>
-                <img src="../images/header/cart.svg" />
-            </label>
-        </div>
-        <div class="theme">
-            <span class="theme-selected"></span>
-            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
-            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
-        </div>
-    </header>
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li class="active"><a href="./products-list.html">PRODUCTS</a></li>
-            <li><a href="../services/services.html">SERVICES</a></li>
-            <li><a href="">ADOPTIONS & RESCUE</a></li>
-            <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
-            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
-        </ul>
-    </nav>
-
+    <!-- SIDEMENU -->
     <aside id="aside">
-        <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
-        SIDEMENU
+        <div class="sidebar-header">
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+            <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
+        </div>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li class="active"><a href="./products/products-list.html">PRODUCTS</a></li>
+            <li><a href="../services/services.html">SERVICES</a></li>
+            <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
+            <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+            <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="sidebar-location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="sidebar-theme">
+                <span class="theme-selected"></span>
+                <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+                <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
+            </div>
+        </div>
     </aside>
 
-    <div class="container">
-        <div class="vendor-header">
+    <!-- CONTENT -->
+    <div class="main-content">
+        <header>
+            <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+            <div class="location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="search">
+                <label class="input-rounded">
+                    <i class="material-icons">search</i>
+                    <input type="text" autocomplete="off" placeholder="Search" />
+                </label>
+            </div>
             <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
             </div>
-            <div class="details">
-                <h3>Reliance pet store</h3>
-                <p>Bommanahalli, Bengaluru</p>
-                <div class="rating-box">
-                    <p>Ratings</p>
-                    <p>3.5</p>
+            <div class="profile">
+                <span class="only-small-device"><a href="../profile/profile.html"><i
+                            class="material-icons">person</i></a></span>
+                <span class="profile-link">Hi, <a href="../profile/profile.html">Maddy</a></span>
+                <label class="icon_badge">
+                    <span>3</span>
+                    <img alt="image" class="lazy" src="../images/header/cart.svg" />
+                </label>
+            </div>
+            <div class="theme">
+                <span class="theme-selected"></span>
+                <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+                <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li class="active"><a href="./products-list.html">PRODUCTS</a></li>
+                <li><a href="../services/services.html">SERVICES</a></li>
+                <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
+                <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+                <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="vendor-header">
+                <div class="logo">
                 </div>
-                <div class="review-box">
-                    <p>Reviews</p>
-                    <p>129</p>
+                <div class="details">
+                    <h3>Reliance pet store</h3>
+                    <p>Bommanahalli, Bengaluru</p>
+                    <div class="rating-box">
+                        <p>Ratings</p>
+                        <p>3.5</p>
+                    </div>
+                    <div class="rating-box">
+                        <p>Reviews</p>
+                        <p>129</p>
+                    </div>
+                    <div class="rating-box center">
+                        <p><i class="material-icons">map</i></p>
+                        <p><a href="">View on map</a></p>
+                    </div>
+                    <div class="review-box center">
+                        <p><i class="material-icons">create</i></p>
+                        <p><a onclick="openreviewmodal()">Add a review</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="category-heading">Shop by category</h3>
+
+            <div class="category-grid">
+                <a href="./category-list.html" class="category">
+                    <div class="image">
+                        <img src="../images/products/category/belt.svg" />
+                    </div>
+                    <p>Belts & collars</p>
+                </a>
+                <div class="category food">
+                    <div class="image">
+                        <img src="../images/products/category/food.svg" />
+                    </div>
+                    <p>Food</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/toy.svg" />
+                    </div>
+                    <p>Toys & treats</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/kennel.svg" />
+                    </div>
+                    <p>Crates & kennels</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/bowl.svg" />
+                    </div>
+                    <p>Bowls</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/apparel.svg" />
+                    </div>
+                    <p>Apparels</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/medication.svg" />
+                    </div>
+                    <p>Medication</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/bed.svg" />
+                    </div>
+                    <p>Beds</p>
+                </div>
+                <div class="category">
+                    <div class="image">
+                        <img src="../images/products/category/grooming.svg" />
+                    </div>
+                    <p>Grooming</p>
+                </div>
+            </div>
+
+            <div class="vendor-footer">
+                <div></div>
+                <div>
+                    <p>ADDRESS</p>
+                    <p>Frosty Crumble, Art of Delight, 44/1, Residency Road</p>
+                </div>
+                <div>
+                    <p>CONTACT</p>
+                    <p>080-76812345</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <h3 class="category-heading">Shop by category</h3>
-
-        <div class="category-grid">
-            <a href="./category-list.html" class="category">
-                <div class="image">
-                    <img src="../images/products/category/belt.svg" />
+    <div class="modal">
+        <i class="material-icons clear" onclick="closereviewmodal()">clear</i>
+        <p class="store-name">Reliance pet store</p>
+        <p class="rating">
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+            <i class="material-icons">star</i>
+        </p>
+        <textarea rows="4"></textarea>
+        <button class="primary">POST</button>
+        <hr />
+        <ul class="comments on-scroll">
+            <li>
+                <div>
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <p>Belts & collars</p>
-            </a>
-            <div class="category food">
-                <div class="image">
-                    <img src="../images/products/category/food.svg" />
+            </li>
+            <li>
+                <div>
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <p>Food</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/toy.svg" />
+            </li>
+            <li>
+                <div>
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <p>Toys & treats</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/kennel.svg" />
+            </li>
+            <li>
+                <div>
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <p>Crates & kennels</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/bowl.svg" />
+            </li>
+            <li>
+                <div>
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <p>Bowls</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/apparel.svg" />
+            </li>
+            <li>
+                <div>
+                    <div class="image"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+                        sed do eiusmod tempor incididunt ut labore et.</p>
                 </div>
-                <p>Apparels</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/medication.svg" />
-                </div>
-                <p>Medication</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/bed.svg" />
-                </div>
-                <p>Beds</p>
-            </div>
-            <div class="category">
-                <div class="image">
-                    <img src="../images/products/category/grooming.svg" />
-                </div>
-                <p>Grooming</p>
-            </div>
-        </div>
-
-        <div class="vendor-footer">
-            <div></div>
-            <div>
-                <p>ADDRESS</p>
-                <p>Frosty Crumble, Art of Delight, 44/1, Residency Road</p>
-            </div>
-            <div>
-                <p>CONTACT</p>
-                <p>080-76812345</p>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 
     <footer>@2020-2021 All Rights Reserved.</footer>
