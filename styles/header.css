@@ -38,6 +38,7 @@ header > div > span {
 }
 
 .profile > span {
+    cursor: pointer;
     color: var(--text-label-color);
     padding-right: 15px;
     border-right: 1px solid var(--border-color);

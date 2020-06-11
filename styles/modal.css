@@ -65,3 +65,81 @@
     border-radius: 50%;
     background-color: var(--body-bg-secondary);
 }
+
+/* LOGIN MODAL */
+.login-modal {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, var(--primary-color), #972ab1);
+    transition: 0.5s all ease-in;
+    z-index: 11;
+    position: absolute;
+    top: -100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal.open {
+    top: 0;
+    display: flex;
+}
+
+.login-modal > .login-header > .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #fff;
+}
+
+.login-modal > .login-header > .logo > img {
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.login-modal > .login-header > .logo > span {
+    color: #fff;
+}
+
+.login-modal > .clear {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-modal > .login-container {
+    width: 300px;
+    padding: 30px 5%;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.login-modal.open > .login-container {
+    opacity: 1;
+}
+
+.login-modal > .login-container > p.label {
+    color: var(--text-label-color);
+    margin: 10px 0;
+}
+
+.login-modal > .login-container > p.link {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-modal > .login-container > p.social-icons > img {
+    padding: 3%;
+    margin: 3%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-modal > .login-container > button {
+    width: 100%;
+}

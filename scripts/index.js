@@ -22,6 +22,18 @@ function closereviewmodal() {
     document.querySelector('.modal').classList.remove('open');
 }
 
+function openlogin() {
+    document.querySelector('body').classList.add('no-overflow');
+    document.querySelector('.overlay').classList.add('show');
+    document.querySelector('.login-modal').classList.add('open');
+}
+
+function closelogin() {
+    document.querySelector('body').classList.remove('no-overflow');
+    document.querySelector('.overlay').classList.remove('show');
+    document.querySelector('.login-modal').classList.remove('open');
+}
+
 function openfilters() {
     document.querySelector('body').classList.add('no-overflow');
     document.querySelector('.overlay').classList.add('show');

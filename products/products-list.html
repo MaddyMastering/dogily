@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../styles/buttons.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
     <link rel="stylesheet" href="../styles/filter-sidebar.css" />
     <link rel="stylesheet" href="../styles/products-list.css" />
     <title>Dogily</title>
@@ -82,7 +83,7 @@
             <div class="profile">
                 <span class="only-small-device"><a href="../profile/profile.html"><i
                             class="material-icons">person</i></a></span>
-                <span class="profile-link">Hi, <a href="../profile/profile.html">Maddy</a></span>
+                <span class="profile-link"><a onclick="openlogin()">LOGIN</a></span>
                 <label class="icon_badge">
                     <span>3</span>
                     <img alt="image" class="lazy" src="../images/header/cart.svg" />
@@ -306,6 +307,44 @@
             <span>
                 <a>Apply</a>
             </span>
+        </div>
+    </div>
+
+    <div class="login-modal">
+        <div class="login-header">
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+        </div>
+
+        <i class="material-icons clear" onclick="closelogin()">clear</i>
+
+        <div class="login-container">
+            <h2>LOGIN</h2>
+            <br />
+            <br />
+            <label class="input-rounded">
+                <i class="material-icons">person</i>
+                <input type="text" autocomplete="off" placeholder="username" />
+            </label>
+            <br />
+            <label class="input-rounded">
+                <i class="material-icons">vpn_key</i>
+                <input type="text" autocomplete="off" placeholder="password" />
+            </label>
+            <br />
+            <button class="primary">LOGIN</button>
+            <p class="label">Forgot password ?</p>
+
+            <br />
+            <br />
+            <p class="label">Or login with</p>
+            <p class="social-icons">
+                <img src="../images/home/social/fb.svg" />
+                <img src="../images/home/social/google.svg" />
+            </p>
+            <p class="link">Sign up</p>
         </div>
     </div>
 
