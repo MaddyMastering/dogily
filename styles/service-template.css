@@ -41,6 +41,7 @@
 }
 
 .vendor-header,
+.service-products,
 .service-description,
 .tags,
 .gallery {
@@ -92,6 +93,18 @@
     height: 200px;
     background: var(--grey-one);
     margin-right: 40px;
+}
+
+.service-products > .service-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-gap: 30px;
+}
+
+.service-products > .service-products-grid > .service-product > .image {
+    width: 150px;
+    height: 150px;
+    background: var(--body-bg-secondary);
 }
 
 @media screen and (max-width: 768px) {

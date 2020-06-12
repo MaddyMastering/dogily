@@ -210,6 +210,15 @@ input[type="range"] {
     width: 80%;
 }
 
+/* TEXT AREA */
+textarea {
+    width: 90%;
+    background: var(--body-bg-grey-dark);
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
     label.icon_badge > img {
         width: 24px;

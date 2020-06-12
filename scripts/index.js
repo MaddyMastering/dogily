@@ -51,7 +51,7 @@ function openme(obj) {
 }
 
 function viewPet() {
-    document.location.href = './profile-pet.html'
+    document.location.href = './profile-pet-food.html'
 }
 
 function compare() {
@@ -90,8 +90,10 @@ function toggleDarkmode() {
         document.querySelector("#darkmode").style.display = "block";
     } else {
         document.querySelector('body').setAttribute('data-mode', 'light');
-        document.querySelector("#lightmode").style.display = "block";
-        document.querySelector("#darkmode").style.display = "none";
+        document.getElementById("lightmode").style.display = "block";
+        document.getElementById("darkmode").style.display = "none";
+
+        console.log(document.getElementById("darkmode"));
     }
 }
 

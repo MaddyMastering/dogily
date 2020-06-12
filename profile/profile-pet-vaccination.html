@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2185d0" />
+    <meta name="description" content="Dogily pet application">
+    <link rel="icon" href="../icons/logo.svg" />
+    <link rel="manifest" href="../manifest.json" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2185d0">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <link rel="apple-touch-icon" href="../icons/icon-152x152.png">
+
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/scrollbar.css" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/profile-pet.css" />
+    <link rel="stylesheet" href="../styles/vaccination-infomation.css" />
+    <title>Dogily</title>
+</head>
+
+<body class="on-scroll" data-mode="dark">
+    <header>
+        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+        <div class="location">
+            <i class="material-icons">gps_fixed</i>
+            <p>Bengaluru</p>
+        </div>
+        <div class="search">
+            <label class="input-rounded">
+                <i class="material-icons">search</i>
+                <input type="text" autocomplete="off" placeholder="Search" />
+            </label>
+        </div>
+        <div class="logo">
+            <img src="../icons/logo.svg">
+            <span>DOGILY</span>
+        </div>
+        <div class="profile">
+            <span class="only-small-device"><a href="profile/profile.html"><i
+                        class="material-icons">person</i></a></span>
+            <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
+            <label class="icon_badge">
+                <span>3</span>
+                <img src="../images/header/cart.svg" />
+            </label>
+        </div>
+        <div class="theme">
+            <span class="theme-selected"></span>
+            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../products/products-list.html">PRODUCTS</a></li>
+            <li><a href="../services/services.html">SERVICES</a></li>
+            <li><a href="">ADOPTIONS & RESCUE</a></li>
+            <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
+        </ul>
+    </nav>
+
+    <aside id="aside">
+        <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
+        SIDEMENU
+    </aside>
+
+    <div class="container">
+        <div class="pet-profile">
+            <div class="back">
+                <a class="link" href="./profile.html"><i class="material-icons">chevron_left</i>BACK</a>
+            </div>
+            <div class="name">
+                <span>Brownie</span>
+                <span class="breed">Golden retriever</span>
+            </div>
+            <div class="avatar">
+                <img class="lazy" src="../images/profile/pet-avatar.png" />
+            </div>
+            <div class="sex">
+                <span>
+                    <img src="../images/profile/female.svg" />
+                </span>
+                <span class="label">FEMALE</span>
+            </div>
+            <div class="age">
+                <span>12</span>
+                <span class="label">YEARS OLD</span>
+            </div>
+            <div class="weight">
+                <span>52</span>
+                <span class="label">KGS</span>
+            </div>
+            <div class="edit">
+                <a class="link" href="">EDIT<i class="material-icons">edit</i></a>
+            </div>
+        </div>
+
+        <div class="pet-profile-nav">
+            <a href="./profile-pet-walking.html">
+                <img class="lazy" src="../images/profile/pet-profile-nav/walking.svg" />
+                <p>Walking</p>
+            </a>
+            <a href="./profile-pet-food.html">
+                <img class="lazy" src="../images/profile/pet-profile-nav/food.svg" />
+                <p>Food</p>
+            </a>
+            <a class="active" href="./profile-pet-vaccination.html">
+                <img class="lazy" src="../images/profile/pet-profile-nav/vaccination.svg" />
+                <p>Vaccination</p>
+            </a>
+            <a href="./pet-profile-prescription.html">
+                <img class="lazy" src="../images/profile/pet-profile-nav/prescription.svg" />
+                <p>Prescription</p>
+            </a>
+            <a href="./pet-profile-deworming.html">
+                <img class="lazy" src="../images/profile/pet-profile-nav/deworming.svg" />
+                <p>Deworming</p>
+            </a>
+            <a href="./pet-profile-services.html">
+                <img class="lazy" src="../images/profile/pet-profile-nav/services.svg" />
+                <p>Services</p>
+            </a>
+        </div>
+
+        <div class="history">
+            <div class="header">
+                <p>VACCINATION HISTORY</p>
+                <i class="material-icons" id="icon-close-history" onclick="closehistory()">clear</i>
+            </div>
+            <div class="vaccination-content">
+                <ul>
+                    <li>
+                        <p>Polio</p>
+                        <p>12th May 2020</p>
+                        <p>10:45am</p>
+                    </li>
+                    <li id="highlightme" onclick="showvaccinationcontent()">
+                        <p>Insulin</p>
+                        <p>12th May 2020</p>
+                        <p>10:45am</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="info-content" class="information close">
+            <div class="header">
+                <i class="material-icons clear" onclick="closevaccinationcontent()">clear</i>
+                <p>INFORMATION</p>
+            </div>
+            <div class="hospital">
+                <div class="image">
+                </div>
+                <div class="description">
+                    <p>Narayana veternary clinic</p>
+                    <p>Bommanahalli, Bengaluru</p>
+                </div>
+            </div>
+            <div class="attachments">
+                <p class="label">ATTACHMENTS</p>
+                <ul>
+                    <li><p><i class="material-icons">attachment</i>&nbsp;Bill.pdf</p></li>
+                    <li><p><i class="material-icons">attachment</i>&nbsp;Bill-2.pdf</p></li>
+                    <li><p><i class="material-icons">attachment</i>&nbsp;vaccination.jpg</p></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <span>
+                    <a>Attach Reciept</a>
+                </span>
+                <span>
+                    <a>Edit Record</a>
+                </span>
+                <span>
+                    <a>Delete Record</a>
+                </span>
+            </div>
+        </div>
+
+        <div id="notify-content" class="information">
+            <p>Do you want us remind you to vaccinate your pet ?</p>
+            <br />
+            <br />
+            <form>
+                <div>
+                    <span>DATE</span>
+                    <label class="input">
+                        <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
+                    </label>
+                </div>
+
+                <div>
+                    <span>TIME</span>
+                    <label class="input">
+                        <input type="text" autocomplete="off" placeholder="HH:MM" />
+                    </label>
+                </div>
+
+                <div class="selection">
+                    <span>RECURRING</span>
+                    <button class="button-group left primary">DAILY</button>
+                    <button class="button-group center">MONTHLY</button>
+                    <button class="button-group right">WEEKLY</button>
+                </div>
+
+                <br />
+                <div>
+                    <button class="primary button-lg notify-button">NOTIFY
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+            </form>
+            <img class="profile-nav-bg" src="../images/profile/profile-pet-bg/vaccination.svg" />
+            <span id="icon-show-history" onclick="openhistory()">SHOW HISTORY</span>
+        </div>
+    </div>
+    <footer>@2020-2021 All Rights Reserved.</footer>
+
+    <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
+    <script type="text/javascript" src="../scripts/index.js"></script>
+    <script type="text/javascript" src="../scripts/profile-pet.js"></script>
+</body>
+
+</html>

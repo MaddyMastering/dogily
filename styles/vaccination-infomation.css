@@ -1,0 +1,134 @@
+#info-content {
+    position: relative;
+    padding: 0;
+    border-right: 1px solid var(--border-color-two);
+}
+
+#info-content > .header {
+    height: 80px;
+    font-weight: bold;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--border-color-two);
+    position: relative;
+}
+
+#info-content > .header > p {
+    line-height: 80px;
+}
+
+#info-content > .header > .clear {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#info-content > .hospital {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding: 30px;
+    grid-gap: 30px;
+}
+
+#info-content > .attachments {
+    padding: 30px;
+}
+
+#info-content > .attachments > ul > li {
+    height: 30px;
+}
+
+#info-content > .attachments > ul > li > i {
+    transform: rotate(90deg);
+}
+
+#info-content > .hospital > .image {
+    height: 100px;
+    width: 100px;
+    background-color: var(--body-bg-secondary);
+}
+
+[data-mode="dark"] #info-content > .hospital > .image {
+    background-color: var(--body-bg);
+}
+
+/* SERVICE  */
+#info-content > .service-map-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin: 30px;
+}
+
+#info-content > .service-map-area > .avatar {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 30px;
+}
+
+#info-content > .service-map-area > .avatar > .image {
+    height: 100px;
+    width: 100px;
+    background-color: var(--body-bg-secondary);
+    border-radius: 50%;
+}
+
+#info-content > .service-map-area > .avatar > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#info-content > .service-map-area > #map {
+    height: 200px;
+    background: var(--body-bg-secondary);
+}
+
+[data-mode="dark"] #info-content > .service-map-area > #map,
+[data-mode="dark"] #info-content > .service-map-area > .avatar > .image {
+    background: var(--body-bg-grey-dark);
+}
+
+#info-content > .service-map-area > .details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#info-content > .footer {
+    height: 50px;
+    border-top: 1px solid var(--border-color-two);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#info-content > .footer > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-content > .footer > span:nth-child(3) {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+#info-content > .footer > span:nth-child(2) {
+    background: var(--body-bg-secondary);
+}
+
+#info-content > .footer > span:nth-child(1) {
+    background: var(--body-bg);
+}
+
+@media screen and (max-width: 768px) {
+    #info-content,
+    #info-content > .footer {
+        width: 100vw;
+    }
+}
