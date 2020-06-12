@@ -79,6 +79,23 @@
     filter: invert(1);
 }
 
+.add-pet-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--body-bg);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+[data-mode="dark"] .add-pet-icon {
+    filter: invert(0);
+    color: #fff;
+}
+
 @media screen and (max-width: 1110px) {
     .container {
         grid-template-columns: 1fr 2fr;

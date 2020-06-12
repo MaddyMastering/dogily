@@ -6,8 +6,9 @@
     transform: translate(-50%, -50%);
     background-color: var(--body-bg);
     z-index: 10;
+    border-radius: 10px;
     display: none;
-    padding: 30px;
+    padding: 50px;
 }
 
 .modal.open {
@@ -31,7 +32,7 @@
 }
 
 .modal > textarea {
-    width: 100%;
+    width: 90%;
     background: var(--body-bg-grey-dark);
     border: none;
     outline: none;
@@ -142,4 +143,58 @@
 
 .login-modal > .login-container > button {
     width: 100%;
+}
+
+/* CREATE PET MODAL */
+.create-pet-modal > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-pet-modal > form > .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--body-bg-secondary);
+}
+
+.create-pet-modal > form > div {
+    margin-right: 0;
+}
+
+.create-pet-modal > form > p {
+    margin-bottom: 20px;
+}
+
+.create-pet-modal > form > p > span {
+    margin: 0 30px;
+}
+
+.create-pet-modal > form > p > span.active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.create-pet-modal > form > p > span > img {
+    margin-right: 10px;
+}
+
+[data-mode="dark"] .create-pet-modal > form > p > span > img {
+    filter: invert(1);
+}
+
+[data-mode="dark"] .create-pet-modal {
+    background: var(--body-bg-grey-dark);
+}
+
+@media screen and (max-width: 480px) {
+    .modal {
+        width: 80vw;
+        height: 80vh;
+        border-radius: 10px;
+        padding: 20px 10px;
+        overflow: auto;
+    }
 }

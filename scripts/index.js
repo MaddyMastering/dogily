@@ -22,6 +22,12 @@ function closereviewmodal() {
     document.querySelector('.modal').classList.remove('open');
 }
 
+function showpetcreatemodal() {
+    document.querySelector('body').classList.remove('no-overflow');
+    document.querySelector('.overlay').classList.remove('show');
+    document.querySelector('.modal').classList.remove('open');
+}
+
 function openlogin() {
     document.querySelector('body').classList.add('no-overflow');
     document.querySelector('.overlay').classList.add('show');
