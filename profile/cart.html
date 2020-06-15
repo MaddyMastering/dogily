@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
-    <link rel="stylesheet" href="../styles/services.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
     <title>Dogily</title>
 </head>
 
@@ -113,7 +113,7 @@
                         <li><a href="">Fish</a></li>
                     </ul>
                 </li>
-                <li class="active"><a href="../services/services.html">SERVICES</a></li>
+                <li><a href="../services/services.html">SERVICES</a></li>
                 <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
                 <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
                 <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
@@ -121,130 +121,133 @@
         </nav>
 
         <div class="container">
-            <div class="banner">
-                <div>
-                    <h3>HOW DO</h3>
-                    <h1>WE WORK</h1>
-                </div>
-                <div>
-                    <h3>SELECT</h3>
-                    <p>what would you prefer</p>
-                </div>
-                <div>
-                    <h3>FIND</h3>
-                    <p>the perfect executor</p>
-                </div>
-                <div>
-                    <h3>ENJOY</h3>
-                    <p>our great services</p>
+            <div class="cart-list on-scroll">
+                <p>Cart (5)</p>
+                <ul>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart-item">
+                            <p>Item one</p>
+                            <p><img src="../images/rupee.svg" /> &nbsp; 200</p>
+                            <i class="material-icons">delete</i>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="total">
+                    <h3>Total</h3>
+                    <h3 class="cash"><img src="../images/rupee.svg" /> &nbsp; 200</h3>
                 </div>
             </div>
-
-            <p class="service-header">Top class services for your pet</p>
-
-            <div class="grid-services">
-                <a href="./pet-grooming.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/grooming-icon.svg" />
+            <div class="payment">
+                <h3>Payment</h3>
+                <form>
+                    <div>
+                        <span>NAME</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="Card name" />
+                        </label>
                     </div>
-                    <p>Grooming</p>
-                </a>
-
-                <a href="./vet-visit.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/vet-visit-icon.svg" />
+                    <div>
+                        <span>CARD NUMBER</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="xxxx-xxxx-xxxx" />
+                        </label>
                     </div>
-                    <p>Vet visit</p>
-                </a>
-
-                <a href="./dog-training.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/dog-training-icon.svg" />
+                    <div>
+                        <span>EXPIRY DATE</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
+                        </label>
                     </div>
-                    <p>Dog training</p>
-                </a>
-
-                <a href="./dog-walking.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/dog-walking-icon.svg" />
+                    <div>
+                        <span>CVV</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="3 digit" />
+                        </label>
                     </div>
-                    <p>Pet Walking</p>
-                </a>
 
-                <a href="./boarding.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/boarding-icon.svg" />
-                    </div>
-                    <p>Boarding</p>
-                </a>
-
-                <a href="./fresh-food.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/fresh-food-icon.svg" />
-                    </div>
-                    <p>Fresh food</p>
-                </a>
-
-                <a href="./sitting.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/sitting-icon.svg" />
-                    </div>
-                    <p>Sitting</p>
-                </a>
-
-                <a href="./emergency.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/emergency-ambulance-svgrepo-com.svg" />
-                    </div>
-                    <p>Emergency</p>
-                </a>
-
-                <a href="./relocation.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/relocation-icon.svg" />
-                    </div>
-                    <p>Relocation</p>
-                </a>
-
-                <a href="./taxi&auto.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/taxi-svgrepo-com.svg" />
-                    </div>
-                    <p>Taxi & autos</p>
-                </a>
-
-                <a href="./vacation.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/vaction-icon.svg" />
-                    </div>
-                    <p>vacation</p>
-                </a>
-
-                <a href="./cafe.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/cafe-icon.svg" />
-                    </div>
-                    <p>Cafe</p>
-                </a>
-
-                <a href="./cremation.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/cremation-icon.svg" />
-                    </div>
-                    <p>Cremation</p>
-                </a>
-
-                <a href="./fish-tank-cleaning.html" class="service">
-                    <div class="icon">
-                        <img src="../images/services/icons/fish-tank-icon.svg" />
-                    </div>
-                    <p>Fish tank cleaning</p>
-                </a>
-
+                    <br />
+                    <button class="primary button-lg">PAY</button>
+                </form>
             </div>
-
-            <br />
-            <br />
         </div>
 
         <footer>@2020-2021 All Rights Reserved.</footer>

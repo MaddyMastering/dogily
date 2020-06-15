@@ -28,214 +28,259 @@
 </head>
 
 <body class="on-scroll" data-mode="dark">
-    <header>
-        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
-        <div class="location">
-            <i class="material-icons">gps_fixed</i>
-            <p>Bengaluru</p>
-        </div>
-        <div class="search">
-            <label class="input-rounded">
-                <i class="material-icons">search</i>
-                <input type="text" autocomplete="off" placeholder="Search" />
-            </label>
-        </div>
-        <div class="logo">
-            <img src="../icons/logo.svg">
-            <span>DOGILY</span>
-        </div>
-        <div class="profile">
-            <span class="only-small-device"><a href="profile/profile.html"><i
-                        class="material-icons">person</i></a></span>
-            <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
-            <label class="icon_badge">
-                <span>3</span>
-                <img src="../images/header/cart.svg" />
-            </label>
-        </div>
-        <div class="theme">
-            <span class="theme-selected"></span>
-            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
-            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
-        </div>
-    </header>
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
-    <nav>
+    <!-- SIDEMENU -->
+    <aside id="aside">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+            <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
+        </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../products/products-list.html">PRODUCTS</a></li>
             <li><a href="../services/services.html">SERVICES</a></li>
-            <li><a href="">ADOPTIONS & RESCUE</a></li>
+            <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
-            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
+            <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
         </ul>
-    </nav>
-
-    <aside id="aside">
-        <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
-        SIDEMENU
+        <div class="sidebar-footer">
+            <div class="sidebar-location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="sidebar-theme">
+                <span class="theme-selected"></span>
+                <i id="sidebarlightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+            </div>
+        </div>
     </aside>
 
-    <div class="container">
-        <div class="pet-profile">
-            <div class="back">
-                <a class="link" href="./profile.html"><i class="material-icons">chevron_left</i>BACK</a>
+    <!-- CONTENT -->
+    <div class="main-content">
+        <header>
+            <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+            <div class="location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
             </div>
-            <div class="name">
-                <span>Brownie</span>
-                <span class="breed">Golden retriever</span>
+            <div class="search">
+                <label class="input-rounded">
+                    <i class="material-icons">search</i>
+                    <input type="text" autocomplete="off" placeholder="Search" />
+                </label>
             </div>
-            <div class="avatar">
-                <img class="lazy" src="../images/profile/pet-avatar.png" />
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
             </div>
-            <div class="sex">
-                <span>
-                    <img src="../images/profile/female.svg" />
+            <div class="profile">
+                <span class="avatar">
+                    <img src="../images/profile/profile.png" />
                 </span>
-                <span class="label">FEMALE</span>
+                <span class="profile-link">
+                    <a> Hi Maddy</a>
+                    <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    <ul>
+                        <li><a href="../profile/profile.html">Profile</a></li>
+                        <li>Cart</li>
+                        <li>logout</li>
+                    </ul>
+                </span>
             </div>
-            <div class="age">
-                <span>12</span>
-                <span class="label">YEARS OLD</span>
+            <div class="theme">
+                <span class="theme-selected"></span>
+                <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+                <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
             </div>
-            <div class="weight">
-                <span>52</span>
-                <span class="label">KGS</span>
-            </div>
-            <div class="edit">
-                <a class="link" href="">EDIT<i class="material-icons">edit</i></a>
-            </div>
-        </div>
+        </header>
 
-        <div class="pet-profile-nav">
-            <a href="./profile-pet-walking.html">
-                <img class="lazy" src="../images/profile/pet-profile-nav/walking.svg" />
-                <p>Walking</p>
-            </a>
-            <a href="./profile-pet-food.html">
-                <img class="lazy" src="../images/profile/pet-profile-nav/food.svg" />
-                <p>Food</p>
-            </a>
-            <a href="./profile-pet-vaccination.html">
-                <img class="lazy" src="../images/profile/pet-profile-nav/vaccination.svg" />
-                <p>Vaccination</p>
-            </a>
-            <a href="./pet-profile-prescription.html">
-                <img class="lazy" src="../images/profile/pet-profile-nav/prescription.svg" />
-                <p>Prescription</p>
-            </a>
-            <a href="./pet-profile-deworming.html">
-                <img class="lazy" src="../images/profile/pet-profile-nav/deworming.svg" />
-                <p>Deworming</p>
-            </a>
-            <a class="active" href="./pet-profile-services.html">
-                <img class="lazy" src="../images/profile/pet-profile-nav/services.svg" />
-                <p>Services</p>
-            </a>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="menu">
+                    <a href="../products/products-list.html">PRODUCTS</a>
+                    <ul class="submenu">
+                        <li><a href="">Dog</a></li>
+                        <li><a href="">Cat</a></li>
+                        <li><a href="">Bird</a></li>
+                        <li><a href="">Small pet</a></li>
+                        <li><a href="">Fish</a></li>
+                    </ul>
+                </li>
+                <li><a href="../services/services.html">SERVICES</a></li>
+                <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
+                <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+                <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+            </ul>
+        </nav>
 
-        <div class="history service-history">
-            <div class="header">
-                <p>COMPLETED SERVICES</p>
-            </div>
-            <div class="content">
-                <ul>
-                    <li>
-                        <div>
-                            <p>Dog Walking</p>
-                            <p>12th May 2020</p>
-                        </div>
-                    </li>
-                    <li id="highlightme" onclick="showservicecontent()">
-                        <div>
-                            <p>Dog Walking</p>
-                            <p>12th May 2020</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>Dog Walking</p>
-                            <p>12th May 2020</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <p>Dog Walking</p>
-                            <p>12th May 2020</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div id="info-content" class="information close">
-            <div class="header">
-                <i class="material-icons clear" onclick="closeservices()">clear</i>
-                <p>INFORMATION</p>
-            </div>
-
-            <div class="service-map-area">
-                <div id="map"></div>
-                <div class="details">
-                    <div>
-                        <p class="label">Arrival</p>
-                        <p><strong>10:30 AM</strong></p>
-                    </div>
-                    <div>
-                        <p class="label">Departure</p>
-                        <p><strong>10:30 AM</strong></p>
-                    </div>
-                    <div>
-                        <p class="label">Location</p>
-                        <p><strong>Shivaji park, Lakkasandra</strong></p>
-                    </div>
+        <div class="container">
+            <div class="pet-profile">
+                <div class="back">
+                    <a class="link" href="./profile.html"><i class="material-icons">chevron_left</i>BACK</a>
                 </div>
-            </div>
-
-            <div class="service-map-area">
+                <div class="name">
+                    <span>Brownie</span>
+                    <span class="breed">Golden retriever</span>
+                </div>
                 <div class="avatar">
-                    <div class="image">
-                    </div>
-                    <div class="description">
-                        <p>Maddy M</p>
-                        <p class="rating"><i class="material-icons">star</i>&nbsp;3.4</p>
-                    </div>
-                    <div></div>
-                    <div class="feedback">
-                        <textarea rows="4" placeholder="Write us a feedback"></textarea>
-                        <br />
-                        <br />
-                        <button class="primary">Send</button>
-                    </div>
+                    <img class="lazy" src="../images/profile/pet-avatar.png" />
                 </div>
-                <div class="attachments">
-                    <p class="label">ATTACHMENTS</p>
+                <div class="sex">
+                    <span>
+                        <img src="../images/profile/female.svg" />
+                    </span>
+                    <span class="label">FEMALE</span>
+                </div>
+                <div class="age">
+                    <span>12</span>
+                    <span class="label">YEARS OLD</span>
+                </div>
+                <div class="weight">
+                    <span>52</span>
+                    <span class="label">KGS</span>
+                </div>
+                <div class="edit">
+                    <a class="link" href="">EDIT<i class="material-icons">edit</i></a>
+                </div>
+            </div>
+
+            <div class="pet-profile-nav">
+                <a href="./profile-pet-walking.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/walking.svg" />
+                    <p>Walking</p>
+                </a>
+                <a href="./profile-pet-food.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/food.svg" />
+                    <p>Food</p>
+                </a>
+                <a href="./profile-pet-vaccination.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/vaccination.svg" />
+                    <p>Vaccination</p>
+                </a>
+                <a href="./pet-profile-prescription.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/prescription.svg" />
+                    <p>Prescription</p>
+                </a>
+                <a href="./pet-profile-deworming.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/deworming.svg" />
+                    <p>Deworming</p>
+                </a>
+                <a class="active" href="./pet-profile-services.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/services.svg" />
+                    <p>Services</p>
+                </a>
+            </div>
+
+            <div class="history service-history">
+                <div class="header">
+                    <p>COMPLETED SERVICES</p>
+                </div>
+                <div class="content">
                     <ul>
                         <li>
-                            <p><i class="material-icons">attachment</i>&nbsp;Bill.pdf</p>
+                            <div>
+                                <p>Dog Walking</p>
+                                <p>12th May 2020</p>
+                            </div>
+                        </li>
+                        <li id="highlightme" onclick="showservicecontent()">
+                            <div>
+                                <p>Dog Walking</p>
+                                <p>12th May 2020</p>
+                            </div>
                         </li>
                         <li>
-                            <p><i class="material-icons">attachment</i>&nbsp;Bill-2.pdf</p>
+                            <div>
+                                <p>Dog Walking</p>
+                                <p>12th May 2020</p>
+                            </div>
                         </li>
                         <li>
-                            <p><i class="material-icons">attachment</i>&nbsp;vaccination.jpg</p>
+                            <div>
+                                <p>Dog Walking</p>
+                                <p>12th May 2020</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="footer">
-                <span>
-                    <a>Attach Reciept</a>
-                </span>
-                <span>
-                    <a>Edit Record</a>
-                </span>
-                <span>
-                    <a>Delete Record</a>
-                </span>
+            <div id="info-content" class="information close">
+                <div class="header">
+                    <i class="material-icons clear" onclick="closeservices()">clear</i>
+                    <p>INFORMATION</p>
+                </div>
+
+                <div class="service-map-area">
+                    <div id="map"></div>
+                    <div class="details">
+                        <div>
+                            <p class="label">Arrival</p>
+                            <p><strong>10:30 AM</strong></p>
+                        </div>
+                        <div>
+                            <p class="label">Departure</p>
+                            <p><strong>10:30 AM</strong></p>
+                        </div>
+                        <div>
+                            <p class="label">Location</p>
+                            <p><strong>Shivaji park, Lakkasandra</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-map-area">
+                    <div class="avatar">
+                        <div class="image">
+                        </div>
+                        <div class="description">
+                            <p>Maddy M</p>
+                            <p class="rating"><i class="material-icons">star</i>&nbsp;3.4</p>
+                        </div>
+                        <div></div>
+                        <div class="feedback">
+                            <textarea rows="4" placeholder="Write us a feedback"></textarea>
+                            <br />
+                            <br />
+                            <button class="primary">Send</button>
+                        </div>
+                    </div>
+                    <div class="attachments">
+                        <p class="label">ATTACHMENTS</p>
+                        <ul>
+                            <li>
+                                <p><i class="material-icons">attachment</i>&nbsp;Bill.pdf</p>
+                            </li>
+                            <li>
+                                <p><i class="material-icons">attachment</i>&nbsp;Bill-2.pdf</p>
+                            </li>
+                            <li>
+                                <p><i class="material-icons">attachment</i>&nbsp;vaccination.jpg</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <span>
+                        <a>Attach Reciept</a>
+                    </span>
+                    <span>
+                        <a>Edit Record</a>
+                    </span>
+                    <span>
+                        <a>Delete Record</a>
+                    </span>
+                </div>
             </div>
         </div>
+
     </div>
     <footer>@2020-2021 All Rights Reserved.</footer>
 

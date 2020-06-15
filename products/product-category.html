@@ -43,8 +43,8 @@
             <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         </div>
         <ul>
-            <li><a href="/">HOME</a></li>
-            <li class="active"><a href="./products/products-list.html">PRODUCTS</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li class="active"><a href="../products/products-list.html">PRODUCTS</a></li>
             <li><a href="../services/services.html">SERVICES</a></li>
             <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
@@ -58,7 +58,6 @@
             <div class="sidebar-theme">
                 <span class="theme-selected"></span>
                 <i id="sidebarlightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
-                <i id="sidebardarkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
             </div>
         </div>
     </aside>
@@ -82,13 +81,18 @@
                 <span>DOGILY</span>
             </div>
             <div class="profile">
-                <span class="only-small-device"><a href="../profile/profile.html"><i
-                            class="material-icons">person</i></a></span>
-                <span class="profile-link">Hi, <a href="../profile/profile.html">Maddy</a></span>
-                <label class="icon_badge">
-                    <span>3</span>
-                    <img alt="image" class="lazy" src="../images/header/cart.svg" />
-                </label>
+                <span class="avatar">
+                    <img src="../images/profile/profile.png" />
+                </span>
+                <span class="profile-link">
+                    <a> Hi Maddy</a>
+                    <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    <ul>
+                        <li><a href="../profile/profile.html">Profile</a></li>
+                        <li>Cart</li>
+                        <li>logout</li>
+                    </ul>
+                </span>
             </div>
             <div class="theme">
                 <span class="theme-selected"></span>
@@ -99,8 +103,17 @@
 
         <nav>
             <ul>
-                <li><a href="/">HOME</a></li>
-                <li class="active"><a href="./products-list.html">PRODUCTS</a></li>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="menu active">
+                    <a href="../products/products-list.html">PRODUCTS</a>
+                    <ul class="submenu">
+                        <li><a href="">Dog</a></li>
+                        <li><a href="">Cat</a></li>
+                        <li><a href="">Bird</a></li>
+                        <li><a href="">Small pet</a></li>
+                        <li><a href="">Fish</a></li>
+                    </ul>
+                </li>
                 <li><a href="../services/services.html">SERVICES</a></li>
                 <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
                 <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>

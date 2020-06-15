@@ -261,6 +261,14 @@
     width: 100%;
     height: 340px;
     background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products > .content > .product > .product-image > img {
+    width: 80%;
+    height: 80%;
 }
 
 .products > .content > .product > .product-description {

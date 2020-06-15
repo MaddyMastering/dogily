@@ -27,151 +27,195 @@
 </head>
 
 <body class="on-scroll" data-mode="dark">
-    <header>
-        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
-        <div class="location">
-            <i class="material-icons">gps_fixed</i>
-            <p>Bengaluru</p>
-        </div>
-        <div class="search">
-            <label class="input-rounded">
-                <i class="material-icons">search</i>
-                <input type="text" autocomplete="off" placeholder="Search" />
-            </label>
-        </div>
-        <div class="logo">
-            <img src="../icons/logo.svg">
-            <span>DOGILY</span>
-        </div>
-        <div class="profile">
-            <span class="only-small-device"><a href="profile/profile.html"><i
-                        class="material-icons">person</i></a></span>
-            <span class="profile-link">Hi, <a href="profile/profile.html">Maddy</a></span>
-            <label class="icon_badge">
-                <span>3</span>
-                <img src="../images/header/cart.svg" />
-            </label>
-        </div>
-        <div class="theme">
-            <span class="theme-selected"></span>
-            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
-            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
-        </div>
-    </header>
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
-    <nav>
+    <!-- SIDEMENU -->
+    <aside id="aside">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+            <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
+        </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../products/products-list.html">PRODUCTS</a></li>
-            <li class="active"><a href="./services.html">SERVICES</a></li>
-            <li><a href="">ADOPTIONS & RESCUE</a></li>
+            <li class="active"><a href="../services/services.html">SERVICES</a></li>
+            <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
-            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
+            <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
         </ul>
-    </nav>
-
-    <aside id="aside">
-        <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
-        SIDEMENU
+        <div class="sidebar-footer">
+            <div class="sidebar-location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="sidebar-theme">
+                <span class="theme-selected"></span>
+                <i id="sidebarlightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+            </div>
+        </div>
     </aside>
 
-    <div class="container">
-        <div class="vendor-header">
+    <!-- CONTENT -->
+    <div class="main-content">
+        <header>
+            <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+            <div class="location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="search">
+                <label class="input-rounded">
+                    <i class="material-icons">search</i>
+                    <input type="text" autocomplete="off" placeholder="Search" />
+                </label>
+            </div>
             <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
             </div>
-            <div class="details">
-                <h3>Reliance pet store</h3>
-                <p>Bommanahalli, Bengaluru</p>
-                <div class="rating-box">
-                    <p>Ratings</p>
-                    <p>3.5</p>
-                </div>
-                <div class="review-box">
-                    <p>Reviews</p>
-                    <p>129</p>
-                </div>
+            <div class="profile">
+                <span class="avatar">
+                    <img src="../images/profile/profile.png" />
+                </span>
+                <span class="profile-link">
+                    <a> Hi Maddy</a>
+                    <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    <ul>
+                        <li><a href="../profile/profile.html">Profile</a></li>
+                        <li>Cart</li>
+                        <li>logout</li>
+                    </ul>
+                </span>
             </div>
-        </div>
+            <div class="theme">
+                <span class="theme-selected"></span>
+                <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+                <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
+            </div>
+        </header>
 
-        <div class="service-description">
-            <div>
-                <p>Would you like us to book an appointment for you ?</p>
-                <br />
-                <form>
-                    <div>
-                        <span>NAME</span>
-                        <label class="input">
-                            <input type="text" autocomplete="off" placeholder="Brownie" />
-                        </label>
-                    </div>
-                    <div>
-                        <span>DATE</span>
-                        <label class="input">
-                            <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
-                        </label>
-                    </div>
-                    <div>
-                        <span>TIME</span>
-                        <label class="input">
-                            <input type="text" autocomplete="off" placeholder="HH:MM" />
-                        </label>
-                    </div>
-                    <div>
-                        <span>EMAIL</span>
-                        <label class="input">
-                            <input type="text" autocomplete="off" placeholder="abc@xyz.com" />
-                        </label>
-                    </div>
-                    <div>
-                        <span>PHONE</span>
-                        <label class="input">
-                            <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" /> 
-                        </label>
-                    </div>
-                    <br/>
-                    <button class="primary button-lg">CHECK AVAILABILITY</button>
-                </form>
-            </div>
-
-            <div class="image">
-                <img src="../images/services/dog-training.svg" />
-                <br />
-                <h3>DOG TRAINING</h3>
-            </div>
-        </div>
-
-        <div class="tags">
-            <p>We are experts in</p>
+        <nav>
             <ul>
-                <li class="tag active">HAIR WASHING</li>
-                <li class="tag active">NAIL CUTTING</li>
-                <li class="tag active">HAIR CURLING</li>
-                <li class="tag active">BATHING</li>
-                <li class="tag active">HAIR COMBING</li>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="menu">
+                    <a href="../products/products-list.html">PRODUCTS</a>
+                    <ul class="submenu">
+                        <li><a href="">Dog</a></li>
+                        <li><a href="">Cat</a></li>
+                        <li><a href="">Bird</a></li>
+                        <li><a href="">Small pet</a></li>
+                        <li><a href="">Fish</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="../services/services.html">SERVICES</a></li>
+                <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
+                <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+                <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="gallery">
-            <p>Gallery</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
-        <div class="vendor-footer">
-            <div></div>
-            <div>
-                <p>ADDRESS</p>
-                <p>Frosty Crumble, Art of Delight, 44/1, Residency Road</p>
+        <div class="container">
+            <div class="vendor-header">
+                <div class="logo">
+                </div>
+                <div class="details">
+                    <h3>Reliance pet store</h3>
+                    <p>Bommanahalli, Bengaluru</p>
+                    <div class="rating-box">
+                        <p>Ratings</p>
+                        <p>3.5</p>
+                    </div>
+                    <div class="review-box">
+                        <p>Reviews</p>
+                        <p>129</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>CONTACT</p>
-                <p>080-76812345</p>
+
+            <div class="service-description">
+                <div>
+                    <p>Would you like us to book an appointment for you ?</p>
+                    <br />
+                    <form>
+                        <div>
+                            <span>NAME</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="Brownie" />
+                            </label>
+                        </div>
+                        <div>
+                            <span>DATE</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
+                            </label>
+                        </div>
+                        <div>
+                            <span>TIME</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="HH:MM" />
+                            </label>
+                        </div>
+                        <div>
+                            <span>EMAIL</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="abc@xyz.com" />
+                            </label>
+                        </div>
+                        <div>
+                            <span>PHONE</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" />
+                            </label>
+                        </div>
+                        <br />
+                        <button class="primary button-lg">CHECK AVAILABILITY</button>
+                    </form>
+                </div>
+
+                <div class="image">
+                    <img src="../images/services/dog-training.svg" />
+                    <br />
+                    <h3>DOG TRAINING</h3>
+                </div>
+            </div>
+
+            <div class="tags">
+                <p>We are experts in</p>
+                <ul>
+                    <li class="tag active">HAIR WASHING</li>
+                    <li class="tag active">NAIL CUTTING</li>
+                    <li class="tag active">HAIR CURLING</li>
+                    <li class="tag active">BATHING</li>
+                    <li class="tag active">HAIR COMBING</li>
+                </ul>
+            </div>
+
+            <div class="gallery">
+                <p>Gallery</p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="vendor-footer">
+                <div></div>
+                <div>
+                    <p>ADDRESS</p>
+                    <p>Frosty Crumble, Art of Delight, 44/1, Residency Road</p>
+                </div>
+                <div>
+                    <p>CONTACT</p>
+                    <p>080-76812345</p>
+                </div>
             </div>
         </div>
     </div>
-
+    
     <footer>@2020-2021 All Rights Reserved.</footer>
     <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>

@@ -20,120 +20,170 @@
     <link rel="stylesheet" href="../styles/scrollbar.css" />
     <link rel="stylesheet" href="../styles/input.css" />
     <link rel="stylesheet" href="../styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/loading-screen.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
     <link rel="stylesheet" href="../styles/breed-compare-search.css" />
     <title>Dogily</title>
 </head>
 
 <body class="on-scroll" data-mode="dark">
-    <header>
-        <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
-        <div class="location">
-            <i class="material-icons">gps_fixed</i>
-            <p>Bengaluru</p>
-        </div>
-        <div class="search">
-            <label class="input-rounded">
-                <i class="material-icons">search</i>
-                <input type="text" autocomplete="off" placeholder="Search" />
-            </label>
-        </div>
-        <div class="logo">
-            <img alt="image" src="../icons/logo.svg">
-            <span>DOGILY</span>
-        </div>
-        <div class="profile">
-            <span class="only-small-device"><a href="../../profile/profile.html"><i
-                        class="material-icons">person</i></a></span>
-            <span class="profile-link">Hi, <a href="../../profile/profile.html">Maddy</a></span>
-            <label class="icon_badge">
-                <span>3</span>
-                <img alt="image" src="../images/header/cart.svg" />
-            </label>
-        </div>
-        <div class="theme">
-            <span class="theme-selected"></span>
-            <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
-            <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
-        </div>
-    </header>
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
 
-    <nav>
+    <!-- SIDEMENU -->
+    <aside id="aside">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+            <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
+        </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../products/products-list.html">PRODUCTS</a></li>
             <li><a href="../services/services.html">SERVICES</a></li>
-            <li><a href="">ADOPTIONS & RESCUE</a></li>
-            <li class="active"><a>BREED INFORMATION</a></li>
-            <li><a href="">VACATIONS & NEIGHBOURHOOD</a></li>
+            <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
+            <li class="active"><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+            <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
         </ul>
-    </nav>
-
-    <aside id="aside">
-        <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
-        SIDEMENU
+        <div class="sidebar-footer">
+            <div class="sidebar-location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="sidebar-theme">
+                <span class="theme-selected"></span>
+                <i id="sidebarlightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+            </div>
+        </div>
     </aside>
 
-    <div class="container">
-        <div class="default">
-            <div class="grid">
+    <!-- CONTENT -->
+    <div class="main-content">
+        <header>
+            <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
+            <div class="location">
+                <i class="material-icons">gps_fixed</i>
+                <p>Bengaluru</p>
+            </div>
+            <div class="search">
+                <label class="input-rounded">
+                    <i class="material-icons">search</i>
+                    <input type="text" autocomplete="off" placeholder="Search" />
+                </label>
+            </div>
+            <div class="logo">
+                <img alt="image" src="../icons/logo.svg">
+                <span>DOGILY</span>
+            </div>
+            <div class="profile">
+                <span class="avatar">
+                    <img src="../images/profile/profile.png" />
+                </span>
+                <span class="profile-link">
+                    <a> Hi Maddy</a>
+                    <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    <ul>
+                        <li><a href="../profile/profile.html">Profile</a></li>
+                        <li>Cart</li>
+                        <li>logout</li>
+                    </ul>
+                </span>
+            </div>
+            <div class="theme">
+                <span class="theme-selected"></span>
+                <i id="lightmode" class="material-icons" onclick="toggleDarkmode()">wb_sunny</i>
+                <i id="darkmode" class="material-icons" onclick="toggleDarkmode()">brightness_2</i>
+            </div>
+        </header>
 
-                <div class="image">
-                    <img src="../images/breed-information/description.png" />
-                    <br /><br />
-                    <div class="carousel-icons">
-                        <i class="material-icons">chevron_left</i>
-                        <p>1 / 5</p>
-                        <i class="material-icons">chevron_right</i>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li class="menu">
+                    <a href="../products/products-list.html">PRODUCTS</a>
+                    <ul class="submenu">
+                        <li><a href="">Dog</a></li>
+                        <li><a href="">Cat</a></li>
+                        <li><a href="">Bird</a></li>
+                        <li><a href="">Small pet</a></li>
+                        <li><a href="">Fish</a></li>
+                    </ul>
+                </li>
+                <li><a href="../services/services.html">SERVICES</a></li>
+                <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
+                <li class="active"><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
+                <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="default">
+                <div class="grid">
+
+                    <div class="image">
+                        <img src="../images/breed-information/description.png" />
+                        <br /><br />
+                        <div class="carousel-icons">
+                            <i class="material-icons">chevron_left</i>
+                            <p>1 / 5</p>
+                            <i class="material-icons">chevron_right</i>
+                        </div>
                     </div>
-                </div>
 
-                <div class="description">
-                    <h3>Breed name</h3>
-                    <table>
-                        <tr>
-                            <td>Family</td>
-                            <td>Cat</td>
-                        </tr>
-                        <tr>
-                            <td>Height</td>
-                            <td>10ft - 15ft</td>
-                        </tr>
-                        <tr>
-                            <td>Weight</td>
-                            <td>120gms - 150gms</td>
-                        </tr>
-                        <tr>
-                            <td>Mood</td>
-                            <td>Attentive</td>
-                        </tr>
-                    </table>
-                    <div class="more-info">
-                        <h3>Description</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
-                            rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
+                    <div class="description">
+                        <h3>Breed name</h3>
+                        <table>
+                            <tr>
+                                <td>Family</td>
+                                <td>Cat</td>
+                            </tr>
+                            <tr>
+                                <td>Height</td>
+                                <td>10ft - 15ft</td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>120gms - 150gms</td>
+                            </tr>
+                            <tr>
+                                <td>Mood</td>
+                                <td>Attentive</td>
+                            </tr>
+                        </table>
+                        <div class="more-info">
+                            <h3>Description</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris
+                                commodo
+                                rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="compare">
-            <div class="breed-search">
-                <h3 class="header">Find other breed of your pet</h3>
+            <div class="compare">
+                <div class="breed-search">
+                    <h3 class="header">Find other breed of your pet</h3>
 
-                <label class="search-bar" for="search-pet-by-breed">
-                    <input type="text" name="search-pet-by-breed" placeholder="Enter breed of your pet" value="Pers" />
-                    <i class="material-icons search-icon">search</i>
-                    <ul class="search-results">
-                        <li><a>Persian cat</a></li>
-                        <li class="active" onclick="compareResult()"><a>Persian Japanese cat</a></li>
-                        <li><a>Persian meowth</a></li>
-                        <li><a>Persian German cat</a></li>
-                    </ul>
-                </label>
+                    <label class="search-bar" for="search-pet-by-breed">
+                        <input type="text" name="search-pet-by-breed" placeholder="Enter breed of your pet"
+                            value="Pers" />
+                        <i class="material-icons search-icon">search</i>
+                        <ul class="search-results">
+                            <li><a>Persian cat</a></li>
+                            <li class="active" onclick="compareResult()"><a>Persian Japanese cat</a></li>
+                            <li><a>Persian meowth</a></li>
+                            <li><a>Persian German cat</a></li>
+                        </ul>
+                    </label>
+                </div>
             </div>
         </div>
     </div>

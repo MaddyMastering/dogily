@@ -7,7 +7,7 @@ header {
     width: calc(100vw - 6%);
     padding: 0 4% 0 2%;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     background: var(--body-bg);
 }
 
@@ -37,11 +37,19 @@ header > div > span {
     color: var(--primary-color);
 }
 
+.profile > .avatar {
+    margin: 0;
+    border-radius: 50%;
+}
+
+.profile > .avatar > img {
+    height: 50px;
+    width: 50px;
+}
+
 .profile > span {
     cursor: pointer;
     color: var(--text-label-color);
-    padding-right: 15px;
-    border-right: 1px solid var(--border-color);
 }
 
 .profile > span > a {
@@ -77,6 +85,39 @@ header > div > span {
     cursor: pointer;
 }
 
+.profile-link {
+    position: relative;
+}
+
+.profile-link > ul {
+    display: none;
+    position: absolute;
+    padding: 15px 50px 15px 20px;
+    border-radius: 0 0 20px 20px;
+    background: var(--body-bg);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+[data-mode="dark"] .profile-link > ul {
+    background: var(--body-bg-secondary);
+}
+
+.profile-link:hover > ul {
+    display: block;
+}
+
+.profile-link > ul > li {
+    line-height: 32px;
+}
+
+.profile-link > ul > li:hover {
+    color: var(--primary-color);
+}
+
+.open-profile {
+    vertical-align: sub;
+}
+
 @media screen and (max-width: 2560px) {
     header > i {
         display: none;
@@ -84,10 +125,6 @@ header > div > span {
 
     .logo {
         font-size: 30px;
-    }
-
-    .only-small-device {
-        display: none;
     }
 }
 
@@ -138,6 +175,11 @@ header > div > span {
     .logo > img {
         width: 24px;
     }
+
+    .profile > .avatar > img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -145,17 +187,13 @@ header > div > span {
         font-size: 25px !important;
     }
 
-    .only-small-device {
-        display: inline-block;
-    }
-
-    .only-small-device > a > i {
-        font-size: 25px;
-        color: #666;
-    }
-
-    .profile-link {
+    .profile-link > a {
         display: none;
+    }
+
+    .profile-link > ul {
+        margin-top: 14px;
+        margin-left: -80px;
     }
 
     header > div > span {
