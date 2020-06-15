@@ -56,3 +56,32 @@
 [data-mode="dark"] .payment {
     background: var(--body-bg-secondary);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .container > .cart-list {
+        padding: 30px;
+    }
+
+    .payment {
+        padding: 30px 30px 30px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container > .cart-list {
+        width: 94vw;
+        padding: 10px;
+    }
+
+    .container > .cart-list > ul > li > .cart-item {
+        width: 80%;
+    }
+}
