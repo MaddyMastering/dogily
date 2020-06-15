@@ -110,6 +110,10 @@ header > div > span {
     line-height: 32px;
 }
 
+.profile-link > ul > li > a {
+    color: var(--text-color);
+}
+
 .profile-link > ul > li:hover {
     color: var(--primary-color);
 }
