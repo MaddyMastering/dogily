@@ -84,4 +84,8 @@
     .container > .cart-list > ul > li > .cart-item {
         width: 80%;
     }
+
+    .payment {
+        padding: 10px;
+    }
 }

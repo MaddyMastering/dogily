@@ -64,12 +64,18 @@
 
 .service-description {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template: "form form form image";
+    grid-row-gap: 50px;
     background-color: var(--body-bg-secondary);
     opacity: 0.8;
 }
 
+.service-description > .form-description {
+    grid-area: form;
+}
+
 .service-description > .image {
+    grid-area: image;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +98,7 @@
     width: 250px;
     height: 200px;
     background: var(--grey-one);
-    margin-right: 40px;
+    margin: 20px;
 }
 
 .service-products > .service-products-grid {
@@ -108,17 +114,30 @@
 }
 
 @media screen and (max-width: 768px) {
-    .vendor-header {
+    .service-description {
+        padding: 30px 15%;
+    }
+
+    .vendor-header .service-products,
+    .tags,
+    .gallery {
         padding: 30px 7%;
+    }
+
+    .service-description {
+        grid-template: "image" "form";
     }
 }
 
 @media screen and (max-width: 480px) {
     .vendor-header,
-    .service-description,
     .tags,
     .gallery {
         padding: 10px 5%;
+    }
+
+    .service-description {
+        padding: 30px;
     }
 
     .vendor-header > .logo {
