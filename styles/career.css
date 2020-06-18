@@ -1,0 +1,93 @@
+.container {
+    background: var(--body-bg-secondary);
+}
+
+.career-description,
+.career-list {
+    padding: 50px 15%;
+}
+
+.career-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.career-description > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.career-description > img {
+    width: 100%;
+    height: auto;
+}
+
+.get-in-touch > label {
+    display: inline-flex;
+}
+
+.get-in-touch > button {
+    border-radius: 0;
+    height: 40px;
+    padding: 0 20px;
+    margin-left: -3px;
+    margin-top: 2px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    vertical-align: bottom;
+}
+
+.career-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-gap: 50px;
+}
+
+.career-list > .career {
+    padding: 30px;
+    background: var(--body-bg);
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.career-list > .career > div {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.career-list > .career > div > i {
+    background: var(--primary-color);
+    border-radius: 50%;
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+[data-mode="dark"] .career-list > .career > div > i {
+    filter: invert(0);
+}
+
+.career-list > .career > button {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .career-description {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .career-description,
+    .career-list {
+        padding: 30px;
+    }
+
+    .career-list > .career {
+        width: 80%;
+    }
+}
