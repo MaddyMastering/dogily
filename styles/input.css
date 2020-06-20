@@ -219,6 +219,47 @@ textarea {
     padding: 10px;
 }
 
+/* AUTOCOMPLETE */
+.autocomplete {
+    position: relative;
+}
+
+.autocomplete > .submenu {
+    display: none;
+    top: 45px;
+    left: 15px;
+    position: absolute;
+    padding: 20px 70px 10px 20px;
+    border-radius: 0 0 20px 20px;
+    background: var(--body-bg);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.autocomplete > input:focus + .submenu {
+    display: block;
+}
+
+.autocomplete > .submenu > li {
+    line-height: 40px;
+}
+
+.autocomplete > .submenu > li > a {
+    color: var(--text-color);
+}
+
+.autocomplete > .submenu > li:hover > a {
+    color: var(--primary-color);
+}
+
+/* ADULT PET SELECTOR */
+.modifier > i {
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: sub;
+    cursor: pointer;
+    border: 1px solid;
+}
+
 @media screen and (max-width: 768px) {
     label.icon_badge > img {
         width: 24px;

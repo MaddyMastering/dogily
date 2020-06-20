@@ -125,17 +125,37 @@
             <div class="vacations-header">
                 <h3>Find the best place for you and your pet together</h3>
                 <div class="vacation-search-form">
-                    <label class="input-rounded" for="destination">
+                    <label class="input-rounded autocomplete" for="destination">
                         <i class="material-icons">near_me</i>
-                        <input type="text" name="destination" placeholder="Destination" />
+                        <input type="text" name="destination" placeholder="Destination" autocomplete="off" />
+                        <ul class="submenu">
+                            <li><a href="">Goa, India</a></li>
+                            <li><a href="">Gokarna, Karnataka</a></li>
+                            <li><a href="">Govindapura, Gujrat</a></li>
+                        </ul>
                     </label>
                     <label class="input-rounded" for="checkin">
                         <i class="material-icons">event</i>
-                        <input type="text" name="checkin" placeholder="Check in - Check out" />
+                        <input type="text" name="checkin" placeholder="Check in - Check out"  autocomplete="off" />
                     </label>
-                    <label class="input-rounded" for="person">
+                    <label class="input-rounded autocomplete" for="person">
                         <i class="material-icons">person</i>
-                        <input type="text" name="person" placeholder="2 Adult - 1 Pet" />
+                        <input type="text" name="person" placeholder="2 Adult - 1 Pet"  autocomplete="off" />
+                        <ul class="submenu">
+                            <li><p class="modifier">
+                                <i class="material-icons">remove</i>
+                                ADULT
+                                <i class="material-icons">add</i>
+                            </p></li>
+
+                            <li>
+                                <p class="modifier">
+                                    <i class="material-icons">remove</i>
+                                    PET
+                                    <i class="material-icons">add</i>
+                                </p>
+                            </li>
+                        </ul>
                     </label>
                     <button class="primary">SEARCH</button>
                 </div>
