@@ -3,16 +3,19 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    top: -100vh;
+    transition: 0.5s all ease-in;
     transform: translate(-50%, -50%);
     background-color: var(--body-bg);
     z-index: 10;
     border-radius: 10px;
-    display: none;
+    /* display: none; */
     padding: 50px;
 }
 
 .modal.open {
-    display: block;
+    top: 50%;
+    /* display: block; */
 }
 
 .modal > .clear {
@@ -74,7 +77,7 @@
     background: linear-gradient(to bottom, var(--primary-color), #972ab1);
     transition: 0.5s all ease-in;
     z-index: 11;
-    position: absolute;
+    position: fixed;
     top: -100vh;
     justify-content: center;
     align-items: center;
@@ -99,7 +102,9 @@
 }
 
 .login-modal > .login-header > .logo > span {
+    padding-left: 10px;
     color: #fff;
+    vertical-align: super;
 }
 
 .login-modal > .clear {
@@ -196,5 +201,9 @@
         border-radius: 10px;
         padding: 20px 10px;
         overflow: auto;
+    }
+
+    .login-modal > .login-header > .logo {
+        top: 30px;
     }
 }
