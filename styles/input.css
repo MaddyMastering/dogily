@@ -275,6 +275,48 @@ label.input select {
     border: 1px solid;
 }
 
+/* gps-search-bar_PET */
+.gps-search-bar {
+    position: relative;
+}
+
+.gps-search-bar > input {
+    width: 70%;
+    height: 50px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gps-search-bar > .search-icon {
+    position: absolute;
+    right: 0;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.gps-search-results {
+    width: 80%;
+    left: 0px;
+}
+
+.gps-search-results > li {
+    padding: 0 20px;
+    line-height: 50px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.gps-search-results > li:hover {
+    background: #dcdcdc;
+}
+
+.gps-search-results > li.active {
+    background: var(--body-bg-secondary);
+}
+
 @media screen and (max-width: 768px) {
     label.icon_badge > img {
         width: 24px;

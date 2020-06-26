@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./styles/scrollbar.css" />
     <link rel="stylesheet" href="./styles/input.css" />
     <link rel="stylesheet" href="./styles/loading-screen.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/sidebar.css" />
@@ -73,7 +74,7 @@
             <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
             <div class="location">
                 <i class="material-icons">gps_fixed</i>
-                <a>#31, 7th main ..</a>
+                <a onclick="openreviewmodal()">#31, 7th main ..</a>
             </div>
             <div class="search">
                 <label class="input-rounded">
@@ -314,6 +315,22 @@
                 </div>
             </section>
         </div>
+    </div>
+
+    <div class="modal">
+        <i class="material-icons clear" onclick="closereviewmodal()">clear</i>
+        <h3>Your location address</h3>
+        <br />
+        <label class="gps-search-bar" for="search-pet-by-breed">
+            <input type="text" name="search-pet-by-breed" placeholder="Home Address"  value="#31, 7th main"/>
+            <i class="material-icons search-icon">search</i>
+        </label>
+        <ul class="gps-search-results">
+            <li><a>#31 7th main hongasandra</a></li>
+            <li><a>#31 7th main hongasandra</a></li>
+            <li><a>#31 7th main hongasandra</a></li>
+            <li><a>#31 7th main hongasandra</a></li>
+        </ul>
     </div>
 
     <footer>@2020-2021 All Rights Reserved.</footer>
