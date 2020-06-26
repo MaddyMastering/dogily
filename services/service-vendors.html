@@ -45,8 +45,8 @@
         </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
-            <li class="active"><a href="../products/products-list.html">PRODUCTS</a></li>
-            <li><a href="../services/services.html">SERVICES</a></li>
+            <li><a href="../products/products-list.html">PRODUCTS</a></li>
+            <li class="active"><a href="../services/services.html">SERVICES</a></li>
             <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
             <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
@@ -94,7 +94,7 @@
         <nav>
             <ul>
                 <li><a href="../index.html">HOME</a></li>
-                <li class="menu active">
+                <li class="menu">
                     <a href="../products/products-list.html">PRODUCTS</a>
                     <ul class="submenu">
                         <li><a href="">Dog</a></li>
@@ -104,7 +104,7 @@
                         <li><a href="">Fish</a></li>
                     </ul>
                 </li>
-                <li><a href="../services/services.html">SERVICES</a></li>
+                <li class="active"><a href="../services/services.html">SERVICES</a></li>
                 <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
                 <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
                 <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
@@ -112,26 +112,21 @@
         </nav>
 
         <div class="container">
-            <div class="banner">
-                <div>
-                    <p>orem ipsum dolor sit amet, consectet</p>
-                    <h3>Lorem ipsum dolor sit 30% consectet</h3>
-                </div>
+            <div class="category-heading">
+                <h3>Grooming executives near to your location</h3>
                 <ul>
                     <li>Sort by</li>
                     <li class="active links">DISTANCE</li>
                     <li class="links">RATING</li>
-                    <li class="links">POPULARITY</li>
+                    <li class="links">PRICE</li>
                     <li class="settings" onclick="openfilters()">
                         <i class="material-icons">tune</i>
                     </li>
                 </ul>
             </div>
 
-            <h3 class="product-header">Products near your location</h3>
-
             <div class="products-grid">
-                <a href="./product-category.html" class="product">
+                <a href="./pet-grooming.html" class="product">
                     <div class="image">
                         <div class="ribbon">
                             <img src="../images/products/ribbon.svg" />
@@ -272,35 +267,37 @@
 
         <div class="item delivery-time">
             <div class="item-header" onclick="openme('.delivery-time')">
-                <p>Delivery time</p>
+                <p>Arrival time</p>
                 <i class="material-icons">keyboard_arrow_down</i>
             </div>
             <div class="item-content">
-                <input type="range" min="0" max="60" />
+                <input type="range" min="0" max="60" /> &nbsp;60 min
+                <p></p>
             </div>
         </div>
 
-        <div class="item rating-filter">
-            <div class="item-header" onclick="openme('.rating-filter')">
-                <p>Rating</p>
+        <div class="item visit-filter">
+            <div class="item-header" onclick="openme('.visit-filter')">
+                <p>Visit</p>
                 <i class="material-icons">keyboard_arrow_down</i>
             </div>
             <div class="item-content">
-                <span class="rating active">
-                    <i class="material-icons">star</i>&nbsp;1
-                </span>
-                <span class="rating">
-                    <i class="material-icons">star</i>&nbsp;2
-                </span>
-                <span class="rating">
-                    <i class="material-icons">star</i>&nbsp;3
-                </span>
-                <span class="rating">
-                    <i class="material-icons">star</i>&nbsp;4
-                </span>
-                <span class="rating">
-                    <i class="material-icons">star</i>&nbsp;5
-                </span>
+                <ul>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" checked />
+                            <span class="check-mark"></span>
+                            <span class="checkbox-label">Store visit</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="checkbox">
+                            <input type="checkbox" />
+                            <span class="check-mark"></span>
+                            <span class="checkbox-label">Home visit</span>
+                        </label>
+                    </li>
+                </ul>
             </div>
         </div>
 

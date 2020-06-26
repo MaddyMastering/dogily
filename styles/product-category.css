@@ -43,6 +43,12 @@
     width: 45%;
 }
 
+@media screen and (max-width: 1280px) {
+    .category-grid {
+        padding: 30px 10%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .category-grid {
         grid-gap: 10px;

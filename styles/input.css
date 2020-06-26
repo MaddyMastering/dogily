@@ -110,6 +110,11 @@ form > div > label.radio {
     background: transparent;
 }
 
+form > .selection {
+    width: 280px;
+    margin-right: 30px;
+}
+
 /* RATING */
 .rating > i {
     padding: 2px 5px;
@@ -158,6 +163,7 @@ label.radio > .radio-label {
     margin-left: 10px;
     line-height: 30px;
     vertical-align: text-bottom;
+    color: var(--text-color);
 }
 
 /* CHECKBOX */
@@ -249,6 +255,15 @@ textarea {
 
 .autocomplete > .submenu > li:hover > a {
     color: var(--primary-color);
+}
+
+/* DROPDOWN */
+label.input select {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    color: var(--text-color);  
 }
 
 /* ADULT PET SELECTOR */

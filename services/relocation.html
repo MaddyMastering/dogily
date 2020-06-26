@@ -51,7 +51,7 @@
         <div class="sidebar-footer">
             <div class="sidebar-location">
                 <i class="material-icons">gps_fixed</i>
-                <p>Bengaluru</p>
+                <a>#31, 7th main ..</a>
             </div>
             <div class="sidebar-theme">
                 <span class="theme-selected"></span>
@@ -66,7 +66,7 @@
             <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
             <div class="location">
                 <i class="material-icons">gps_fixed</i>
-                <p>Bengaluru</p>
+                <a>#31, 7th main ..</a>
             </div>
             <div class="search">
                 <label class="input-rounded">
@@ -142,35 +142,50 @@
                     <p>Would you like us to book an appointment for you ?</p>
                     <br />
                     <form>
-                        <div>
+                        <div class="inline">
                             <span>NAME</span>
                             <label class="input">
                                 <input type="text" autocomplete="off" placeholder="Brownie" />
                             </label>
                         </div>
-                        <div>
-                            <span>DATE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
-                            </label>
-                        </div>
-                        <div>
-                            <span>TIME</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="HH:MM" />
-                            </label>
-                        </div>
-                        <div>
-                            <span>EMAIL</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="abc@xyz.com" />
-                            </label>
-                        </div>
-                        <div>
+                        <div class="inline">
                             <span>PHONE</span>
                             <label class="input">
                                 <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" />
                             </label>
+                        </div>
+                        <br />
+                        <div class="inline">
+                            <span>PICK UP</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="From" />
+                            </label>
+                        </div>
+                        <div class="inline">
+                            <span>DROP</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="To" />
+                            </label>
+                        </div>
+                        <br />
+                        <div class="inline">
+                            <span>PICK UP TIME</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="DD/MM/YYYY HH:MM" />
+                            </label>
+                        </div>
+                        <div class="inline">
+                            <span>DROP TIME</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="DD/MM/YYYY HH:MM" />
+                            </label>
+                        </div>
+                        <br />
+                        <div class="selection">
+                            <span>CARTON SIZE</span>
+                            <button class="button-group left primary">SMALL</button>
+                            <button class="button-group center">LARGE</button>
+                            <button class="button-group right">XL</button>
                         </div>
                         <br />
                         <button class="primary button-lg">CHECK AVAILABILITY</button>
@@ -187,11 +202,10 @@
             <div class="tags">
                 <p>We are experts in</p>
                 <ul>
-                    <li class="tag active">HAIR WASHING</li>
-                    <li class="tag active">NAIL CUTTING</li>
-                    <li class="tag active">HAIR CURLING</li>
-                    <li class="tag active">BATHING</li>
-                    <li class="tag active">HAIR COMBING</li>
+                    <li class="tag active">MEDICAL ASSIST</li>
+                    <li class="tag active">POTTY BREAKS</li>
+                    <li class="tag active">SOCIALLY DISTANCED</li>
+                    <li class="tag active">LOCATION SHARING ON REQUEST</li>
                 </ul>
             </div>
 

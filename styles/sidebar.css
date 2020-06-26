@@ -31,6 +31,7 @@
     line-height: 80px;
     font-size: 35px;
     color: #fff;
+    cursor: pointer;
 }
 
 #aside > ul > li {
@@ -70,6 +71,7 @@
 #aside > .sidebar-footer > .sidebar-location > i,
 #aside > .sidebar-footer > .sidebar-theme > i {
     color: #fff;
+    cursor: pointer;
 }
 
 #aside > .sidebar-footer > .sidebar-theme {

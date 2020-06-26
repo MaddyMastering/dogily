@@ -144,6 +144,11 @@
     filter: invert(1);
 }
 
+@media screen and (max-width: 1280px) {
+    .vacation-list {
+        padding: 30px 5%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .vacation-sub-heading {

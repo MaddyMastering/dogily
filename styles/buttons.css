@@ -57,7 +57,7 @@ button.button-lg {
 
 /* BUTTON GROUP */
 .button-group {
-    padding: 5% 8%;
+    padding: 5% 6%;
     background: var(--body-bg);
     color: var(--text-color);
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);

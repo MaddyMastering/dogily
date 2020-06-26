@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
     <link rel="stylesheet" href="../styles/service-template.css" />
+    <link rel="stylesheet" href="../libs/leaflet/leaflet.css" />
     <title>Dogily</title>
 </head>
 
@@ -51,7 +52,7 @@
         <div class="sidebar-footer">
             <div class="sidebar-location">
                 <i class="material-icons">gps_fixed</i>
-                <p>Bengaluru</p>
+                <a>#31, 7th main ..</a>
             </div>
             <div class="sidebar-theme">
                 <span class="theme-selected"></span>
@@ -66,7 +67,7 @@
             <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
             <div class="location">
                 <i class="material-icons">gps_fixed</i>
-                <p>Bengaluru</p>
+                <a>#31, 7th main ..</a>
             </div>
             <div class="search">
                 <label class="input-rounded">
@@ -139,37 +140,67 @@
 
             <div class="service-description">
                 <div class="form-description">
-                    <p>Would you like us to book an appointment for you ?</p>
+                    <p>Would you like us to book taxi for you ?</p>
                     <br />
                     <form>
-                        <div>
+                        <div class="inline">
                             <span>NAME</span>
                             <label class="input">
                                 <input type="text" autocomplete="off" placeholder="Brownie" />
                             </label>
                         </div>
-                        <div>
+                        <div class="inline">
+                            <span>PHONE</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" />
+                            </label>
+                        </div>
+                        <br />
+                        <div class="inline">
+                            <span>PICK UP</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="From" />
+                            </label>
+                        </div>
+                        <div class="inline">
+                            <span>DROP</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="To" />
+                            </label>
+                        </div>
+                        <br />
+                        <div class="inline">
                             <span>DATE</span>
                             <label class="input">
                                 <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
                             </label>
                         </div>
-                        <div>
+                        <div class="inline">
                             <span>TIME</span>
                             <label class="input">
                                 <input type="text" autocomplete="off" placeholder="HH:MM" />
                             </label>
                         </div>
-                        <div>
-                            <span>EMAIL</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="abc@xyz.com" />
-                            </label>
+                        <br />
+                        <div class="selection">
+                            <span>TAXI TYPE</span>
+                            <button class="button-group left primary">2 Seater</button>
+                            <button class="button-group center">4 Seater</button>
+                            <button class="button-group right">Auto</button>
                         </div>
-                        <div>
-                            <span>PHONE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" />
+                        <div class="inline">
+                            <p>Trip Type</p>
+                            <label class="radio">
+                                <input type="radio" name="trip" value="one" checked />
+                                <span class="radio-mark"></span>
+                                <span class="radio-label">ONE WAY</span>
+                            </label>
+                            <br />
+                            <br />
+                            <label class="radio">
+                                <input type="radio" name="trip" value="two" />
+                                <span class="radio-mark"></span>
+                                <span class="radio-label">ROUND TRIP</span>
                             </label>
                         </div>
                         <br />
@@ -219,7 +250,11 @@
 
     <footer>@2020-2021 All Rights Reserved.</footer>
     <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
+    <script type="text/javascript" src="../libs/leaflet/leaflet.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>
+    <!-- <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+    </script> -->
 </body>
 
 </html>
