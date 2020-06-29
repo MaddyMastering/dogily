@@ -22,6 +22,22 @@ function closereviewmodal() {
     document.querySelector('.modal').classList.remove('open');
 }
 
+function showimagemodal() {
+    document.querySelector('body').classList.add('no-overflow');
+    document.querySelector('.overlay').classList.add('show');
+
+    const modal = document.querySelector('.image-modal');
+    modal.classList.add('open');
+
+    modal.addEventListener('click', (e) => {
+        if (e.target.classList.contains('image-modal')) {
+            document.querySelector('body').classList.remove('no-overflow');
+            document.querySelector('.overlay').classList.remove('show');
+            modal.classList.remove('open');
+        }
+    });
+}
+
 function showpetcreatemodal() {
     document.querySelector('body').classList.remove('no-overflow');
     document.querySelector('.overlay').classList.remove('show');

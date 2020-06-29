@@ -13,9 +13,27 @@
     padding: 50px;
 }
 
+.image-modal {
+    opacity: 0;
+    pointer-events: none;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s all ease-in;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #fff;    
+}
+
 .modal.open {
     top: 50%;
     /* display: block; */
+}
+
+.image-modal.open {
+    pointer-events: all;
+    opacity: 1;
 }
 
 .modal > .clear {
