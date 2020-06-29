@@ -49,7 +49,7 @@
             <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         </div>
         <ul>
-            <li class="active"><a href="/">HOME</a></li>
+            <li class="active"><a>HOME</a></li>
             <li><a href="./products/products-list.html">PRODUCTS</a></li>
             <li><a href="./services/services.html">SERVICES</a></li>
             <li><a href="./rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
@@ -77,9 +77,14 @@
                 <a onclick="openreviewmodal()">#31, 7th main ..</a>
             </div>
             <div class="search">
-                <label class="input-rounded">
+                <label class="input-rounded autocomplete">
                     <i class="material-icons">search</i>
                     <input type="text" autocomplete="off" placeholder="Search" />
+                    <ul class="submenu">
+                        <li><a href="./products/product-detail.html">Pedigree ultimate edition</a></li>
+                        <li><a href="./products/product-detail.html">Product two</a></li>
+                        <li><a href="./products/product-detail.html">Product three</a></li>
+                    </ul>
                 </label>
             </div>
             <div class="logo">
@@ -99,6 +104,10 @@
                         <li>logout</li>
                     </ul>
                 </span>
+                <a class="cart-icon" href="./profile/cart.html">
+                    <span>3</span>
+                    <img src="./images/header/cart.svg" />
+                </a>
             </div>
             <div class="theme">
                 <span class="theme-selected"></span>
@@ -111,19 +120,41 @@
             <ul>
                 <li class="active"><a href="/">HOME</a></li>
                 <li class="menu">
-                    <a href="./products/products-list.html">PRODUCTS</a>
+                    <a>PRODUCTS
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
                     <ul class="submenu">
-                        <li><a href="">Dog</a></li>
-                        <li><a href="">Cat</a></li>
-                        <li><a href="">Bird</a></li>
-                        <li><a href="">Small pet</a></li>
-                        <li><a href="">Fish</a></li>
+                        <li><a href="./products/products-list.html">Dog</a></li>
+                        <li><a href="./products/products-list.html">Cat</a></li>
+                        <li><a href="./products/products-list.html">Bird</a></li>
+                        <li><a href="./products/products-list.html">Small pet</a></li>
+                        <li><a href="./products/products-list.html">Fish</a></li>
                     </ul>
                 </li>
-                <li><a href="./services/services.html">SERVICES</a></li>
+                <li class="menu">
+                    <a>SERVICES
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="./services/services.html">Dog</a></li>
+                        <li><a href="./services/services.html">Cat</a></li>
+                        <li><a href="./services/services.html">Bird</a></li>
+                        <li><a href="./services/services.html">Small pet</a></li>
+                        <li><a href="./services/services.html">Fish</a></li>
+                    </ul>
+                </li>
                 <li><a href="./rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
                 <li><a href="./breeds/breed-information.html">BREED INFORMATION</a></li>
-                <li><a href="./vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+                <li class="menu">
+                    <a>
+                        VACATIONS & NEIGHBOURHOOD
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="./vacations-neighbourhood/vacations.html">Vacations</a></li>
+                        <li><a href="./vacations-neighbourhood/vacations.html">Neighbourhood</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -160,10 +191,11 @@
 
             <section class="welcome">
                 <h1>Welcome to team dogily</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. In hac habitasse platea dictumst. Mi sit amet mauris commodo
-                    rem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. In hac habitasse platea dictumst.</p>
+                <p>Pets are family and to make your furry best friend feel extra special and comfortable, you need to
+                    buy the best products
+                    for them. Here’s us showing our love to all pets with our pick of pet stores in Bangalore. Glenands
+                    is probably your
+                    go-to brands for all kinds of pet feed including dog biscuits.</p>
             </section>
 
             <section class="shop-by-pet">
@@ -175,9 +207,9 @@
                     </span>
                     <span class="label">DOG</span>
                     <span class="actions">
-                        <a href="">PRODUCTS</a>
+                        <a href="./products/products-list.html">PRODUCTS</a>
                         &nbsp;&nbsp;
-                        <a href="">SERVICES</a>
+                        <a href="./services/services.html">SERVICES</a>
                     </span>
                 </div>
                 <img alt="image" class="dog-bg lazy" data-src="./images/home/shop-by-pet/dog-bg.webp" />
@@ -188,9 +220,9 @@
                     </span>
                     <span class="label">SMALL PET</span>
                     <span class="actions">
-                        <a href="">PRODUCTS</a>
+                        <a href="./products/products-list.html">PRODUCTS</a>
                         &nbsp;&nbsp;
-                        <a href="">SERVICES</a>
+                        <a href="./services/services.html">SERVICES</a>
                     </span>
                 </div>
                 <span>
@@ -205,9 +237,9 @@
                     </span>
                     <span class="label">FISH</span>
                     <span class="actions">
-                        <a href="">PRODUCTS</a>
+                        <a href="./products/products-list.html">PRODUCTS</a>
                         &nbsp;&nbsp;
-                        <a href="">SERVICES</a>
+                        <a href="./services/services.html">SERVICES</a>
                     </span>
                 </div>
                 <img alt="image" class="fish-bg lazy" data-src="./images/home/shop-by-pet/fish-bg.webp" />
@@ -218,9 +250,9 @@
                     </span>
                     <span class="label">BIRD</span>
                     <span class="actions">
-                        <a href="">PRODUCTS</a>
+                        <a href="./products/products-list.html">PRODUCTS</a>
                         &nbsp;&nbsp;
-                        <a href="">SERVICES</a>
+                        <a href="./services/services.html">SERVICES</a>
                     </span>
                 </div>
                 <img alt="image" class="bird-bg lazy" data-src="./images/home/shop-by-pet/bird-bg.webp" />
@@ -231,9 +263,9 @@
                     </span>
                     <span class="label">CAT</span>
                     <span class="actions">
-                        <a href="">PRODUCTS</a>
+                        <a href="./products/products-list.html">PRODUCTS</a>
                         &nbsp;&nbsp;
-                        <a href="">SERVICES</a>
+                        <a href="./services/services.html">SERVICES</a>
                     </span>
                 </div>
                 <img alt="image" class="cat-bg lazy" data-src="./images/home/shop-by-pet/cat-bg.webp" />
@@ -246,7 +278,7 @@
                     <a href="">TOP SELLING</a>
                 </div>
                 <div class="content">
-                    <div class="product">
+                    <a href="./products/product-detail.html" class="product">
                         <div class="product-image">
                             <img src="./images/products/product.svg" />
                         </div>
@@ -254,28 +286,34 @@
                             <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
                             <p>Rs 1999</p>
                         </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-image"></div>
+                    </a>
+                    <a href="./products/product-detail.html" class="product">
+                        <div class="product-image">
+                            <img src="./images/products/product.svg" />
+                        </div>
                         <div class="product-description">
                             <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
                             <p>Rs 1999</p>
                         </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-image"></div>
+                    </a>
+                    <a href="./products/product-detail.html" class="product">
+                        <div class="product-image">
+                            <img src="./images/products/product.svg" />
+                        </div>
                         <div class="product-description">
                             <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
                             <p>Rs 1999</p>
                         </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-image"></div>
+                    </a>
+                    <a href="./products/product-detail.html" class="product">
+                        <div class="product-image">
+                            <img src="./images/products/product.svg" />
+                        </div>
                         <div class="product-description">
                             <p>Product one <span class="ratings"><i class="material-icons">star</i>3.5</span></p>
                             <p>Rs 1999</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
@@ -322,7 +360,7 @@
         <h3>Your location address</h3>
         <br />
         <label class="gps-search-bar" for="search-pet-by-breed">
-            <input type="text" name="search-pet-by-breed" placeholder="Home Address"  value="#31, 7th main"/>
+            <input type="text" name="search-pet-by-breed" autocomplete="off" placeholder="Home Address" value="#31, 7th main" />
             <i class="material-icons search-icon">search</i>
         </label>
         <ul class="gps-search-results">

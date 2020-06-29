@@ -82,6 +82,7 @@
     position: relative;
     background: var(--body-bg-grey-dark);
     height: calc(100vh - 160px);
+    min-height: 740px;
 }
 
 .shop-by-pet > h2 {
@@ -255,6 +256,8 @@
     height: 400px;
     display: inline-block;
     margin: 10px;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
 .products > .content > .product > .product-image {

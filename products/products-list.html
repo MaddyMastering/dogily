@@ -49,7 +49,16 @@
             <li><a href="../services/services.html">SERVICES</a></li>
             <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
-            <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+            <li class="menu">
+                    <a>
+                        VACATIONS & NEIGHBOURHOOD
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="./vacations-neighbourhood/vacations.html">Vacations</a></li>
+                        <li><a href="./vacations-neighbourhood/vacations.html">Neighbourhood</a></li>
+                    </ul>
+                </li>
         </ul>
         <div class="sidebar-footer">
             <div class="sidebar-location">
@@ -69,12 +78,17 @@
             <i class="material-icons menu" onclick="sidemenuopen()">menu</i>
             <div class="location">
                 <i class="material-icons">gps_fixed</i>
-                <a>#31, 7th main ..</a>
+                <a onclick="openreviewmodal()">#31, 7th main ..</a>
             </div>
             <div class="search">
-                <label class="input-rounded">
+                <label class="input-rounded autocomplete">
                     <i class="material-icons">search</i>
                     <input type="text" autocomplete="off" placeholder="Search" />
+                    <ul class="submenu">
+                        <li><a href="./product-detail.html">Pedigree ultimate edition</a></li>
+                        <li><a href="./product-detail.html">Product two</a></li>
+                        <li><a href="./product-detail.html">Product three</a></li>
+                    </ul>
                 </label>
             </div>
             <div class="logo">
@@ -95,19 +109,41 @@
             <ul>
                 <li><a href="../index.html">HOME</a></li>
                 <li class="menu active">
-                    <a href="../products/products-list.html">PRODUCTS</a>
+                    <a>PRODUCTS
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
                     <ul class="submenu">
-                        <li><a href="">Dog</a></li>
-                        <li><a href="">Cat</a></li>
-                        <li><a href="">Bird</a></li>
-                        <li><a href="">Small pet</a></li>
-                        <li><a href="">Fish</a></li>
+                        <li><a >Dog</a></li>
+                        <li><a >Cat</a></li>
+                        <li><a >Bird</a></li>
+                        <li><a >Small pet</a></li>
+                        <li><a >Fish</a></li>
                     </ul>
                 </li>
-                <li><a href="../services/services.html">SERVICES</a></li>
+                <li class="menu">
+                    <a>SERVICES
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="../services/services.html">Dog</a></li>
+                        <li><a href="../services/services.html">Cat</a></li>
+                        <li><a href="../services/services.html">Bird</a></li>
+                        <li><a href="../services/services.html">Small pet</a></li>
+                        <li><a href="../services/services.html">Fish</a></li>
+                    </ul>
+                </li>
                 <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
                 <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
-                <li><a href="../vacations-neighbourhood/vacations.html">VACATIONS & NEIGHBOURHOOD</a></li>
+                <li class="menu">
+                    <a>
+                        VACATIONS & NEIGHBOURHOOD
+                        <i class="material-icons open-profile">keyboard_arrow_down</i>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="../vacations-neighbourhood/vacations.html">Vacations</a></li>
+                        <li><a href="../vacations-neighbourhood/vacations.html">Neighbourhood</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -233,7 +269,7 @@
         </div>
         <div class="item pets-filter">
             <div class="item-header" onclick="openme('.pets-filter')">
-                <p>Pets</p>
+                <p>Breeds</p>
                 <i class="material-icons">keyboard_arrow_down</i>
             </div>
             <div class="item-content">
@@ -242,28 +278,28 @@
                         <label class="checkbox">
                             <input type="checkbox" />
                             <span class="check-mark"></span>
-                            <span class="checkbox-label">DOG</span>
+                            <span class="checkbox-label">Breed one</span>
                         </label>
                     </li>
                     <li>
                         <label class="checkbox">
                             <input type="checkbox" />
                             <span class="check-mark"></span>
-                            <span class="checkbox-label">CAT</span>
+                            <span class="checkbox-label">Breed one</span>
                         </label>
                     </li>
                     <li>
                         <label class="checkbox">
                             <input type="checkbox" />
                             <span class="check-mark"></span>
-                            <span class="checkbox-label">RABBIT</span>
+                            <span class="checkbox-label">Breed one</span>
                         </label>
                     </li>
                     <li>
                         <label class="checkbox">
                             <input type="checkbox" />
                             <span class="check-mark"></span>
-                            <span class="checkbox-label">BIRD</span>
+                            <span class="checkbox-label">Breed one</span>
                         </label>
                     </li>
                 </ul>
@@ -276,7 +312,8 @@
                 <i class="material-icons">keyboard_arrow_down</i>
             </div>
             <div class="item-content">
-                <input type="range" min="0" max="60" />
+                <input type="range" min="0" max="60" />&nbsp;60 min
+                <p></p>
             </div>
         </div>
 

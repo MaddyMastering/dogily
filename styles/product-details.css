@@ -39,15 +39,15 @@
 }
 
 .add-to-cart,
-.cart-icon {
+.add-to-cart-icon {
     width: 250px;
 }
 
-.cart-icon > .button-group {
+.add-to-cart-icon > .button-group {
     border: none;
 }
 
-.cart-icon > .button-group.center {
+.add-to-cart-icon > .button-group.center {
     vertical-align: bottom;
     height: 48px;
 }
@@ -64,7 +64,7 @@
     filter: invert(1);
 }
 
-[data-mode="dark"] .cart-icon > .button-group > i {
+[data-mode="dark"] .add-to-cart-icon > .button-group > i {
     filter: invert(0);
 }
 
