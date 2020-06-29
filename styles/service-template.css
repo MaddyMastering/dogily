@@ -71,8 +71,56 @@
     opacity: 0.8;
 }
 
+.service-description.success {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), var(--success-color)) !important;
+}
+
+.service-description.failure {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), var(--danger-color)) !important;
+}
+
 .service-description > .form-description {
     grid-area: form;
+}
+
+.service-description.success > .form-description,
+.service-description.failure > .form-description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-description > .form-description > .status-icon.success,
+.service-description > .form-description > .status-icon.failure {
+    margin: 50px;
+}
+
+.service-description > .form-description > .status-icon.success > i {
+    color: var(--success-color);
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--success-color);
+}
+
+.service-description > .form-description > .status-icon.failure > i {
+    color: var(--danger-color);
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--danger-color);
+}
+
+[data-mode="dark"] .service-description > .form-description > .status-icon.success > i,
+[data-mode="dark"] .service-description > .form-description > .status-icon.failure > i {
+    filter: invert(0);
 }
 
 .service-description > .image {

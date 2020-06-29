@@ -16,6 +16,7 @@ button[disabled]:hover {
 }
 
 form > button {
+    margin-right: 30px;
     width: 250px;
 }
 
@@ -30,10 +31,22 @@ button.primary > i {
     float: right;
 }
 
+/* CANCEL BUTTON */
+button.cancel {
+    border: 1px solid var(--border-color);
+    background: #fff;
+}
+
 /* GREEN BUTTON */
 button.success {
-    color: #000;
-    background: #a2e159;
+    color: #fff;
+    background: var(--success-color);
+}
+
+/* RED BUTTON */
+button.danger {
+    color: #fff;
+    background-color: var(--danger-color);
 }
 
 /* WHITE BUTTON */

@@ -336,6 +336,37 @@ label.input select {
     height: 0.1px;
 }
 
+/* TIME SLOTS */
+.time-slots > li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--body-bg-secondary);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.time-slots > li.active {
+    background: var(--primary-color);
+}
+
+.time-slots > li > a {
+    color: var(--text-color);
+}
+
+.time-slots > li:hover > a {
+    color: var(--primary-color);
+}
+
+.time-slots > li.active > a {
+    color: #fff;
+}
+
+.time-slots > li:hover.active > a {
+    filter: brightness(0.8);
+}
+
 @media screen and (max-width: 768px) {
     label.icon_badge > img {
         width: 24px;

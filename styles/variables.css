@@ -8,6 +8,9 @@
     --primary-hover-color: rgba(33, 133, 208, 0.8);
     --primary-color-filter: invert(49%) sepia(21%) saturate(4938%) hue-rotate(183deg) brightness(86%) contrast(88%);
 
+    --success-color: #4CAF50;
+    --danger-color: #F44336;
+
     --grey-one: rgb(243, 243, 243);
 
     --footer-background-color: rgba(0, 0, 0, 0.8);
@@ -33,6 +36,9 @@
     --primary-color: #2185d0;
     --primary-hover-color: rgba(33, 133, 208, 0.8);
     --primary-color-filter: invert(49%) sepia(21%) saturate(4938%) hue-rotate(183deg) brightness(86%) contrast(88%);
+
+    --success-color: #4CAF50;
+    --danger-color: #F44336;
 
     --grey-one: rgba(243, 243, 243, 0.8);
 

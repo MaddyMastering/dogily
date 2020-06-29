@@ -18,10 +18,8 @@
     <link rel="stylesheet" href="../styles/fonts.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/scrollbar.css" />
-    <link rel="stylesheet" href="../styles/loading-screen.css" />
     <link rel="stylesheet" href="../styles/input.css" />
     <link rel="stylesheet" href="../styles/buttons.css" />
-    <link rel="stylesheet" href="../styles/modal.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
@@ -182,81 +180,51 @@
                 </div>
             </div>
 
-            <div class="service-description">
-               <div class="form-description">
-                    <p>Would you like us to book an appointment for you ?</p>
+            <div class="service-description failure">
+                <div class="form-description">
+                    <div class="status-icon failure">
+                        <i class="material-icons">clear</i>
+                    </div>
+                    <p>Your Time slot is not available. Please choose available slots</p>
                     <br />
-                    <form action="./pet-grooming-success.html">
-                        <div class="inline">
-                            <span>NAME</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="Brownie" />
-                            </label>
-                        </div>
-                        <div class="inline">
-                            <span>PHONE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" />
-                            </label>
-                        </div>
-                        <br />
-                        <div class="inline">
-                            <span>DATE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
-                            </label>
-                        </div>
-                        <div class="inline">
-                            <span>TIME</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="HH:MM" />
-                            </label>
-                        </div>
-                        <br />
-                        <div class="inline">
-                            <span>LOCATION</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="HOME ADDRESS" />
-                            </label>
-                        </div>
-                        <br />
-                        <br />
-                        <button class="primary button-lg">CHECK AVAILABILITY</button>
+
+                    <ul class="time-slots">
+                        <li class="slot active"><a href="">12 JUN 10:30 am</a></li>
+                        <li class="slot"><a href="">12 JUN 10:30 am</a></li>
+                        <li class="slot"><a href="">12 JUN 10:30 am</a></li>
+                        <li class="slot"><a href="">12 JUN 10:30 am</a></li>
+                    </ul>
+
+                    <br />
+                    <form>
+                        <button class="cancel button-lg inline">CANCEL</button>
+                        <button class="success button-lg inline">CONTINUE</button>
                     </form>
                 </div>
 
                 <div class="image">
-                    <img src="../images/services/pet-grooming.svg" />
+                    <img src="../images/services/vet-visit.svg" />
                     <br />
-                    <h3>PET GROOMING</h3>
+                    <h3>VET VISIT</h3>
                 </div>
             </div>
 
             <div class="tags">
                 <p>We are experts in</p>
                 <ul>
-                    <li class="tag active">HAIR WASHING</li>
-                    <li class="tag active">NAIL CUTTING</li>
-                    <li class="tag active">HAIR CURLING</li>
-                    <li class="tag active">BATHING</li>
-                    <li class="tag active">HAIR COMBING</li>
+                    <li class="tag active">METHODICAL APPROACH</li>
+                    <li class="tag active">EMPATHY & SENSITIVITY</li>
+                    <li class="tag active">MANUAL DEXTERITY</li>
+                    <li class="tag active">SCIENTIFIC ABILITY</li>
                 </ul>
             </div>
 
             <div class="gallery">
                 <p>Gallery</p>
-                <div onclick="showimagemodal()">
-                    <img src="../images/services/gallery-1.jpg" />
-                </div>
-                <div onclick="showimagemodal()">
-                    <img src="../images/services/gallery-1.jpg" />
-                </div>
-                <div onclick="showimagemodal()">
-                    <img src="../images/services/gallery-1.jpg" />
-                </div>
-                <div onclick="showimagemodal()">
-                    <img src="../images/services/gallery-1.jpg" />
-                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
 
             <div class="vendor-footer">
@@ -271,11 +239,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="image-modal center">
-        <img src="../images/services/gallery-1.jpg" />
-        <p>Gallery image caption</p>
     </div>
 
     <footer>@2020-2021 All Rights Reserved.</footer>
