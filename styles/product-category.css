@@ -44,6 +44,7 @@
 }
 
 @media screen and (max-width: 1366px) {
+    .category-heading,
     .category-grid {
         padding: 30px 10%;
     }

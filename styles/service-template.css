@@ -151,6 +151,17 @@
     padding: 20px;
 }
 
+@media screen and (max-width: 1366px) {
+    .vendor-header,
+    .service-products,
+    .tags,
+    .service-description,
+    .service-vacations,
+    .gallery {
+        padding: 30px 9%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .vendor-header,
     .service-products,

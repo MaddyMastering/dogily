@@ -96,9 +96,10 @@
 }
 
 .login-modal > .login-header > .logo > img {
-    padding: 5px;
-    background: #fff;
-    border-radius: 50%;
+    padding: 20px;
+    filter: invert(1);
+    /* background: #fff;
+    border-radius: 50%; */
 }
 
 .login-modal > .login-header > .logo > span {

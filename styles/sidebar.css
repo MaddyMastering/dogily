@@ -16,9 +16,10 @@
 }
 
 .sidebar-header > .logo > img {
-    background: #fff;
-    border-radius: 50%;
+    /* background: #fff;
+    border-radius: 50%; */
     padding: 5px;
+    filter: invert(1);
 }
 
 .sidebar-header > .logo > span {
