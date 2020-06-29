@@ -185,6 +185,12 @@ a.cart-icon > span {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    header {
+        grid-template-columns: 1fr 3fr 1.5fr;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         grid-template-columns: 1fr 2fr 1.5fr;

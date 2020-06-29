@@ -144,7 +144,7 @@
     filter: invert(1);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
     .vacation-list {
         padding: 30px 5%;
     }
