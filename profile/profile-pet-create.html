@@ -187,131 +187,50 @@
             </div>
 
             <div class="pets">
-                <h3>Pets</h3>
+                <h3>Basic infomation of your pet</h3>                
 
-                <div class="pet-list">
-                    <div class="pet-card" onclick="viewPet()">
-                        <div class="pet-avatar">
-                            <img class="lazy" src="../images/profile/pet-avatar.png" />
+                <div class="create-pet-modal">
+                    <form>
+                        <div class="image">
+                            <!-- <img src="../images/breed-information/dog.png" /> -->
+                            <label class="input-file-upload">
+                                <i class="material-icons">create</i>
+                                <input type="file" name="file" />
+                            </label>
                         </div>
-                        <div class="pet-description">
-                            <div class="info">
-                                <span>Brownie</span>
-                                <span class="breed">Golden retriever</span>
-                            </div>
-                            <div class="icons">
-                                <div class="sex">
-                                    <span>
-                                        <img src="../images/profile/female.svg" />
-                                    </span>
-                                    <span class="label">FEMALE</span>
-                                </div>
-                                <div class="age">
-                                    <span>12</span>
-                                    <span class="label">YEARS</span>
-                                </div>
-                                <div class="weight">
-                                    <span>52</span>
-                                    <span class="label">KGS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <i class="material-icons clear">clear</i>
-                    </div>
+                        <p>
+                            <span class="active"><img src="../images/profile/male.svg" /> MALE</span>
+                            <span><img src="../images/profile/female.svg" /> FEMALE</span>
+                        </p>
 
-                    <div class="pet-card">
-                        <div class="pet-avatar">
-                            <img class="lazy" src="../images/profile/pet-avatar.png" />
+                        <div>
+                            <span>NAME</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="Brownie" />
+                            </label>
                         </div>
-                        <div class="pet-description">
-                            <div class="info">
-                                <span>Brownie</span>
-                                <span class="breed">Golden retriever</span>
-                            </div>
-                            <div class="icons">
-                                <div class="sex">
-                                    <span>
-                                        <img src="../images/profile/male.svg" />
-                                    </span>
-                                    <span class="label">MALE</span>
-                                </div>
-                                <div class="age">
-                                    <span>12</span>
-                                    <span class="label">YEARS</span>
-                                </div>
-                                <div class="weight">
-                                    <span>52</span>
-                                    <span class="label">KGS</span>
-                                </div>
-                            </div>
+                        <div>
+                            <span>DOB</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="DD/MM/YYY" />
+                            </label>
                         </div>
-                        <i class="material-icons clear">clear</i>
-                    </div>
-
-                    <div class="pet-card">
-                        <div class="pet-avatar">
-                            <img class="lazy" src="../images/profile/pet-avatar.png" />
+                        <div>
+                            <span>BREED</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="Breed" />
+                            </label>
                         </div>
-                        <div class="pet-description">
-                            <div class="info">
-                                <span>Brownie</span>
-                                <span class="breed">Golden retriever</span>
-                            </div>
-                            <div class="icons">
-                                <div class="sex">
-                                    <span>
-                                        <img src="../images/profile/male.svg" />
-                                    </span>
-                                    <span class="label">MALE</span>
-                                </div>
-                                <div class="age">
-                                    <span>12</span>
-                                    <span class="label">YEARS</span>
-                                </div>
-                                <div class="weight">
-                                    <span>52</span>
-                                    <span class="label">KGS</span>
-                                </div>
-                            </div>
+                        <div>
+                            <span>WEIGHT</span>
+                            <label class="input">
+                                <input type="text" autocomplete="off" placeholder="00 lbs" />
+                            </label>
                         </div>
-                        <i class="material-icons clear">clear</i>
-                    </div>
-
-                    <div class="pet-card">
-                        <div class="pet-avatar">
-                            <img class="lazy" src="../images/profile/pet-avatar.png" />
-                        </div>
-                        <div class="pet-description">
-                            <div class="info">
-                                <span>Brownie</span>
-                                <span class="breed">Golden retriever</span>
-                            </div>
-                            <div class="icons">
-                                <div class="sex">
-                                    <span>
-                                        <img src="../images/profile/male.svg" />
-                                    </span>
-                                    <span class="label">MALE</span>
-                                </div>
-                                <div class="age">
-                                    <span>12</span>
-                                    <span class="label">YEARS</span>
-                                </div>
-                                <div class="weight">
-                                    <span>52</span>
-                                    <span class="label">KGS</span>
-                                </div>
-                            </div>
-                        </div>
-                        <i class="material-icons clear">clear</i>
-                    </div>
+                        <button class="primary">SAVE</button>
+                    </form>
                 </div>
-
             </div>
-
-            <a href="./profile-pet-create.html">
-                <i class="material-icons add-pet-icon">add</i>
-            </a>
         </div>
     </div>
 

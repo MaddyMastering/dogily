@@ -155,15 +155,24 @@
 .create-pet-modal > form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 .create-pet-modal > form > .image {
     width: 150px;
     height: 150px;
+    margin-left: 50px;
     border-radius: 50%;
+    position: relative;
     background: var(--body-bg-secondary);
+}
+
+.create-pet-modal > form > .image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.8;
 }
 
 .create-pet-modal > form > div {
@@ -185,6 +194,12 @@
 
 .create-pet-modal > form > p > span > img {
     margin-right: 10px;
+}
+
+.create-pet-modal > form > button.primary {
+    padding: 0;
+    height: 40px;
+    line-height: 1px;
 }
 
 [data-mode="dark"] .create-pet-modal > form > p > span > img {

@@ -267,7 +267,7 @@ label.input select {
     outline: none;
     width: 100%;
     background: transparent;
-    color: var(--text-color);  
+    color: var(--text-color);
 }
 
 /* ADULT PET SELECTOR */
@@ -319,6 +319,21 @@ label.input select {
 
 .gps-search-results > li.active {
     background: var(--body-bg-secondary);
+}
+
+/* FILE UPLOAD */
+.input-file-upload {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 35%;
+    background: transparent;
+}
+
+.input-file-upload > input[type="file"] {
+    visibility: hidden;
+    width: 0.1px;
+    height: 0.1px;
 }
 
 @media screen and (max-width: 768px) {
