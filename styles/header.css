@@ -97,7 +97,7 @@ a.cart-icon > span {
     filter: invert(1);
 }
 
-[data-mode=dark] .logo > img {
+[data-mode="dark"] .logo > img {
     filter: invert(1);
 }
 
@@ -234,5 +234,10 @@ a.cart-icon > span {
 
     header > div > span {
         margin: 0 10px;
+    }
+
+    .logo > img {
+        width: 40%;
+        height: auto;
     }
 }

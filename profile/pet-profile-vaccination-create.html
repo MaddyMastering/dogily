@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
     <link rel="stylesheet" href="../styles/profile-pet.css" />
+    <link rel="stylesheet" href="../styles/vaccination-infomation.css" />
     <title>Dogily</title>
 </head>
 
@@ -36,7 +37,7 @@
         <div class="sidebar-header">
             <div class="logo">
                 <img alt="image" src="../icons/new-logo.svg">
-                
+
             </div>
             <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         </div>
@@ -85,7 +86,7 @@
             </div>
             <div class="logo">
                 <img alt="image" src="../icons/new-logo.svg">
-                
+
             </div>
             <div class="profile">
                 <span class="avatar">
@@ -153,6 +154,7 @@
                 </li>
             </ul>
         </nav>
+
         <div class="container">
             <div class="pet-profile">
                 <div class="back">
@@ -193,11 +195,11 @@
                     <img class="lazy" src="../images/profile/pet-profile-nav/food.svg" />
                     <p>Food</p>
                 </a>
-                <a href="./profile-pet-vaccination.html">
+                <a class="active" href="./profile-pet-vaccination.html">
                     <img class="lazy" src="../images/profile/pet-profile-nav/vaccination.svg" />
                     <p>Vaccination</p>
                 </a>
-                <a class="active" href="./pet-profile-prescription.html">
+                <a href="./pet-profile-prescription.html">
                     <img class="lazy" src="../images/profile/pet-profile-nav/prescription.svg" />
                     <p>Prescription</p>
                 </a>
@@ -213,38 +215,77 @@
 
             <div class="history">
                 <div class="header">
-                    <p>PRESCRIPTION HISTORY</p>
+                    <p>VACCINATION HISTORY</p>
                     <i class="material-icons" id="icon-close-history" onclick="closehistory()">clear</i>
                 </div>
-                <div class="content">
+                <div class="vaccination-content">
                     <ul>
                         <li>
-                            <div>
-                                <p>12th May 2020</p>
-                                <p>10:45 am</p>
-                            </div>
-                            <div>
-                                <p>20 min</p>
-                            </div>
+                            <p>Polio</p>
+                            <p>12th May</p>
+                            <p>10:45am</p>
                         </li>
-                        <li>
-                            <div>
-                                <p>12th May 2020</p>
-                                <p>10:45 am</p>
-                            </div>
-                            <div>
-                                <p>20 min</p>
-                            </div>
+                        <li id="highlightme" onclick="showvaccinationcontent()">
+                            <p>Insulin</p>
+                            <p>12th May</p>
+                            <p>10:45am</p>
                         </li>
                     </ul>
                 </div>
             </div>
 
+            <div id="info-content" class="information close">
+                <div class="header">
+                    <i class="material-icons clear" onclick="closevaccinationcontent()">clear</i>
+                    <p>INFORMATION</p>
+                </div>
+                <div class="hospital">
+                    <div class="image">
+                    </div>
+                    <div class="description">
+                        <p>Narayana veternary clinic</p>
+                        <p>Bommanahalli, Bengaluru</p>
+                    </div>
+                </div>
+                <div class="attachments">
+                    <p class="label">ATTACHMENTS</p>
+                    <ul>
+                        <li>
+                            <p><i class="material-icons">attachment</i>&nbsp;Bill.pdf</p>
+                        </li>
+                        <li>
+                            <p><i class="material-icons">attachment</i>&nbsp;Bill-2.pdf</p>
+                        </li>
+                        <li>
+                            <p><i class="material-icons">attachment</i>&nbsp;vaccination.jpg</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <span>
+                        <a>Attach Reciept</a>
+                    </span>
+                    <span>
+                        <a>Edit Record</a>
+                    </span>
+                    <span>
+                        <a>Delete Record</a>
+                    </span>
+                </div>
+            </div>
+
             <div id="notify-content" class="information">
-                <p>Do you want us remind you for next pet prescription ?</p>
+                <p>Provide previous vaccination information of your pet</p>
                 <br />
                 <br />
                 <form>
+                    <div>
+                        <span>NAME</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="Name" />
+                        </label>
+                    </div>
+
                     <div>
                         <span>DATE</span>
                         <label class="input">
@@ -259,22 +300,30 @@
                         </label>
                     </div>
 
-                    <div class="selection">
-                        <span>RECURRING</span>
-                        <button class="button-group left primary">DAILY</button>
-                        <button class="button-group center">MONTHLY</button>
-                        <button class="button-group right">WEEKLY</button>
+                    <div>
+                        <span>CLINIC</span>
+                        <label class="input">
+                            <select>
+                                <option selected>SELECT CLINIC</option>
+                                <option>CLINIC ONE</option>
+                                <option>CLINIC TWO</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        <span>UPLOAD</span>
+                        <label class="input">
+                            <input type="file" />
+                        </label>
                     </div>
 
                     <br />
                     <div>
-                        <button class="primary button-lg notify-button">NOTIFY
-                            <i class="material-icons">send</i>
-                        </button>
+                        <button class="primary">SAVE</button>
                     </div>
                 </form>
-                <img class="profile-nav-bg" src="../images/profile/profile-pet-bg/prescription.svg" />
-                <span id="icon-show-history" onclick="openhistory()">SHOW HISTORY</span>
+                <img class="profile-nav-bg" src="../images/profile/profile-pet-bg/vaccination.svg" />
             </div>
         </div>
 

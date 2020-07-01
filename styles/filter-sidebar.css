@@ -1,5 +1,5 @@
 .filter-sidebar {
-    position: absolute;
+    position: fixed;
     right: -400px;
     top: 0;
     height: 100vh;
@@ -86,10 +86,6 @@
 
 .filter-sidebar > .item.open {
     background: var(--body-bg-secondary);
-}
-
-.filter-sidebar > .item.open > .item-header > i {
-    /* transform: rotateZ(180deg); */
 }
 
 .filter-sidebar > .item.open > .item-content {

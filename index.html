@@ -20,11 +20,13 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/scrollbar.css" />
     <link rel="stylesheet" href="./styles/input.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
     <link rel="stylesheet" href="./styles/loading-screen.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/chat.css" />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./libs/glider/glider.min.css" />
     <title>Dogily</title>
@@ -44,7 +46,7 @@
         <div class="sidebar-header">
             <div class="logo">
                 <img alt="image" src="./icons/new-logo.svg">
-                
+
             </div>
             <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         </div>
@@ -334,7 +336,7 @@
                 <div class="links">
                     <p class="header">Others</p>
                     <p><a href="">Blogs</a></p>
-                    <p><a href="">Career</a></p>
+                    <p><a href="./career.html">Career</a></p>
                     <p><a href="">About us</a></p>
                     <p><a href="">About us</a></p>
                 </div>
@@ -359,7 +361,8 @@
         <h3>Your location address</h3>
         <br />
         <label class="gps-search-bar" for="search-pet-by-breed">
-            <input type="text" name="search-pet-by-breed" autocomplete="off" placeholder="Home Address" value="#31, 7th main" />
+            <input type="text" name="search-pet-by-breed" autocomplete="off" placeholder="Home Address"
+                value="#31, 7th main" />
             <i class="material-icons search-icon">search</i>
         </label>
         <ul class="gps-search-results">
@@ -368,6 +371,38 @@
             <li><a>#31 7th main hongasandra</a></li>
             <li><a>#31 7th main hongasandra</a></li>
         </ul>
+    </div>
+
+    <div class="float-chat-icon">
+        <div class="chat" onclick="toggleChat()">
+            <i class="material-icons">chat</i>
+        </div>
+
+        <div class="close" onclick="toggleChat()">
+            <i class="material-icons">clear</i>
+        </div>
+    </div>
+
+    <div class="chat-message-box">
+        <p>Chat with us</p>
+        <ul>
+            <li class="sent">
+                <span class="text">tempor incididunt utd tempor
+                    ut d incididunt ut</span>
+                <span class="date">Tue 2:46</span>
+            </li>
+            <li class="recieved">
+                <span class="text">tempor incididunt utd tempor
+                    ut d incididunt ut</span>
+                <span class="date">Tue 2:46</span>
+            </li>
+        </ul>
+        <div class="footer">
+            <label class="input-rounded">
+                <input type="text" placeholder="Type here" />
+            </label>
+            <button class="chat-send">Send</button>
+        </div>
     </div>
 
     <footer>@2020-2021 All Rights Reserved.</footer>

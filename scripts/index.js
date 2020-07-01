@@ -48,6 +48,17 @@ function openlogin() {
     document.querySelector('body').classList.add('no-overflow');
     document.querySelector('.overlay').classList.add('show');
     document.querySelector('.login-modal').classList.add('open');
+    document.querySelector('#register').style.display = 'none';
+}
+
+function showlogin() {
+    document.querySelector('#login').style.display = 'block';
+    document.querySelector('#register').style.display = 'none';
+}
+
+function showregister() {
+    document.querySelector('#login').style.display = 'none';
+    document.querySelector('#register').style.display = 'block';
 }
 
 function closelogin() {
@@ -82,6 +93,10 @@ function compare() {
 
 function compareResult() {
     document.location.href = './breed-result.html'
+}
+
+function toggleChat() {
+    document.querySelector('.float-chat-icon').classList.toggle('open');
 }
 
 function initCarousel() {

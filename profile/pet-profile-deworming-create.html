@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
-    <link rel="stylesheet" href="../styles/service-template.css" />
+    <link rel="stylesheet" href="../styles/profile-pet.css" />
     <title>Dogily</title>
 </head>
 
@@ -36,14 +36,14 @@
         <div class="sidebar-header">
             <div class="logo">
                 <img alt="image" src="../icons/new-logo.svg">
-                
+
             </div>
             <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         </div>
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../products/products-list.html">PRODUCTS</a></li>
-            <li class="active"><a href="../services/services.html">SERVICES</a></li>
+            <li><a href="../services/services.html">SERVICES</a></li>
             <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
             <li class="menu">
@@ -85,7 +85,7 @@
             </div>
             <div class="logo">
                 <img alt="image" src="../icons/new-logo.svg">
-                
+
             </div>
             <div class="profile">
                 <span class="avatar">
@@ -127,16 +127,16 @@
                         <li><a href="../products/products-list.html">Fish</a></li>
                     </ul>
                 </li>
-                <li class="menu active">
+                <li class="menu">
                     <a>SERVICES
                         <i class="material-icons open-profile">keyboard_arrow_down</i>
                     </a>
                     <ul class="submenu">
-                        <li><a href="./services.html">Dog</a></li>
-                        <li><a href="./services.html">Cat</a></li>
-                        <li><a href="./services.html">Bird</a></li>
-                        <li><a href="./services.html">Small pet</a></li>
-                        <li><a href="./services.html">Fish</a></li>
+                        <li><a href="../services/services.html">Dog</a></li>
+                        <li><a href="../services/services.html">Cat</a></li>
+                        <li><a href="../services/services.html">Bird</a></li>
+                        <li><a href="../services/services.html">Small pet</a></li>
+                        <li><a href="../services/services.html">Fish</a></li>
                     </ul>
                 </li>
                 <li><a href="../rescue/adoptions-rescue.html">ADOPTIONS & RESCUE</a></li>
@@ -155,144 +155,152 @@
         </nav>
 
         <div class="container">
-            <div class="vendor-header">
-                <div class="logo">
+            <div class="pet-profile">
+                <div class="back">
+                    <a class="link" href="./profile.html"><i class="material-icons">chevron_left</i>BACK</a>
                 </div>
-                <div class="details">
-                    <h3>Reliance pet store</h3>
-                    <p>Bommanahalli, Bengaluru</p>
-                    <div class="rating-box">
-                        <p>Ratings</p>
-                        <p>3.5</p>
-                    </div>
-                    <div class="rating-box">
-                        <p>Reviews</p>
-                        <p>129</p>
-                    </div>
-                    <div class="rating-box center">
-                        <p><i class="material-icons">map</i></p>
-                        <p><a target="_blank" href="https://www.google.co.in/maps">View on map</a></p>
-                    </div>
-                    <div class="review-box center">
-                        <p><i class="material-icons">create</i></p>
-                        <p><a onclick="openreviewmodal()">Add a review</a></p>
-                    </div>
+                <div class="name">
+                    <span>Brownie</span>
+                    <span class="breed">Golden retriever</span>
+                </div>
+                <div class="avatar">
+                    <img class="lazy" src="../images/profile/pet-avatar.png" />
+                </div>
+                <div class="sex">
+                    <span>
+                        <img src="../images/profile/female.svg" />
+                    </span>
+                    <span class="label">FEMALE</span>
+                </div>
+                <div class="age">
+                    <span>12</span>
+                    <span class="label">YEARS OLD</span>
+                </div>
+                <div class="weight">
+                    <span>52</span>
+                    <span class="label">KGS</span>
+                </div>
+                <div class="edit">
+                    <a class="link" href="./profile-pet-create.html">EDIT<i class="material-icons">edit</i></a>
                 </div>
             </div>
 
-            <div class="service-description">
-                <div class="form-description">
-                    <p>Would you like us to book an appointment for you ?</p>
+            <div class="pet-profile-nav">
+                <a href="./profile-pet-walking.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/walking.svg" />
+                    <p>Walking</p>
+                </a>
+                <a href="./profile-pet-food.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/food.svg" />
+                    <p>Food</p>
+                </a>
+                <a href="./profile-pet-vaccination.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/vaccination.svg" />
+                    <p>Vaccination</p>
+                </a>
+                <a href="./pet-profile-prescription.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/prescription.svg" />
+                    <p>Prescription</p>
+                </a>
+                <a class="active" href="./pet-profile-deworming.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/deworming.svg" />
+                    <p>Deworming</p>
+                </a>
+                <a href="./pet-profile-services.html">
+                    <img class="lazy" src="../images/profile/pet-profile-nav/services.svg" />
+                    <p>Services</p>
+                </a>
+            </div>
+
+            <div class="history">
+                <div class="header">
+                    <p>DEWORMING HISTORY</p>
+                    <i class="material-icons" id="icon-close-history" onclick="closehistory()">clear</i>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <div>
+                                <p>12th May 2020</p>
+                                <p>10:45 am</p>
+                            </div>
+                            <div>
+                                <p>20 min</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>12th May 2020</p>
+                                <p>10:45 am</p>
+                            </div>
+                            <div>
+                                <p>20 min</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="notify-content" class="information">
+                <p>Provide previous deworming information of your pet</p>
+                <br />
+                <br />
+                <form>
+                    <div>
+                        <span>NAME</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="Name" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <span>DATE</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <span>TIME</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="HH:MM" />
+                        </label>
+                    </div>
+
+                    <div>
+                        <span>CLINIC</span>
+                        <label class="input">
+                            <select>
+                                <option selected>SELECT CLINIC</option>
+                                <option>CLINIC ONE</option>
+                                <option>CLINIC TWO</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        <span>UPLOAD</span>
+                        <label class="input">
+                            <input type="file" />
+                        </label>
+                    </div>
+
                     <br />
-                    <form>
-                        <div class="inline">
-                            <span>NAME</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="Brownie" />
-                            </label>
-                        </div>
-                        <div class="inline">
-                            <span>PHONE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="xxx-xxx-xxxx" />
-                            </label>
-                        </div>
-                        <br />
-                        <div class="inline">
-                            <span>DATE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
-                            </label>
-                        </div>
-                        <div class="inline">
-                            <span>TIME</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="HH:MM" />
-                            </label>
-                        </div>
-                        <br />
-                        <div class="inline">
-                            <span>PLACE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="Pick up location" />
-                            </label>
-                        </div>
-                        <div class="inline">
-                            <span>BURIAL</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="Burial location" />
-                            </label>
-                        </div>
-                        <br />
-                        <div class="inline">
-                            <p>Do you want freezers ?</p>
-                            <label class="radio">
-                                <input type="radio" name="frezzer" value="one" checked />
-                                <span class="radio-mark"></span>
-                                <span class="radio-label">YES</span>
-                            </label>
-                            <br />
-                            <br />
-                            <label class="radio">
-                                <input type="radio" name="frezzer" value="two" />
-                                <span class="radio-mark"></span>
-                                <span class="radio-label">NO</span>
-                            </label>
-                        </div>
-                        <div class="inline">
-                            <p>In need of transport facility ?</p>
-                            <label class="radio">
-                                <input type="radio" name="transport" value="one" checked />
-                                <span class="radio-mark"></span>
-                                <span class="radio-label">YES</span>
-                            </label>
-                            <br />
-                            <br />
-                            <label class="radio">
-                                <input type="radio" name="transport" value="two" />
-                                <span class="radio-mark"></span>
-                                <span class="radio-label">NO</span>
-                            </label>
-                        </div>
-                        <br />
-                        <br />
-                        <button class="primary button-lg">CHECK AVAILABILITY</button>
-                    </form>
-                </div>
-
-                <div class="image">
-                    <img src="../images/services/cremation.svg" />
-                    <br />
-                    <h3>PET CREMATION</h3>
-                </div>
-            </div>
-
-            <div class="gallery">
-                <p>Gallery</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div class="vendor-footer">
-                <div></div>
-                <div>
-                    <p>ADDRESS</p>
-                    <p>Frosty Crumble, Art of Delight, 44/1, Residency Road</p>
-                </div>
-                <div>
-                    <p>CONTACT</p>
-                    <p>080-76812345</p>
-                </div>
+                    <div>
+                        <button class="primary">SAVE</button>
+                    </div>
+                </form>
+                <img class="profile-nav-bg" src="../images/profile/profile-pet-bg/deworming.svg" />
             </div>
         </div>
 
     </div>
 
     <footer>@2020-2021 All Rights Reserved.</footer>
+
     <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>
+    <script type="text/javascript" src="../scripts/profile-pet.js"></script>
 </body>
 
 </html>

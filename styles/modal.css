@@ -169,6 +169,11 @@
     width: 100%;
 }
 
+.login-modal > .login-container > .image {
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
 /* CREATE PET MODAL */
 .create-pet-modal > form {
     display: flex;
@@ -177,7 +182,8 @@
     flex-direction: column;
 }
 
-.create-pet-modal > form > .image {
+.create-pet-modal > form > .image,
+.login-container > .image {
     width: 150px;
     height: 150px;
     margin-left: 50px;
@@ -186,11 +192,11 @@
     background: var(--body-bg-secondary);
 }
 
-.create-pet-modal > form > .image > img {
+.create-pet-modal > form > .image > img,
+.login-container > .image > img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    opacity: 0.8;
 }
 
 .create-pet-modal > form > div {

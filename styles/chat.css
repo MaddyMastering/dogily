@@ -1,0 +1,113 @@
+.float-chat-icon {
+    z-index: 8;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    cursor: pointer;
+}
+
+.float-chat-icon > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: var(--body-bg);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.float-chat-icon > div.close {
+    display: none;
+}
+
+.float-chat-icon.open > div.chat {
+    display: none;
+}
+
+.float-chat-icon.open > div.close {
+    display: flex;
+}
+
+.chat-message-box {
+    pointer-events: none;
+    z-index: 8;
+    position: fixed;
+    padding: 20px;
+    bottom: 80px;
+    right: 150px;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    background: var(--body-bg-secondary);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.float-chat-icon.open + .chat-message-box {
+    transform: scale(1);
+    pointer-events: all;
+}
+
+.chat-message-box > .footer {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+}
+
+.chat-message-box > .footer > .input-rounded {
+    background: var(--body-bg-grey-dark);
+}
+
+.chat-message-box > .footer > .input-rounded > input {
+    background: var(--body-bg-grey-dark);
+}
+
+.chat-message-box > .footer > button.chat-send {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.chat-message-box > ul > li {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.chat-message-box > ul > li > .date {
+    color: var(--text-label-color);
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.chat-message-box > ul > .sent {
+    background: rgba(33, 133, 208, 0.3);
+}
+
+.chat-message-box > ul > .recieved {
+    float: right;
+    background: var(--body-bg);
+}
+
+@media screen and (max-width: 480px) {
+    .float-chat-icon {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .chat-message-box {
+        bottom: 100px;
+        right: 20px;
+        width: 80vw;
+        height: 70vh;
+    }
+}

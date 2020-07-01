@@ -71,13 +71,13 @@
     opacity: 0.8;
 }
 
-.service-description.success {
+/* .service-description.success {
     background: linear-gradient(to right, rgba(255, 0, 0, 0), var(--success-color)) !important;
 }
 
 .service-description.failure {
     background: linear-gradient(to right, rgba(255, 0, 0, 0), var(--danger-color)) !important;
-}
+} */
 
 .service-description > .form-description {
     grid-area: form;
@@ -116,6 +116,14 @@
     width: 50px;
     border-radius: 50%;
     border: 5px solid var(--danger-color);
+}
+
+.service-description > .form-description > form > ul > li {
+    margin: 20px 0;
+}
+
+.service-description > .form-description > form > ul > li > .price {
+    float: right;
 }
 
 [data-mode="dark"] .service-description > .form-description > .status-icon.success > i,

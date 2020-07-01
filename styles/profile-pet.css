@@ -86,7 +86,8 @@
     line-height: 80px;
 }
 
-.history > .header > i {
+.history > .header > i,
+.history > .header > a {
     float: right;
     line-height: 80px;
     cursor: pointer;
@@ -240,6 +241,16 @@
 
     #icon-close-history {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .information {
+        padding: 50px 70px;
+    }
+
+    .profile-nav-bg {
+        right: 30px;
     }
 }
 

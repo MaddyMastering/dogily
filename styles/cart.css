@@ -1,91 +1,137 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-.container > .cart-list {
-    height: calc(100vh - 270px);
-    padding: 30px 50px 30px 90px;
     background: var(--body-bg-secondary);
-    overflow: auto;
 }
 
-.container > .cart-list > ul > li > .cart-item {
-    padding: 10px;
-    position: relative;
-    border-bottom: 1px solid var(--border-color);
+.cart-header {
+    padding: 30px 15% 0 15%;
 }
 
-.container > .cart-list > ul > li > .cart-item > i {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
+.cart-list {
+    padding: 30px 15%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
 }
 
-.container > .cart-list > ul > li:last-child {
+.cart-list > .items > h3 {
     margin-bottom: 30px;
 }
 
-.container > .cart-list > .total {
+.cart-list > .items > ul {
+    border-radius: 10px;
+    background: var(--body-bg);
+}
+
+.cart-list > .items > ul > li > .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid var(--border-color);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
-.container > .cart-list > .total > .cash {
-    text-align: right;
+.cart-list > .items > ul > li > .cart-item > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.payment {
-    padding: 30px 50px 30px 90px;
+.cart-list > .items > ul > li > .cart-item > .image {
+    height: 150px;
+    width: 150px;
 }
 
-.payment > h3 {
-    margin-bottom: 50px;
+.cart-list > .items > ul > li > .cart-item > .image > img {
+    width: 70%;
+    height: 70%;
 }
 
-[data-mode="dark"] .container > .cart-list > ul > li > .cart-item > p > img,
-[data-mode="dark"] .container > .cart-list > .total > .cash > img {
-    filter: invert(1);
+.cart-list > .items > ul > li > .cart-item > .add-to-cart-icon > button {
+    padding: 3% 5%;
 }
 
-[data-mode="dark"] .container > .cart-list {
-    background: var(--body-bg-grey-dark);
+.cart-list > .items > ul > li > .cart-item > .add-to-cart-icon > .button-group.center {
+    height: 38px;
+    width: 50px;
 }
 
-[data-mode="dark"] .payment {
-    background: var(--body-bg-secondary);
+.cart-list > .items > ul > li > .cart-item > div > .delete {
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px var(--shadow-color-two);
+}
+
+.checkout {
+    max-height: 374px;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--body-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.checkout > ul > hr {
+    margin: 20px 0;
+    border-color: var(--border-color);
+}
+
+.checkout > ul > li {
+    height: 40px;
+}
+
+.checkout > ul > li > p {
+    line-height: 40px;
+}
+
+.checkout > ul > li:last-child > p {
+    font-weight: bold;
+}
+
+.checkout > ul > li > p > span {
+    float: right;
+}
+
+@media screen and (max-width: 1366px) {
+    .cart-header {
+        padding: 30px 10% 0 10%;
+    }
+
+    .cart-list {
+        padding: 30px 10%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr 2fr;
+    .cart-header {
+        padding: 30px 7% 0 7%;
     }
 
-    .container > .cart-list {
-        padding: 30px;
+    .cart-list {
+        padding: 30px 7%;
     }
 
-    .payment {
-        padding: 30px 30px 30px 50px;
+    .cart-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .container {
+    .cart-header {
+        padding: 30px 5% 0 5%;
+    }
+
+    .cart-list {
+        padding: 30px 5%;
+    }
+
+    .cart-list {
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
-    .container > .cart-list {
-        width: 94vw;
-        padding: 10px;
-    }
-
-    .container > .cart-list > ul > li > .cart-item {
-        width: 80%;
-    }
-
-    .payment {
-        padding: 30px;
+    .cart-list > .items > ul > li > .cart-item {
+        overflow-x: scroll;
+        width: 80vw;
     }
 }

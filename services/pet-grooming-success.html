@@ -98,7 +98,7 @@
                     <i class="material-icons open-profile">keyboard_arrow_down</i>
                     <ul>
                         <li><a href="../profile/profile.html">Profile</a></li>
-                        <li>Cart</li>
+                        <li><a href="../profile/cart.html">Cart</a></li>
                         <li>logout</li>
                     </ul>
                 </span>
@@ -187,21 +187,82 @@
                     <div class="status-icon success">
                         <i class="material-icons">done</i>
                     </div>
-                    <p>Your Time slot is available. Do you want to continue ?</p>
+                    <p>Your Time slot is available. Select grooming styles to continue</p>
 
                     <br />
-                    <form>
-                        <!-- <div>
-                            <span>BREED</span>
-                            <label class="input">
-                                <select>
-                                    <option selected>SELECT BREED</option>
-                                    <option>Breed one</option>
-                                    <option>Breed two</option>
-                                </select>
-                            </label>
-                        </div> -->
+                    <form action="../profile/cart.html">
+                        <p>Grooming packages</p>
+                        <ul>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked />
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-label">Hair washing</span>
+                                </label>
+                                <p class="price">
+                                    <img src="../images/rupee.svg" />
+                                    &nbsp;200
+                                </p>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-label">Nail cutting</span>
+                                </label>
+                                <p class="price">
+                                    <img src="../images/rupee.svg" />
+                                    &nbsp;200
+                                </p>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-label">Hair washing</span>
+                                </label>
+                                <p class="price">
+                                    <img src="../images/rupee.svg" />
+                                    &nbsp;200
+                                </p>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-label">Nail cutting</span>
+                                </label>
+                                <p class="price">
+                                    <img src="../images/rupee.svg" />
+                                    &nbsp;200
+                                </p>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-label">Hair washing</span>
+                                </label>
+                                <p class="price">
+                                    <img src="../images/rupee.svg" />
+                                    &nbsp;200
+                                </p>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                    <span class="check-mark"></span>
+                                    <span class="checkbox-label">Nail cutting</span>
+                                </label>
+                                <p class="price">
+                                    <img src="../images/rupee.svg" />
+                                    &nbsp;200
+                                </p>
+                            </li>
+                        </ul>
 
+                        <br />
+                        <br />
                         <button class="cancel button-lg inline">CANCEL</button>
                         <button class="success button-lg inline">CONTINUE</button>
                     </form>

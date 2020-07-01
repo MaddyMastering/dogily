@@ -4,9 +4,12 @@
 }
 
 .profile-description {
-    color: #fff;
     background: var(--primary-color);
+}
 
+.profile-description > .form  {
+    color: #fff;
+    max-height: 700px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr 1.5fr 1fr 2fr;
@@ -14,33 +17,33 @@
     padding: 60px;
 }
 
-.profile-description > .avatar {
+.profile-description > .form  > .avatar {
     text-align: center;
 }
 
-.profile-description > .name {
+.profile-description > .form  > .name {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.profile-description > .name > div,
-.profile-description > .address,
-.profile-description > .phone {
+.profile-description > .form  > .name > div,
+.profile-description > .form  > .address,
+.profile-description > .form  > .phone {
     display: flex;
     flex-direction: column;
 }
 
-.profile-description > .name > div > span,
-.profile-description > .address > span,
-.profile-description > .phone > span {
+.profile-description > .form  > .name > div > span,
+.profile-description > .form  > .address > span,
+.profile-description > .form  > .phone > span {
     margin-bottom: 15px;
 }
 
-.profile-description > .bottom {
+.profile-description > .form  > .bottom {
     position: relative;
 }
 
-.profile-description > .bottom > button {
+.profile-description > .form  > .bottom > button {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -101,7 +104,7 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    .profile-description {
+    .profile-description > .form  {
         padding: 30px;
     }
 
@@ -122,15 +125,15 @@
         grid-gap: 0px;
     }
 
-    .profile-description {
+    .profile-description > .form  {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
 
-    .profile-description > .name,
-    .profile-description > .address,
-    .profile-description > .phone,
-    .profile-description > .bottom {
+    .profile-description > .form  > .name,
+    .profile-description > .form  > .address,
+    .profile-description > .form  > .phone,
+    .profile-description > .form  > .bottom {
         display: none;
     }
 

@@ -42,7 +42,7 @@ nav > ul > li:hover > a {
 
 @media screen and (max-width: 2560px) {
     aside {
-        position: absolute;
+        position: fixed;
         left: -500px;
         top: 0;
         height: 100vh;

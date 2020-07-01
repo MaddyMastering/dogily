@@ -185,6 +185,7 @@ label.checkbox > .check-mark {
     display: inline-block;
     background-color: #fff;
     cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 label.checkbox > .check-mark:after {
@@ -261,6 +262,28 @@ textarea {
     color: var(--primary-color);
 }
 
+/* ADD TO CART */
+.add-to-cart-icon {
+    width: 250px;
+}
+
+.add-to-cart-icon > .button-group {
+    border: none;
+}
+
+.add-to-cart-icon > .button-group.center {
+    vertical-align: bottom;
+    height: 48px;
+}
+
+.add-to-cart-icon > button > i {
+    color: #fff;
+}
+
+[data-mode="dark"] .add-to-cart-icon > button > i {
+    filter: invert(0);
+}
+
 /* DROPDOWN */
 label.input select {
     border: none;
@@ -325,15 +348,25 @@ label.input select {
 .input-file-upload {
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
-    right: 35%;
-    background: transparent;
+    bottom: 0;
+    right: 2%;
+    padding: 22px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 70px 70px;
 }
 
 .input-file-upload > input[type="file"] {
     visibility: hidden;
     width: 0.1px;
     height: 0.1px;
+}
+
+.input-file-upload > i {
+    color: #fff;
+}
+
+[data-mode="dark"] .input-file-upload > i {
+    filter: invert(0);
 }
 
 /* TIME SLOTS */
@@ -343,7 +376,7 @@ label.input select {
     margin: 30px 15px;
     padding: 10px 20px;
     border-radius: 5px;
-    background: var(--body-bg-secondary);
+    background: var(--body-bg);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -365,6 +398,11 @@ label.input select {
 
 .time-slots > li:hover.active > a {
     filter: brightness(0.8);
+}
+
+/* PRICE */
+[data-mode="dark"] .price > img {
+    filter: invert(1);
 }
 
 @media screen and (max-width: 768px) {
