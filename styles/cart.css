@@ -20,6 +20,7 @@
 .cart-list > .items > ul {
     border-radius: 10px;
     background: var(--body-bg);
+    box-shadow: 0 3px 6px var(--shadow-color-one);
 }
 
 .cart-list > .items > ul > li > .cart-item {
@@ -68,6 +69,11 @@
     border-radius: 10px;
     background: var(--body-bg);
     border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 3px 6px var(--shadow-color-one);
+}
+
+.checkout-payment {
+    max-height: 200px;
 }
 
 .checkout > ul > hr {

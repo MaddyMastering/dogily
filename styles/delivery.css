@@ -1,0 +1,45 @@
+.delivery-header {
+    padding: 30px 15% 0 15%;
+}
+
+.container {
+    background: var(--body-bg-secondary);
+}
+
+.address-create {
+    padding: 30px 15%;
+}
+
+.address-list {
+    padding: 30px 15%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-gap: 30px;
+}
+
+.address-list > .address {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--body-bg);
+    box-shadow: 0 3px 6px var(--shadow-color-one);
+}
+
+.address-list > .address > i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.add-address-icon {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--body-bg);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(0, 0, 0, 0.2);
+}

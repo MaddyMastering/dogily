@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/navbar.css" />
     <link rel="stylesheet" href="../styles/sidebar.css" />
-    <link rel="stylesheet" href="../styles/cart.css" />
+    <link rel="stylesheet" href="../styles/delivery.css" />
     <title>Dogily</title>
 </head>
 
@@ -156,124 +156,33 @@
         </nav>
 
         <div class="container">
-            <h3 class="cart-header">Cart (5)</h3>
-            <div class="cart-list">
-                <div class="items">
-                    <ul>
-                        <li>
-                            <div class="cart-item">
-                                <div class="image">
-                                    <img src="../images/products/product.svg" />
-                                </div>
-                                <div class="description">
-                                    <p><strong>Pedigree ultimate edition</strong></p>
-                                </div>
-                                <div class="add-to-cart-icon">
-                                    <button class="button-group left success">
-                                        <i class="material-icons">remove</i>
-                                    </button>
-                                    <button disabled class="button-group center success">1</button>
-                                    <button class="button-group right success">
-                                        <i class="material-icons">add</i>
-                                    </button>
-                                </div>
-                                <div>
-                                    <p class="price"><img src="../images/rupee.svg" /> &nbsp; 200</p>
-                                </div>
-                                <div>
-                                    <i class="material-icons delete">clear</i>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cart-item">
-                                <div class="image">
-                                    <img src="../images/products/product.svg" />
-                                </div>
-                                <div class="description">
-                                    <p><strong>Pedigree ultimate edition</strong></p>
-                                </div>
-                                <div class="add-to-cart-icon">
-                                    <button class="button-group left success">
-                                        <i class="material-icons">remove</i>
-                                    </button>
-                                    <button disabled class="button-group center success">1</button>
-                                    <button class="button-group right success">
-                                        <i class="material-icons">add</i>
-                                    </button>
-                                </div>
-                                <div>
-                                    <p class="price"><img src="../images/rupee.svg" /> &nbsp; 200</p>
-                                </div>
-                                <div>
-                                    <i class="material-icons delete">clear</i>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cart-item">
-                                <div class="image">
-                                    <img src="../images/products/product.svg" />
-                                </div>
-                                <div class="description">
-                                    <p><strong>Pedigree ultimate edition</strong></p>
-                                </div>
-                                <div class="add-to-cart-icon">
-                                    <button class="button-group left success">
-                                        <i class="material-icons">remove</i>
-                                    </button>
-                                    <button disabled class="button-group center success">1</button>
-                                    <button class="button-group right success">
-                                        <i class="material-icons">add</i>
-                                    </button>
-                                </div>
-                                <div>
-                                    <p class="price"><img src="../images/rupee.svg" /> &nbsp; 200</p>
-                                </div>
-                                <div>
-                                    <i class="material-icons delete">clear</i>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="checkout">
-                    <form>
-                        <div>
-                            <span>PROMO CODE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="XXXX" />
-                                <i class="material-icons">send</i>
-                            </label>
-                        </div>
+            <h3 class="delivery-header">Delivery Address</h3>
+            <div class="address-list">
+                <div class="address">
+                    <i class="material-icons">clear</i>
+                    <form action="./payment.html">
+                        <p><strong>HOME</strong></p>
+                        <p>#31, 7th main, hongasandra, bangalore 560068</p>
+                        <p>7760449537</p>
+                        <br />
+                        <button class="primary">DELIVER HERE</button>
                     </form>
-                    <ul>
-                        <li>
-                            <p>Products
-                                <span class="price"><img src="../images/rupee.svg" /> &nbsp; 200</span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>Shipping
-                                <span class="price"><img src="../images/rupee.svg" /> &nbsp; 200</span>
-                            </p>
-                        </li>
-                        <hr />
-                        <li>
-                            <p>
-                                TOTAL COST
-                                <span class="price"><img src="../images/rupee.svg" /> &nbsp; 200</span>
-                            </p>
-                        </li>
-                    </ul>
-                    <br />
-                    <br />
-                    <div class="center">
-                        <button class="primary button-lg" onclick="checkout()">CHECKOUT</button>
-                    </div>
+                </div>
+                <div class="address">
+                    <i class="material-icons">clear</i>
+                    <form action="./payment.html">
+                        <p><strong>HOME</strong></p>
+                        <p>#31, 7th main, hongasandra, bangalore 560068</p>
+                        <p>7760449537</p>
+                        <br />
+                        <button class="primary">DELIVER HERE</button>
+                    </form>
                 </div>
             </div>
+
+            <a href="./create-delivery.html">
+                <i class="material-icons add-address-icon">add</i>
+            </a>
         </div>
 
         <footer>@2020-2021 All Rights Reserved.</footer>

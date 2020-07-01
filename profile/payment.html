@@ -156,98 +156,38 @@
         </nav>
 
         <div class="container">
-            <h3 class="cart-header">Cart (5)</h3>
+            <h3 class="cart-header">Payment</h3>
             <div class="cart-list">
-                <div class="items">
-                    <ul>
-                        <li>
-                            <div class="cart-item">
-                                <div class="image">
-                                    <img src="../images/products/product.svg" />
-                                </div>
-                                <div class="description">
-                                    <p><strong>Pedigree ultimate edition</strong></p>
-                                </div>
-                                <div class="add-to-cart-icon">
-                                    <button class="button-group left success">
-                                        <i class="material-icons">remove</i>
-                                    </button>
-                                    <button disabled class="button-group center success">1</button>
-                                    <button class="button-group right success">
-                                        <i class="material-icons">add</i>
-                                    </button>
-                                </div>
-                                <div>
-                                    <p class="price"><img src="../images/rupee.svg" /> &nbsp; 200</p>
-                                </div>
-                                <div>
-                                    <i class="material-icons delete">clear</i>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cart-item">
-                                <div class="image">
-                                    <img src="../images/products/product.svg" />
-                                </div>
-                                <div class="description">
-                                    <p><strong>Pedigree ultimate edition</strong></p>
-                                </div>
-                                <div class="add-to-cart-icon">
-                                    <button class="button-group left success">
-                                        <i class="material-icons">remove</i>
-                                    </button>
-                                    <button disabled class="button-group center success">1</button>
-                                    <button class="button-group right success">
-                                        <i class="material-icons">add</i>
-                                    </button>
-                                </div>
-                                <div>
-                                    <p class="price"><img src="../images/rupee.svg" /> &nbsp; 200</p>
-                                </div>
-                                <div>
-                                    <i class="material-icons delete">clear</i>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="cart-item">
-                                <div class="image">
-                                    <img src="../images/products/product.svg" />
-                                </div>
-                                <div class="description">
-                                    <p><strong>Pedigree ultimate edition</strong></p>
-                                </div>
-                                <div class="add-to-cart-icon">
-                                    <button class="button-group left success">
-                                        <i class="material-icons">remove</i>
-                                    </button>
-                                    <button disabled class="button-group center success">1</button>
-                                    <button class="button-group right success">
-                                        <i class="material-icons">add</i>
-                                    </button>
-                                </div>
-                                <div>
-                                    <p class="price"><img src="../images/rupee.svg" /> &nbsp; 200</p>
-                                </div>
-                                <div>
-                                    <i class="material-icons delete">clear</i>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <form>
+                    <div>
+                        <span>NAME</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="Card name" />
+                        </label>
+                    </div>
+                    <div>
+                        <span>CARD NUMBER</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="xxxx-xxxx-xxxx" />
+                        </label>
+                    </div>
+                    <div>
+                        <span>EXPIRY DATE</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="DD/MM/YYYY" />
+                        </label>
+                    </div>
+                    <div>
+                        <span>CVV</span>
+                        <label class="input">
+                            <input type="text" autocomplete="off" placeholder="3 digit" />
+                        </label>
+                    </div>
 
-                <div class="checkout">
-                    <form>
-                        <div>
-                            <span>PROMO CODE</span>
-                            <label class="input">
-                                <input type="text" autocomplete="off" placeholder="XXXX" />
-                                <i class="material-icons">send</i>
-                            </label>
-                        </div>
-                    </form>
+                    <br />
+                    <button class="primary button-lg">PAY</button>
+                </form>
+                <div class="checkout checkout-payment">
                     <ul>
                         <li>
                             <p>Products
@@ -267,16 +207,13 @@
                             </p>
                         </li>
                     </ul>
-                    <br />
-                    <br />
-                    <div class="center">
-                        <button class="primary button-lg" onclick="checkout()">CHECKOUT</button>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <footer>@2020-2021 All Rights Reserved.</footer>
+    </div>
+
+    <footer>@2020-2021 All Rights Reserved.</footer>
     </div>
     <script async type="text/javascript" src="../libs/lazy-load/lazyLoad.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>

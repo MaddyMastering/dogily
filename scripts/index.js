@@ -83,12 +83,17 @@ function openme(obj) {
     document.querySelector(obj).classList.toggle('open');
 }
 
+
+function checkout() {
+    document.location.href = './delivery.html';
+}
+
 function viewPet() {
-    document.location.href = './profile-pet-food.html'
+    document.location.href = './profile-pet-food.html';
 }
 
 function compare() {
-    document.location.href = './breed-compare-search.html'
+    document.location.href = './breed-compare-search.html';
 }
 
 function compareResult() {
