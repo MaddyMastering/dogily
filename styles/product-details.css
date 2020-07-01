@@ -38,9 +38,14 @@
     margin: 10px;
 }
 
-.add-to-cart,
 .add-to-cart-icon {
     width: 250px;
+}
+
+.add-to-cart > button {
+    padding: 2% 0%;
+    width: 200px;
+    margin-right: 20px;
 }
 
 .add-to-cart-icon > .button-group {
@@ -53,7 +58,7 @@
 }
 
 .add-to-cart > button {
-    height: 40px;
+    width: 150px;
 }
 
 [data-mode="dark"] .container {
