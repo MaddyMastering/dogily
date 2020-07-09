@@ -1,70 +1,102 @@
-.adoptions-container, .rescue-container {
+.adoptions-container {
     padding: 50px 15%;
 }
 
 .adoptions-container,
-.rescue-container {
+.adoption-pets {
+    background: var(--body-bg-secondary);
+}
+
+.adoptions-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
 }
 
-.rescue-container,
-.rescuers {
-    background: var(--body-bg-secondary);
-}
-
-.adoptions-container > .image > img,
-.rescue-container > .image > img {
+.adoptions-container > .image > img{
     width: 100%;
     height: auto;
 }
 
-.adoptions-container > .description,
-.rescue-container > .description {
+.adoptions-container > .description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.adoption-pets, .rescuers {
-    padding: 0 15% 50px 15%;
+.adoption-pets {
+    padding: 50px 15%;
 }
 
-.adoption-pets > .list,
-.rescuers {
+.adoption-pets > .tags > ul > li {
+    display: inline-block;
+}
+
+.adoption-pets > .list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 150px);
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-gap: 60px;
 }
 
-.rescuers > div > .image {
-    background: var(--body-bg-grey-dark) !important;
-}
-
-.adoption-pets > .list > div.link {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 30px;
-}
-
-.adoption-pets > .list > div.link > a {
-    text-decoration: underline;
+.adoption-pets > .list > a {
     color: var(--text-color);
+    position: relative;
 }
 
-.adoption-pets > .list > div > .image,
-.rescuers > div > .image {
-    width: 150px;
-    height: 150px;
-    background: var(--body-bg-secondary);
+.adoption-pets > .list > a:hover {
+    color: var(--primary-color);
+}
+
+.adoption-pets > .list > a:hover > .image {
+    filter: brightness(0.8);
+}
+
+.adoption-pets > .list > a:hover > .image > img {
+    transform: scale(1.1);
+}
+
+.adoption-pets > .list > a > span {
+    position: absolute;
+    right: 10px;
+    top: 225px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.adoption-pets > .list > a > span.available {
+    background: var(--success-color);
+}
+
+.adoption-pets > .list > a > span.not-available {
+    background: var(--danger-color);
+}
+
+.adoption-pets > .list > a > p {
+    margin-bottom: 0;
+}
+
+.adoption-pets > .list > a > .image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--body-bg);
+}
+
+.adoption-pets > .list > a > .image > img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 250ms ease-in;
 }
 
 @media screen and (max-width: 768px) {
-    .adoptions-container,
-    .rescue-container {
+    .adoptions-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -73,9 +105,5 @@
 @media screen and (max-width: 480px) {
     .adoptions-container {
         grid-template-rows: 100px 1fr;
-    }
-
-    .rescue-container {
-        grid-template-rows: 1fr 200px;
     }
 }
