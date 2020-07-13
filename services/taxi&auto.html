@@ -37,7 +37,7 @@
         <div class="sidebar-header">
             <div class="logo">
                 <img alt="image" src="../icons/new-logo.svg">
-                
+
             </div>
             <i class="material-icons clear" onclick="sidemenuclose()">clear</i>
         </div>
@@ -45,15 +45,15 @@
             <li><a href="../index.html">HOME</a></li>
             <li><a href="../products/products-list.html">PRODUCTS</a></li>
             <li class="active"><a href="../services/services.html">SERVICES</a></li>
-                            <li class="menu">
-                    <a >ADOPTIONS & RESCUE
-                        <i class="material-icons open-profile">keyboard_arrow_down</i>
-                    </a>
-                    <ul class="submenu">
-                        <li><a href="../rescue/adoptions-rescue.html">Adoptions</a></li>
-                        <li><a href="../rescue/rescue.html">Rescue team</a></li>
-                    </ul>
-                </li>
+            <li class="menu">
+                <a>ADOPTIONS & RESCUE
+                    <i class="material-icons open-profile">keyboard_arrow_down</i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="../rescue/adoptions-rescue.html">Adoptions</a></li>
+                    <li><a href="../rescue/rescue.html">Rescue team</a></li>
+                </ul>
+            </li>
             <li><a href="../breeds/breed-information.html">BREED INFORMATION</a></li>
             <li class="menu">
                 <a>
@@ -94,7 +94,7 @@
             </div>
             <div class="logo">
                 <img alt="image" src="../icons/new-logo.svg">
-                
+
             </div>
             <div class="profile">
                 <span class="avatar">
@@ -140,7 +140,7 @@
                     <a>SERVICES
                         <i class="material-icons open-profile">keyboard_arrow_down</i>
                     </a>
-                     <ul class="submenu">
+                    <ul class="submenu">
                         <li><a href="./dog-services.html">Dog</a></li>
                         <li><a href="./cat-services.html">Cat</a></li>
                         <li><a href="./bird-services.html">Bird</a></li>
@@ -148,8 +148,8 @@
                         <li><a href="./fish-services.html">Fish</a></li>
                     </ul>
                 </li>
-                                <li class="menu">
-                    <a >ADOPTIONS & RESCUE
+                <li class="menu">
+                    <a>ADOPTIONS & RESCUE
                         <i class="material-icons open-profile">keyboard_arrow_down</i>
                     </a>
                     <ul class="submenu">
@@ -165,14 +165,14 @@
                     </a>
                     <ul class="submenu">
                         <li><a href="../vacations-neighbourhood/vacations.html">Vacations</a></li>
-                        <li><a href="../vacations-neighbourhood/vacations.html">Neighbourhood</a></li>
+                        <li><a href="../vacations-neighbourhood/neighbourhood.html">Neighbourhood</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
 
         <div class="container">
-<div class="vendor-header">
+            <div class="vendor-header">
                 <div class="logo">
                     <img src="../images/services/gallery-1.jpg" />
                 </div>
@@ -237,10 +237,11 @@
                         <div class="inline">
                             <span>SCHEDULE</span>
                             <label class="input">
-                                <select>
+                                <select id="select" onchange="selectDropdown()">
                                     <option selected disabled>SELECT SCHEDULE</option>
                                     <option>NOW</option>
                                     <option>LATER</option>
+                                    <option>OTHER</option>
                                 </select>
                             </label>
                         </div>
@@ -263,6 +264,8 @@
                                 <input type="text" autocomplete="off" placeholder="HH:MM" />
                             </label>
                         </div> -->
+                        <br />
+                        <textarea class="other-desc" rows="4" placeholder="DESCRIPTION"></textarea>
                         <br />
                         <button class="primary button-lg">CHECK AVAILABILITY</button>
                     </form>

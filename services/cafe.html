@@ -164,7 +164,7 @@
                     </a>
                     <ul class="submenu">
                         <li><a href="../vacations-neighbourhood/vacations.html">Vacations</a></li>
-                        <li><a href="../vacations-neighbourhood/vacations.html">Neighbourhood</a></li>
+                        <li><a href="../vacations-neighbourhood/neighbourhood.html">Neighbourhood</a></li>
                     </ul>
                 </li>
             </ul>
@@ -236,14 +236,16 @@
                         <div>
                             <span>TABLE</span>
                             <label class="input">
-                                <select>
+                                <select id="select" onchange="selectDropdown()">
                                     <option selected>SELECT TABLE</option>
                                     <option>12A</option>
                                     <option>34B</option>
+                                    <option>OTHER</option>
                                 </select>
                             </label>
                         </div>
-
+                        <br />
+                        <textarea class="other-desc" rows="4" placeholder="DESCRIPTION"></textarea>
                         <br />
                         <button class="primary button-lg">RESERVE TABLE</button>
                     </form>

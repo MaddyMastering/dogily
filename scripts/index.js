@@ -139,6 +139,15 @@ function toggleDarkmode() {
     }
 }
 
+function selectDropdown() {
+    var ele = document.getElementById('select');
+    if (ele.options[ele.selectedIndex].value === 'OTHER') {
+        document.querySelector('.other-desc').style.display = 'block';
+    } else {
+        document.querySelector('.other-desc').style.display = 'none';
+    }
+}
+
 window.onload = () => {
     if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
 
@@ -153,6 +162,11 @@ window.onload = () => {
         }, 1500);
 
         initCarousel();
+    }
+
+    var textarea = document.querySelector('.other-desc');
+    if (textarea) {
+        textarea.style.display = 'none';
     }
 
     initLazyLoad();

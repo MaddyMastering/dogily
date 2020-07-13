@@ -5,6 +5,10 @@
     padding: 30px;
 }
 
+.vacations-header.neighbourhood {
+    background: url(../images/vacations/neighbourhood-bg.svg);
+}
+
 .vacations-header > h3 {
     text-align: center;
     color: #fff;
@@ -89,6 +93,7 @@
 
 /* LIST */
 .vacation-list,
+.neighbourhood-list,
 .vacation-sub-heading {
     padding: 30px 8%;
 }
@@ -97,6 +102,46 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
     grid-gap: 50px;
+}
+
+.neighbourhood-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40vw);
+    grid-gap: 50px;
+}
+
+.neighbourhood-list > .item {
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 0px -1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.neighbourhood-list > .item > .description {
+    position: relative;
+    height: 160px;
+}
+
+.neighbourhood-list > .item > .description > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    padding: 3%;
+}
+
+.neighbourhood-list > .item > .image {
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    background: var(--body-bg-secondary);
+}
+
+.neighbourhood-list > .item > .image > img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
 }
 
 .vacation-list > .item {
@@ -138,6 +183,10 @@
 
 .vacation-list > .item > .description > .row-bottom {
     margin-top: 50px;
+}
+
+[data-mode="dark"] .neighbourhood-list > .item {
+    background: var(--body-bg-grey-dark);
 }
 
 [data-mode="dark"] .vacation-list > .item > .description > .row-one > p > img {

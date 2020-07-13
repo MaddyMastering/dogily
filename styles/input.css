@@ -16,7 +16,8 @@ label.input {
     width: 250px;
 }
 
-label > i {
+label > i,
+label > img {
     margin: 0 10px;
     color: var(--text-disabled-color);
 }

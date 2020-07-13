@@ -90,6 +90,13 @@
     opacity: 0.8;
 }
 
+.other-desc {
+    width: 250px;
+    background: var(--body-bg);
+    box-shadow: 0 3px 6px var(--shadow-color-two);
+    margin-bottom: 30px;
+}
+
 /* .service-description.success {
     background: linear-gradient(to right, rgba(255, 0, 0, 0), var(--success-color)) !important;
 }
