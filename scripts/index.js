@@ -149,7 +149,7 @@ function selectDropdown() {
 }
 
 window.onload = () => {
-    if (window.location.pathname.includes('index.html') || window.location.pathname === '/') {
+    if (window.location.pathname.includes('index.html') || window.location.pathname === '/' || window.location.pathname === '/dogily/') {
 
         setTimeout(() => {
             document.querySelector('body').classList.add('no-overflow');
